@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+
+/**
+ * @doc 基础简写样式
+ * @author 方刚
+ * @time 2015-04-10 10:15:02
+ */
+
+.text-center{
+	text-align: center;
+}
+.text-right{
+	text-align: right;
+}

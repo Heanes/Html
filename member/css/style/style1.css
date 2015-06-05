@@ -1,0 +1,98 @@
+@CHARSET "UTF-8";
+
+/* S 全局大块样式 S */
+body ,* {
+	font: 14px/1.3 '微软雅黑','SimSun', Arial, Verdana, tahoma, Helvetica, sans-serif
+}
+/* 容器样式 */
+.container {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+/* E 全局大块样式 E */
+
+/* S 表格样式 S */
+.table-border,
+.tr-border tr,
+.td-border td,
+.th-border th{
+	border: 1px solid;
+}
+
+/* 数据列表样式 S  */
+.table-data-list{
+	border-radius: 4px;
+}
+.table-data-list tr td{
+	padding:12px;
+	border-color: #eee;
+}
+.table-data-list tr th{
+	background-color:#eaf8ff;
+	border-color:#eee;
+	padding: 8px 10px;
+	font-weight: bold;
+}
+/* 数据列表样式  E*/
+
+/* 数据搜索输入表格样式  S*/
+.data-search-form input[type=text]{
+	height: 32px;
+	padding:0 5px;
+	border: 1px solid #23C6FB;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(27, 60, 144, 0.6);
+}
+.data-search-form input[type=text]:hover{
+	border: 1px solid red;
+}
+.data-search-form input[type=text]:focus{
+	outline:none;
+	box-shadow: 0 0 8px rgba(224, 16, 16, 0.5);
+}
+
+.data-search-form .search-button{
+	width: 80px;
+	height: 40px;
+	border: none;
+	border-radius:5px;
+	background:url("../../image/search/search_btn.png")no-repeat 20% 12px #23c6fb;
+	background-size:20px 20px;
+	color: white;
+	cursor: pointer;
+	padding: 5px 2px 5px 28px;
+	box-shadow: 0 0 8px rgba(27, 60, 144, 0.6);
+}
+
+.table-data-search{
+}
+.table-data-search th{
+	text-align: 
+}
+.table-data-search tr td{
+	padding: 10px;
+}
+/* 数据搜索输入表格样式 E */
+
+/* 数据编辑页面表格样式 S */
+.table-data-edit{
+	
+}
+.table-data-edit tr th,
+.table-data-edit tr td{
+	padding: 8px 3px;
+}
+.table-data-edit tr th{
+	text-align:right;
+	font-weight: bold;
+}
+.table-data-edit tr td{
+	text-align: left;
+}
+
+/* 数据编辑页面表格样式 E */
+
+
+
+/* E 表格样式 E */

@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+/**
+ * @doc Apache目录列表样式
+ * @copyright heanes.com
+ * @author Heanes
+ * @time 2015-05-20 10:29:17
+ */
+body{font-size:14px;padding:10px;margin:0}
+#indextitle{font-size:18px}
+table#indexlist{border-collapse:collapse;border-spacing:0}
+table#indexlist tbody tr.odd td,table#indexlist tbody tr.odd th{_background-color:#f9f9f9}
+table#indexlist tbody tr:hover{background:#F4F4F4}
+table#indexlist th{font-size:12px}
+table#indexlist tr td{padding:5px}
+td.indexcolicon{font-size:12px;padding:0}
+td.indexcolicon img{width:16px;height:16px}
+td.indexcolname{font-size:13px;word-wrap:break-word;word-break:break-all}
+td.indexcollastmod{font-size:12px}
+td.indexcoldesc,td.indexcolsize{font-size:12px;padding-left:15px}
+.apache-footer p{text-align:center;padding:0;margin:0}
+.apache-footer .mail-to-author{color:#ddd;text-decoration:none}

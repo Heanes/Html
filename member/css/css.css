@@ -1,0 +1,79 @@
+@CHARSET "UTF-8";
+/* 数据列表区域 */
+.data-list{margin-top:10px}
+/* 数据编辑区域 */
+.data-edit-block{width:800px;margin:0 auto}
+.data-edit-block .edit-title .edit-title-p{color:#32BDEA;font-size:16px}
+.edit-form{margin-top:15px}
+.edit-form form{margin:15px auto}
+.edit-form img.face-photo{width:110px;height:120px}
+/* 保存按钮 */
+.save-button{width:70px;height:45px;background-color:#32BDEA;color:white;border:none;border-radius:5px;padding:5px;font-size:16px;cursor:pointer;box-shadow:0 0 8px rgba(27,60,144,0.6)}
+/* 客户详细信息页面 */
+.details{width:880px}
+.details h1{color:#23c6fb;font-size:20px;text-align:center}
+.details h2{color:#fe6800;font-size:18px;margin:30px 80px}
+.details p{line-height:8PX;font-family:宋体;font-size:14px}
+.company{margin:48px 0}
+.information,.company,.loan{margin-left:320px}
+.process{margin-top:12px;width:260px;height:150px;padding:50px 300px}
+.process .time{background-image:url(../image/progress/dot_finish.jpg);background-repeat:no-repeat;width:24px}
+.complete{color:#E34043;border-collapse:collapse;font-family:宋体;font-weight:bold}
+table.complete td{height:45px;padding-right:5px}
+table.no-complete td{height:45px;padding-right:5px}
+.time-no{background-image:url(../image/progress/dot_unfinish.jpg);background-repeat:no-repeat;width:24px}
+.no-complete{border-collapse:collapse;color:#999999;height:45px;font-family:宋体;font-weight:bold}
+/* 贷款进度查询页面 */
+.clear{clear:both}
+.query{width:130px;height:42px;border:1px #d8d8d8 solid;margin-top:28px}
+.query p{color:#fe6a00;font-size:14px;text-align:center;font-weight:bold}
+.line{height:1px;background-color:#d8d8d8;width:860px}
+.query-content{margin-top:12px;width:600px;height:150px;padding:50px 130px}
+.one,.Arrow-1,.two,.Arrow-2,.three,.Arrow-3,.four,.Arrow-4{display:inline;float:left}
+.Arrow-4{padding-top:42px}
+.five,.six,.Arrow-5{float:left}
+.query-content  .five{padding-left:307px}
+/* 兼职申请介绍页面 */
+.main-content{width:800px;margin:0 auto}
+.introduce-partjober{padding:10px 0;padding-bottom:20px;text-align:center}
+.bg-gray{background:#eee9ed;padding-bottom:40px}
+.bg-bolang{background:url(../image/introduce/bg-bolang.png);display:block;height:20px}
+.introduce-title{padding:20px 0}
+.introduce-title h1{font-size:28px}
+.introduce-content{padding-bottom:10px 20px}
+.introduce-content p{text-indent:2em;font-size:16px;line-height:26px}
+.text-left{text-align:left}
+.introduce-number{padding-top:40px}
+.introduce-number .block-left{float:left;width:50%}
+.introduce-number .publicity{padding:10px 0;color:#245f88;font-weight:bold}
+.introduce-number .block-right{float:right;width:50%}
+.introduce-num,.introduce-num strong{font-size:40px}
+.introduce-num strong{padding:5px 10px;background:url(../image/introduce/bg-num.png) no-repeat;margin:0 6px}
+.inline-text-half{width:50%;float:left}
+.inline-img-half{float:right;width:50%;height:100%;vertical-align:middle}
+.inline-img-half img{width:300px}
+.introduce-handle{text-align:center;margin:20px auto}
+button.join-button{display:inline-block;background:#01517f;padding:10px 20px;color:white;font-weight:bold;cursor:pointer}
+/* 申请兼职页面 */
+.apply-part-jober{padding:5px 14px}
+table.apply-part-jober-table{width:100%}
+table.apply-part-jober-table tr{height:50px}
+table.apply-part-jober-table tr:last-child{border-bottom:none}
+table.apply-part-jober-table tr th{text-align:right;padding:1px}
+table.apply-part-jober-table tr td{width:auto;padding:8px}
+.data-edit-table td.td-input-select{text-align:left;padding-right:20%}
+input.input-apply{border:1px solid #01DDD1;line-height:35px}
+.file-upload-block{padding:10px 0;width:264px;margin:0 auto}
+.upload-field{text-align:center}
+.file-upload-wrap{position:relative;height:35px;line-height:35px;margin-bottom:15px;color:#fff;font-size:15px;vertical-align:middle;background:#00a1cc;border-radius:6px}
+.upload-button-text{display:block;height:35px;line-height:35px}
+.upload-file-filed{cursor:pointer;position:absolute;top:0;left:0;display:inline-block;width:100%;height:100%;opacity:0}
+.upload-img-preview{width:250px;border:1px solid #ddd;padding:5px;background:#fff}
+.upload-title{text-align:center}
+.upload-notice{text-align:center}
+.notice-wrap{display:inline-block}
+.upload-notice p{line-height:22px;color:#CD291D;text-indent:2em;text-align:left}
+.upload-notice p:first-child{text-indent:0}
+.upload-clause{padding:15px}
+.upload-handle{text-align:center}
+.upload-handle .apply-button{background:#FD6862;color:#fff;width:100px;height:45px}
