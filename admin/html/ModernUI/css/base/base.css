@@ -1,0 +1,47 @@
+@CHARSET "UTF-8";
+
+.table {
+	display: table;
+	background: #f00;
+	width: 100%;
+}
+
+.t_row {
+	display: table-caption;
+	border: 1px solid #f00;
+	height: 100px;
+	background: #00f;
+}
+
+.t_cell {
+	display: table-cell;
+	border: 1px solid #f00;
+	height: 100px;
+	background: #0f0
+}
+.t_footer{
+	display: table-footer-group;
+	border: 1px solid #f00;
+	height: 100px;
+	background: #008000
+}
+/* div显示表格效果用法
+<div class="table">
+		<div class="t_row">一列</div>
+		<div class="t_cell">两列</div>
+		<div class="t_cell">两列</div>
+	</div>
+	<div class="table">
+		<div class="t_row">一列</div>
+		<div class="t_cell">三列</div>
+		<div class="t_cell">三列</div>
+		<div class="t_cell">三列</div>
+	</div>
+	<div class="table">
+		<div class="t_row">一列</div>
+		<div class="t_cell">四列</div>
+		<div class="t_cell">四列</div>
+		<div class="t_cell">四列</div>
+		<div class="t_cell">四列</div>
+	</div>
+*/

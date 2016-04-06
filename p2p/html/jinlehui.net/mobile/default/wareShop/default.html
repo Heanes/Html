@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html class="default-background">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- 让IE8在新模式下渲染（禁止兼容模式） -->
+	<meta name="renderer" content="webkit"><!-- 让360等多核模式浏览器默认用极速模式打开 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui" />
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+
+	<meta name="author" content="Heanes heanes.com email(heanes@163.com)">
+	<meta name="keywords" content="软件,商务,HTML,tutorials,source codes">
+	<meta name="description" content="描述">
+	<link rel="shortcut icon" href="/public/static/image/favicon/favicon.ico"/>
+	<link rel="bookmark" href="/public/static/image/favicon/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="/public/static/libs/css/reset/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="/public/static/libs/css/base/base.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/style/style1.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/css.css"/>
+
+	<!-- S js S -->
+	<script type="text/javascript" src="/public/static/libs/js/jquery/2.1.4/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="/public/static/libs/js/Excolo-Slider/1.1.0/jquery.excoloSlider.js"></script>
+	<script type="text/javascript" src="../js/js.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="/public/static/libs/js/jquery.lazyload/1.9.5/jquery.lazyload.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('img.lazyload').lazyload({
+				effect : "fadeIn",
+				threshold : 200
+			});
+		});
+	</script>
+	<!-- E js E -->
+	<title>积分商城首页</title>
+</head>
+<body>
+<div class="wrap default-background">
+	<!-- S 头部 S -->
+	<div class="header">
+
+	</div>
+	<!-- E 头部 E-->
+	<!-- S 主要内容 S -->
+	<div class="main">
+		<div class="main-content w-wrap">
+			<!-- S 响应式幻灯部分 S -->
+			<div class="index-slide text-center" id="index_slide">
+				<a href="../image/slide/1.jpg"><img src="../image/slide/1.jpg" alt="slide1.jpg" /></a>
+				<a href="../image/slide/2.jpg"><img src="../image/slide/2.jpg" alt="slide2.jpg" /></a>
+				<a href="../image/slide/3.jpg"><img src="../image/slide/3.jpg" alt="slide3.jpg" /></a>
+				<a href="../image/slide/4.jpg"><img src="../image/slide/4.jpg" alt="slide4.jpg" /></a>
+				<a href="../image/slide/5.jpg"><img src="../image/slide/5.jpg" alt="slide5.jpg" /></a>
+			</div>
+			<script type="text/javascript">
+				/**
+				 * 响应式幻灯，支持触摸滑动，将JS脚本放在html中是为了响应更快，避免未加载完成时造成页面排版错乱的情况
+				 * @author 方刚
+				 * @time 2014-11-28 14:02:12
+				 */
+				if (jQuery.isFunction(jQuery.fn.excoloSlider)) {
+					var slider=$("#index_slide").excoloSlider({
+						pagerClass: "index-slide-pager",
+						autoPlay: true,
+						height: 'auto'
+					});
+				}
+			</script>
+			<!-- E 响应式幻灯部分 E -->
+			<!-- 商品列表 -->
+			<div class="integral-nav-block">
+				<ul class="integral-nav-ul">
+					<li><a href="##"><i class="integral-icon"></i><span class="integral-text"><strong class="my-rank-total">1120</strong>积分</span></a></li>
+					<li><a href="##"><i class="integral-icon integral-record-icon"></i><span class="integral-text">兑换记录</span></a></li>
+				</ul>
+			</div>
+			<div class="goods-list-block">
+				<div class="goods-list clearfix">
+					<ul class="goods-list-ul">
+						<li class="goods-li">
+							<div class="goods-block">
+								<a href="goodsDetail.html" class="goods-href">
+									<div class="goods-image">
+										<img data-original="../image/ware/ware1.jpg" src="../image/ware/goods-loading.png" class="lazyload">
+									</div>
+									<div class="info">
+										<p class="goods-name">锅碗瓢盆任你挑任你选，破的不要钱，旧的白送，假的买一赔三</p>
+										<p class="goods-price"><i class="integral-icon mini"></i>156.00</p>
+									</div>
+									<div class="meta">
+										<span class="original-price">187.00</span>
+										<i class="goods-separate-border"></i>
+										<span class="sold-out">已兑111件</span>
+									</div>
+								</a>
+							</div>
+						</li>
+						<li class="goods-li">
+							<div class="goods-block">
+								<a href="goodsDetail.html" class="goods-href">
+									<div class="goods-image">
+										<img data-original="../image/ware/ware2.jpg" src="../image/ware/goods-loading.png" class="lazyload">
+									</div>
+									<div class="info">
+										<p class="goods-name">帐篷，郊游必备，给你的旅行创造一个温暖舒适的小家</p>
+										<p class="goods-price"><i class="integral-icon mini"></i>156.00</p>
+									</div>
+									<div class="meta">
+										<span class="original-price">187.00</span>
+										<i class="goods-separate-border"></i>
+										<span class="sold-out">已兑111件</span>
+									</div>
+								</a>
+							</div>
+						</li>
+						<li class="goods-li">
+							<div class="goods-block">
+								<a href="goodsDetail.html" class="goods-href">
+									<div class="goods-image">
+										<img data-original="../image/ware/ware3.jpg" src="../image/ware/goods-loading.png" class="lazyload">
+									</div>
+									<div class="info">
+										<p class="goods-name">帐篷，郊游必备，给你的旅行创造一个温暖舒适的小家</p>
+										<p class="goods-price"><i class="integral-icon mini"></i>156.00</p>
+									</div>
+									<div class="meta">
+										<span class="original-price">187.00</span>
+										<i class="goods-separate-border"></i>
+										<span class="sold-out">已兑111件</span>
+									</div>
+								</a>
+							</div>
+						</li>
+						<li class="goods-li">
+							<div class="goods-block">
+								<a href="goodsDetail.html" class="goods-href">
+									<div class="goods-image">
+										<img data-original="../image/ware/ware4.jpg" src="../image/ware/goods-loading.png" class="lazyload">
+									</div>
+									<div class="info">
+										<p class="goods-name">帐篷，郊游必备，给你的旅行创造一个温暖舒适的小家</p>
+										<p class="goods-price"><i class="integral-icon mini"></i>156.00</p>
+									</div>
+									<div class="meta">
+										<span class="original-price">187.00</span>
+										<i class="goods-separate-border"></i>
+										<span class="sold-out">已兑111件</span>
+									</div>
+								</a>
+							</div>
+						</li>
+						<li class="goods-li">
+							<div class="goods-block">
+								<a href="goodsDetail.html" class="goods-href">
+									<div class="goods-image">
+										<img data-original="../image/ware/ware5.jpg" src="../image/ware/goods-loading.png" class="lazyload">
+									</div>
+									<div class="info">
+										<p class="goods-name">帐篷，郊游必备，给你的旅行创造一个温暖舒适的小家</p>
+										<p class="goods-price"><i class="integral-icon mini"></i>156.00</p>
+									</div>
+									<div class="meta">
+										<span class="original-price">187.00</span>
+										<i class="goods-separate-border"></i>
+										<span class="sold-out">已兑111件</span>
+									</div>
+								</a>
+							</div>
+						</li>
+						<li class="goods-li">
+							<div class="goods-block">
+								<a href="goodsDetail.html" class="goods-href">
+									<div class="goods-image">
+										<img data-original="../image/ware/ware6.jpg" src="../image/ware/goods-loading.png" class="lazyload">
+									</div>
+									<div class="info">
+										<p class="goods-name">帐篷，郊游必备，给你的旅行创造一个温暖舒适的小家</p>
+										<p class="goods-price"><i class="integral-icon mini"></i>156.00</p>
+									</div>
+									<div class="meta">
+										<span class="original-price">187.00</span>
+										<i class="goods-separate-border"></i>
+										<span class="sold-out">已兑111件</span>
+									</div>
+								</a>
+							</div>
+						</li>
+						<li class="goods-li">
+							<div class="goods-block">
+								<a href="goodsDetail.html" class="goods-href">
+									<div class="goods-image">
+										<img data-original="../image/ware/ware7.jpg" src="../image/ware/goods-loading.png" class="lazyload">
+									</div>
+									<div class="info">
+										<p class="goods-name">帐篷，郊游必备，给你的旅行创造一个温暖舒适的小家</p>
+										<p class="goods-price"><i class="integral-icon mini"></i>156.00</p>
+									</div>
+									<div class="meta">
+										<span class="original-price">187.00</span>
+										<i class="goods-separate-border"></i>
+										<span class="sold-out">已兑111件</span>
+									</div>
+								</a>
+							</div>
+						</li>
+						<li class="goods-li">
+							<div class="goods-block">
+								<a href="goodsDetail.html" class="goods-href">
+									<div class="goods-image">
+										<img data-original="../image/ware/ware8.jpg" src="../image/ware/goods-loading.png" class="lazyload">
+									</div>
+									<div class="info">
+										<p class="goods-name">帐篷，郊游必备，给你的旅行创造一个温暖舒适的小家</p>
+										<p class="goods-price"><i class="integral-icon mini"></i>156.00</p>
+									</div>
+									<div class="meta">
+										<span class="original-price">187.00</span>
+										<i class="goods-separate-border"></i>
+										<span class="sold-out">已兑111件</span>
+									</div>
+								</a>
+							</div>
+						</li>
+						<li class="goods-li">
+							<div class="goods-block">
+								<a href="goodsDetail.html" class="goods-href">
+									<div class="goods-image">
+										<img data-original="../image/ware/ware9.jpg" src="../image/ware/goods-loading.png" class="lazyload">
+									</div>
+									<div class="info">
+										<p class="goods-name">帐篷，郊游必备，给你的旅行创造一个温暖舒适的小家</p>
+										<p class="goods-price"><i class="integral-icon mini"></i>156.00</p>
+									</div>
+									<div class="meta">
+										<span class="original-price">187.00</span>
+										<i class="goods-separate-border"></i>
+										<span class="sold-out">已兑111件</span>
+									</div>
+								</a>
+							</div>
+						</li>
+						<!--<li class="goods-li">
+							<div class="goods-block">
+								<a href="goodsDetail.html" class="goods-href">
+									<div class="goods-image">
+										<img data-original="../image/ware/ware10.jpg" src="../image/ware/goods-loading.png" class="lazyload">
+									</div>
+									<div class="info">
+										<p class="goods-name">帐篷，郊游必备，给你的旅行创造一个温暖舒适的小家</p>
+										<p class="goods-price"><i class="integral-icon mini"></i>156.00</p>
+									</div>
+									<div class="meta">
+										<span class="original-price">187.00</span>
+										<i class="goods-separate-border"></i>
+										<span class="sold-out">已兑111件</span>
+									</div>
+								</a>
+							</div>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- E 主要内容 E -->
+</div>
+</body>
+</html>

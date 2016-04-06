@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ie浏览器版本过低iealert提示jquery插件</title>
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+<script type="text/javascript" src="/public/static/libs/js/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="../js/iealert.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/iealert/browser-is-too-old.css">
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("body").iealert();
+    });
+</script>
+</head>
+<body>
+<div id="ie-alert-overlay" style="_height:497px"></div>
+<div id="ie-alert-panel" style="top:300px;_top:300px">
+    <span>你知道你的internet explorer是过时了吗?</span>
+    <p>为了得到我们网站最好的体验效果,我们建议您升级到最新版本的internet explorer或选择另一个web浏览器.一个列表最流行的web浏览器在下面可以找到.
+    <h1 id="goon" style="cursor:pointer;font-size:20px">&gt;&gt;&gt;继续访问</h1>
+    <div class="browser">
+        <ul>
+            <li><a class="chrome" href="https://www.google.com/chrome/" target="_blank"></a></li>
+            <li><a class="firefox" href="http://www.mozilla.org/en-us/firefox/new/" target="_blank"></a></li>
+            <li><a class="ie9" href="http://windows.microsoft.com/en-us/internet-explorer/downloads/ie/" target="_blank"></a></li>
+            <li><a class="safari" href="http://www.apple.com/safari/download/" target="_blank"></a></li>
+            <li><a class="opera" href="http://www.opera.com/download/" target="_blank"></a></li>
+        </ul>
+    </div>
+</div>
+<div style="display:none;background:#d4bfff;margin:200px auto;border:1px dashed #ff3fff;padding:20px;width:500px">
+    <h1>默认是低于ie8浏览器都会弹出提示框，大家想看到效果就用ie6、ie7来打开运行</h1>
+</div>
+</body>
+</html>

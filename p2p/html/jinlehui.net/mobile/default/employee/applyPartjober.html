@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="default-background">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- 让IE8在新模式下渲染（禁止兼容模式） -->
+<meta name="renderer" content="webkit"><!-- 让360等多核模式浏览器默认用极速模式打开 -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+
+<meta name="author" content="Heanes heanes.com email(heanes@163.com)">
+<meta name="keywords" content="软件,商务,HTML,tutorials,source codes">
+<meta name="description" content="描述">
+<link rel="shortcut icon" href="/public/static/image/favicon/favicon.ico" />
+<link rel="bookmark" href="/public/static/image/favicon/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/public/static/libs/css/reset/reset.css" />
+<link rel="stylesheet" type="text/css" href="../css/style/style1.css" />
+<link rel="stylesheet" type="text/css" href="../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../css/css.css" />
+<title>申请成为兼职页面</title>
+</head>
+<body>
+	<div class="wrap default-background">
+		<!-- S 头部 S -->
+		<div class="header">
+			
+		</div>
+		<!-- E 头部 E-->
+		<!-- S 主要内容 S -->
+		<div class="main">
+			<div class="main-content w-wrap">
+				<div class="page-introduce-img">
+					<img alt="" src="../image/introduce/introduce-apply.png" class="introduce-img">
+				</div>
+				<div class="apply-part-jober">
+					<form action="action.php" id="my_upload" method="post">
+						<table class="apply-part-jober-table">
+							<tbody>
+								<tr>
+									<th>真实姓名</th>
+									<td><input name="real_name" type="text" class="input-data input-apply" /></td>
+								</tr>
+								<tr>
+									<th>性别</th>
+									<td>
+										<input name="gender" type="radio" class="input-apply" value="1" />男
+										<input name="gender" type="radio" class="input-apply" value="0" />女
+									</td>
+								</tr>
+								<tr>
+									<th>银行卡号</th>
+									<td><input name="bank_card_num" type="text" class="input-data input-apply" /></td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="file-upload-block">
+							<div class="upload-field">
+								<div class="file-upload-wrap">
+									<span class="upload-button-text">请上传银行卡正面照片</span>
+									<input type="file" name="mypic" class="upload-file-filed" />
+								</div>
+								<div class="progress">
+									<span class="bar"></span><span class="percent">0%</span>
+								</div>
+								<div class="files"></div>
+								<img class="upload-img-preview" src="../image/bankCard/demo_front.jpg">
+							</div>
+						</div>
+						<div class="file-upload-block">
+							<div class="upload-field">
+								<div class="file-upload-wrap">
+									<span class="upload-button-text">请上传身份证正面照片</span>
+									<input type="file" name="IDCard_front_pic" class="upload-file-filed" />
+								</div>
+								<img class="upload-img-preview" alt="" src="../image/IDCard/demo_front.jpg">
+							</div>
+						</div>
+						<div class="file-upload-block">
+							<div class="upload-field">
+								<div class="file-upload-wrap">
+									<span class="upload-button-text">请上传身份证反面照片</span>
+									<input type="file" name="IDCard_behind_pic" class="upload-file-filed" />
+								</div>
+								<img class="upload-img-preview" alt="" src="../image/IDCard/demo_behind.jpg">
+							</div>
+						</div>
+						<div class="upload-notice">
+							<div class="notice-wrap">
+								<p>注：1、姓名、银行卡姓名、上传身份证姓名要保持一致</p>
+								<p>2、请勿上传信用卡，否则会影响你提现</p>
+								<p>3、提交之前请仔细检查好银行卡号信息</p>
+							</div>
+						</div>
+						<div class="check-clause upload-clause">
+							<p class="text-center">
+								<input type="checkbox" checked="checked" />我已阅读并同意<a href="" class="law-href">《金乐汇交易条款》</a>
+							</p>
+						</div>
+						<div class="upload-handle">
+							<input type="submit" name="partjober_apply_submit" class="button-normal apply-button" value="立即申请" />
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- E 主要内容 E -->
+		<!-- S 脚部 S -->
+		<div class="footer">
+			
+		</div>
+		<!-- E 脚部 E -->
+	</div>
+	<cite>
+		<!-- S js S -->
+		<script type="text/javascript" src="/public/static/libs/js/jquery/2.1.4/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="/public/static/libs/js/jquery.form/3.51/jquery.form.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				var bar = $('.bar');
+				var percent = $('.percent');
+				var progress = $(".progress");
+				var files = $(".files");
+				var btn = $(".btn span");
+				$('input[type="file"]').change(function() {
+					var this_input = $(this);
+					$("#my_upload").ajaxSubmit({
+						dataType: 'json',
+						beforeSend: function() {
+							progress.show();
+							var percentVal = '0%';
+							bar.width(percentVal);
+							percent.html(percentVal);
+							btn.html("上传中...");
+						},
+						uploadProgress: function(event, position, total, percentComplete) {
+							var percentVal = percentComplete + '%';
+							bar.width(percentVal);
+							percent.html(percentVal);
+						},
+						success: function(data) {
+							files.html("<b>" + data.name + "(" + data.size + "k)</b> <span class='delimg' rel='" + data.pic + "'>删除</span>");
+							this_input.parent().parent().find('img.upload-img-preview').attr('src',"files/" + data.pic);
+							btn.html("添加附件");
+						},
+						error: function(xhr) {
+							btn.html("上传失败");
+							bar.width('0');
+							files.html(xhr.responseText);
+						}
+					});
+				});
+
+				files.children('.delimg').on('click', function() {
+					alert('aa');
+					var pic = $(this).attr("rel");
+					$.post("action.php?act=delimg", {imagename: pic}, function(msg) {
+						if (msg == 1) {
+							files.html("删除成功.");
+							showimg.empty();
+							progress.hide();
+						} else {
+							alert(msg);
+						}
+					});
+				});
+			});
+			</script>
+		<!-- E js E -->
+	</cite>
+</body>
+</html>

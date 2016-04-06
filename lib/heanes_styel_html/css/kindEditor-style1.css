@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+/**
+ * @doc 富文本编辑器样式
+ * @author fanggang
+ * @time 2015-12-11 16:19:52
+ */
+.textarea-words-count{
+    font-size:13px;
+    line-height:1.5em;
+    color:#999
+}
+.ke-toolbar{
+    background-color:#edf3ff;
+}

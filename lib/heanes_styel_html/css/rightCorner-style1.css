@@ -1,0 +1,18 @@
+.right-corner{position:fixed;left:50%;bottom:80px;margin-left:499px}
+.right-corner .handle-block{width:60px;height:60px;margin-bottom:3px}
+.right-corner .handle-block.relative{position:relative}
+.right-corner .handle-block .handle{width:60px;height:60px;line-height:60px;display:block}
+.right-corner .handle-block .handle.handle-icon{background-color:rgba(133,194,242,.72);color:#fff;text-align:center;cursor:pointer}
+.right-corner .handle-block .handle.handle-icon:hover{background-color:#2d96e9}
+.right-corner .handle-block .go-to-top{}
+.right-corner .handle-block .go-to-top:hover{}
+.right-corner .handle-block .refresh{}
+.right-corner .handle-block .refresh:hover{}
+.right-corner .handle-block .go-to-home{}
+.right-corner .handle-block .go-to-home:hover{}
+.right-corner .handle-block .qr-code{}
+.right-corner .handle-block .qr-code:hover{}
+.right-corner .handle-block.hover-change-block{position:relative;}
+.right-corner .handle-block.hover-change-block:hover .hover-change-content{display:block;}
+.right-corner .handle-block.hover-change-block .hover-change-content{display:none;position:absolute;top:-50%;}
+.right-corner .handle-block .qr-code-content{right:60px}

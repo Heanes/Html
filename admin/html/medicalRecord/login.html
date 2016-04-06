@@ -1,0 +1,57 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="css/login.css" />
+<title>登录</title>
+</head>
+<body>
+	<div id="clouds" class="stage"></div>
+	<div class="admin_login_box_background"></div>
+		<div class="admin_login_box login-block">
+			<img src="image/common/logo/logo.jpg" class="admin-logo">
+			<h1>护理质控管理系统登录</h1>
+			<form action="" method="post" name="login_form" id="login_form">
+				<div class="login-field login-user-account">
+					<label>管理帐号</label>
+					<input type="text" name="user_name" placeholder="输入用户名/手机号" title="请输入用户名或手机号" required />
+					<p class="login-tip input-error-notice">账户名不正确</p>
+				</div>
+				<div class="login-field login-user-pwd">
+					<label>密码</label>
+					<input type="password" name="user_pwd" placeholder="输入密码" title="密码长度至少为6位" required />
+					<p class="login-tip input-error-notice">密码长度不够</p>
+				</div>
+				<div class="login-field login-captcha">
+					<label>验证码</label>
+					<input type="text" name="captcha" placeholder="验证码" title="请对照输入右侧图片中的字符" maxlength="4" required autocomplete="off" />
+					<span class="captcha-wrap">
+						<img alt="" src="image/captcha/captcha1.png" class="captcha-code" onclick="this.src='image/captcha/captcha2.png'">
+					</span>
+					<p class="login-tip input-error-notice">验证码错误</p>
+				</div>
+				<div class="login-handle">
+					<div class="login-handle-field">
+						<input type="submit" class="login-submit" name="login_form_submit" value="登录" />
+					</div>
+				</div>
+			</form>
+			<div class="login-handle-extra">
+				<div class="forget-password">
+					<a href="" class="href-duck">忘记密码？</a>
+				</div>
+			</div>
+		</div>
+    <!-- js S -->
+	<script type="text/javascript" src="/public/static/libs/js/jquery/2.1.4/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="/public/static/libs/js/jquery.spritely/0.6.8/jquery.spritely-0.6.8.js"></script><!-- 云层效果 -->
+	<script type="text/javascript" src="js/effect.js"></script>
+	<script type="text/javascript" src="js/chur.min.js"></script><!-- 蒲公英漂浮效果 -->
+	<script type="text/javascript" src="js/common/common.js"></script>
+	<script type="text/javascript">
+		//蒲公英漂浮效果
+		snowStorm = new SnowStorm('image/chur/');
+	</script>
+	<!-- js E -->
+</body>
+</html>

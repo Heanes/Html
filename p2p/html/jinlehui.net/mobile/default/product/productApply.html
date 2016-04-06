@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="default-background">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- 让IE8在新模式下渲染（禁止兼容模式） -->
+<meta name="renderer" content="webkit"><!-- 让360等多核模式浏览器默认用极速模式打开 -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=yes,minimal-ui" />
+
+<meta name="author" content="Heanes heanes.com email(heanes@163.com)">
+<meta name="keywords" content="软件,商务,HTML,tutorials,source codes">
+<meta name="description" content="描述">
+<link rel="shortcut icon" href="/public/static/image/favicon/favicon.ico" />
+<link rel="bookmark" href="/public/static/image/favicon/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/public/static/libs/css/reset/reset.css" />
+<link rel="stylesheet" type="text/css" href="../css/style/style1.css" />
+<link rel="stylesheet" type="text/css" href="../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../css/css.css" />
+<title>金融产品申请页</title>
+</head>
+<body>
+	<div class="wrap default-background">
+		<!-- S 头部 S -->
+		<div class="header">
+			
+		</div>
+		<!-- E 头部 E-->
+		<!-- S 主要内容 S -->
+		<div class="main">
+			<div class="main-content w-wrap">
+				<div class="page-introduce-img">
+					<img src="../image/introduce/introduce-product-apply.png" class="introduce-img">
+				</div>
+				<div class="product-apply">
+					<form action="" method="post">
+						<table class="data-edit-table data-apply-table">
+							<tbody>
+								<tr>
+									<th>姓名<i class="border-one"></i></th>
+									<td>
+										<input type="text" name="user_id" class="input-data input-border-none" placeholder="请输入真实姓名" />
+									</td>
+								</tr>
+								<tr>
+									<th>手机号码<i class="border-one"></i></th>
+									<td class="input-width-unit mobile-verify-code">
+										<span class="text-right"><input type="text" name="user_mobile" class="input-data input-border-none" placeholder="请填写手机验证码" /></span>
+										<span class="input-verify-code" id="get_regsms_code" style="width:auto;">获取验证码</span>
+									</td>
+								</tr>
+								<tr>
+									<th>验证码<i class="border-one"></i></th>
+									<td>
+										<input type="text" name="loan_money_total" class="input-data input-border-none" placeholder="请填写验证码" />
+									</td>
+								</tr>
+								<tr>
+									<th>贷款额度<i class="border-one"></i></th>
+									<td class="input-width-unit">
+										<span><input type="text" name="loan_rate" class="input-data input-border-none text-right" placeholder="请填写贷款额度" /></span>
+										<span class="input-data-decorate">万元</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="data-detail-handle">
+							<div class="handle-center">
+								<input type="submit" class="button-large-long button-show" value="立即申请" />
+							</div>
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+		<!-- E 主要内容 E -->
+		<!-- S 脚部 S -->
+		<div class="footer">
+			
+		</div>
+		<!-- E 脚部 E -->
+	</div>
+	<cite>
+		<!-- S js S -->
+		<script type="text/javascript" src="/public/static/libs/js/jquery/2.1.4/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script type="text/javascript">
+			var register_vy_time = null;  	//定义时间
+			var is_lock_send_vy = false;	//解除锁定
+			var left_rg_time = 0;			//开始时间
+
+			function left_time_to_send_regvy(){
+				clearTimeout(register_vy_time);
+				var button_get_regsms_code=$("#get_regsms_code");
+				if(left_rg_time > 0){
+					register_vy_time = setTimeout(left_time_to_send_regvy,1000);
+					button_get_regsms_code.html(left_rg_time+"秒后重新获取验证码");
+					button_get_regsms_code.addClass("btn_disable");
+					left_rg_time -- ;
+				}else{
+					is_lock_send_vy = false;
+					button_get_regsms_code.removeClass('btn_disable');
+					button_get_regsms_code.html("重新获取验证码");
+					left_rg_time = 0;
+				}
+			}
+
+			$(document).ready(function(){
+				$('#get_regsms_code').click(function(){
+					var user_mobile=$('input[name="user_mobile"]');
+					if($.trim(user_mobile.val()).length == 0){
+						is_lock_send_vy = false;
+						alert('未填写用户名或手机号！');
+						$('input[name="user_name"]').css({border:'1px solid red'});
+						return false;
+					}
+					if($(this).hasClass('btn_disable')){
+						return false;
+					}else{
+						$(this).html('正在发送中...');
+						$(this).addClass('btn_disable');
+					}
+					is_lock_send_vy = true;
+					//ajax发送手机验证码
+					var ajaxurl = "<?php echo BASE_URL;?>index.php?act=sms&op=sendRegCaptchaSms";
+					var query = {};
+					query.user_mobile = $.trim(user_mobile.val());
+					$.ajax({
+						url: ajaxurl,
+						data:query,
+						type: "POST",
+						dataType: "json",
+						success: function(result){
+							if(result.status==1){
+								left_rg_time = 60;
+								left_time_to_send_regvy();
+							}
+							else{
+								alert(result.msg);
+								$("#get_regsms_code").html(result.msg);
+								is_lock_send_vy = true;
+								return false;
+							}
+						},error:function(){
+							is_lock_send_vy = false;
+							alert('未知原因，发送失败，请稍后再试');
+						}
+					});
+				});
+			});
+		</script>
+		<!-- E js E -->
+	</cite>
+</body>
+</html>

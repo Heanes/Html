@@ -1,0 +1,54 @@
+@CHARSET "UTF-8";
+/**
+ * @doc 各页页面样式
+ * @copyright heanes.com
+ * @author Heanes
+ * @time 2015-09-14 12:05:05
+ */
+
+/* 首页 */
+/* app banner */
+.banner{width:100%;height:484px;position:relative;background:url(../images/index/banner.png) no-repeat center;background-size:100% 100%;}
+.banner .absolute-center{position:absolute;left:50%;right:50%;bottom:0;margin-left:-400px;}
+.banner .center-content{width:820px;height:430px;}
+.content-left,.content-right{float:left;position:absolute;bottom:0;}
+.text-block{padding-left:50px;top:0;right:0;}
+.app-img-block img{width:236px;height:430px;}
+.app-img-block{display:inline-block;}
+.web-title{width:520px;color:#fff;}
+.web-title .title{font-size:48px;font-weight:300;padding:16px 0;}
+.web-title .sub-title{font-size:34px;font-weight:300;line-height:56px;padding:16px 0;}
+.banner .web-qrCode{width:134px;height:134px;position:absolute;bottom:50px;}
+.banner .web-qrCode img{width:100%;height:100%;}
+
+/* 介绍 */
+.index-introduce{text-align:center;background-color:#fff;padding-top:40px;}
+.index-introduce.bg-gray{background-color:#f2f2f2;}
+.introduce-text{margin-bottom:60px;}
+.introduce-img img{max-width:100%;}
+.index-introduce h1{font-size:46px;font-weight:300;padding-bottom:20px;color:#424242;}
+.index-introduce p{line-height:28px;font-size:18px;color:#383838;}
+.introduce-desc-block{text-align:center;}
+.desc-block-ul{padding-bottom:30px;}
+.desc-block-ul li{display:inline-block;margin:0 28px;}
+.desc-block-ul li:hover{transform: scale(1.1,1.1);border:0;box-shadow:0 0 12px 6px rgba(132, 129, 129, 0.31);}
+.introduce-content-desc{width:244px;height:244px;border:1px solid #ddd;text-align:center;margin:0 auto;padding-top:20px;}
+.desc-icon{display:inline-block;width:100px;height:100px;background-size:100%;margin-bottom:10px;}
+.desc-text h2{line-height:28px;padding:10px 0;}
+.desc-text h3{font-weight:300;}
+.loan-rate{color:#fdb4b4;}
+.procedure-easy{color:#96ddfa;}
+.check-fast{color:#b6f3c0;}
+.partjober-introduce-bg{position:relative;height:764px;background:url(../images/index/banner-bottom.png) no-repeat;background-size:100% 100%;padding-top:0;}
+.partjober-introduce-bg:hover .bg-cover{background-color:transparent;}
+.partjober-introduce-bg .bg-cover{height:100%;width:100%;background-color:rgba(221, 221, 221, 0.24);display:block;}
+.partjober-introduce-text{width:100%;position:absolute;top:50%;bottom:50%;text-align:center;margin-top:-72px;}
+.introduce-text.partjober-introduce-text .center-content{text-shadow:0 0 4px #fff,0 0 6px #fff,0 0 15px #fff,0 0 2px #7D7D7D,0 0 70px #9C8B9A;}
+.introduce-text.partjober-introduce-text .center-content:hover{text-shadow:none;}
+.index-introduce.partjober-introduce-bg h1,
+.index-introduce.partjober-introduce-bg p{color:#fff;letter-spacing:.3em;}
+.introduce-img .app-bg{background:url(../images/index/bg-app-product.png) no-repeat center;background-size:contain;}
+.index-introduce-announce{text-align:center;color:#40b6f9;padding:80px 0;}
+.desc-text h1{line-height:28px;padding:10px 0;font-weight:300;}
+.index-introduce-announce .web-qrCode{padding:10px 0;}
+.index-introduce-announce .web-qrCode img{width:134px;height:134px;}

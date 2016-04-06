@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+/* 侧栏常用样式 */
+/* 导入font-awesome字体文件 */
+@import url(/public/static/libs/fonts/font-awesome/4.2.0/css/font-awesome.min.css);
+/* 右下角样式 S */
+/* 常用导航 使用了font-awesome字体 */
+.right-corner-nav{width:60px;position:fixed;right:50px;bottom:30px;}
+.right-corner-nav .handle-block .handle-content a.handle{display:block;}
+.right-corner-nav button{margin-bottom:3px;color:#fff;background-color:rgba(45,150,233,.6);}
+.right-corner-nav button:hover{color:#fff;background-color:#2D96E9;}
+.icon.icon-right-corner{width:60px;height:60px;line-height:60px;display:table-cell;font-family:FontAwesome,sans-serif;font-weight:lighter;font-style:normal;font-size:36px;vertical-align:middle;}
+.icon.icon-go-to-home:after{content:"\f015";}
+.icon.icon-back-top:after{content:"\f077";}
+.icon.icon-reload:after{content:"\f021";}
+.icon.icon-comment:after{content:"\f0e6";}
+.icon.icon-go-to-bottom:after{content:"\f078";}
+.icon.icon-tablet:after{content:"\f10a";}
+.icon.icon-share:after{content:"\f1e0";}

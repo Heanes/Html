@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="renderer" content="webkit">
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="/public/static/image/favicon/favicon.ico" />
+<link rel="bookmark" href="/public/static/image/favicon/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/public/static/libs/js/jquery-ui/layout/1.4.3/layout-default.css"/>
+<link rel="stylesheet" type="text/css" href="/public/static/libs/css/reset/reset.css"/>
+<link rel="stylesheet" type="text/css" href="css/base/base.css"/>
+<link rel="stylesheet" type="text/css" href="css/layout.css"/>
+<title>后台管理中心</title>
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="ui-layout-north">
+		<!--头部开始-->
+		<iframe src="layout/header.html"></iframe>
+		<!--头部结束-->
+	</div>
+	<!-- 菜单部分-->
+	<div class="ui-layout-west">
+		<iframe src="layout/menu.html"></iframe>
+	</div>
+	<!-- 中间部分 -->
+	<div class="ui-layout-center">
+		<iframe name="conframe" src="default.html" class="iframe_admin"></iframe>
+	</div>
+	<!-- 右侧部分 -->
+	<div class="ui-layout-east">
+		<iframe src="layout/right.html"></iframe>
+	</div>
+	<!-- 脚部 -->
+	<div class="ui-layout-south">
+		<iframe src="layout/footer.html"></iframe>
+	</div>
+	<!-- js S -->
+	<script type="text/javascript" src="/public/static/libs/js/jquery/2.1.4/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="/public/static/libs/js/jquery-ui/1.11.2/jquery-ui-1.11.2.js"></script>
+	<script type="text/javascript" src="/public/static/libs/js/jquery-ui/layout/1.4.3/jquery.layout-1.4.3.js"></script>
+	<script type="text/javascript" src="js/frame.js"></script><!-- 折叠功能的框架 -->
+	<!-- js E -->
+</body>
+</html>

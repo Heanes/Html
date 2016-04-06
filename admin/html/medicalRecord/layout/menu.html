@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>左侧菜单</title>
+<link rel="stylesheet" type="text/css" href="/public/static/libs/css/reset/reset.css"/>
+<link rel="stylesheet" type="text/css" href="/public/static/libs/css/base/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/layout.css"/>
+</head>
+<body>
+	<div class="menu_ul">
+		<ul id="list">
+			<li class="li_current"><p><img src="../image/layout/menu/fire.jpg" />通用查询</p></li>
+			<li><p><img src="../image/layout/menu/fire.jpg" />系统管理</p></li>
+			<li><p><img src="../image/layout/menu/fire.jpg" />入院管理</p></li>
+			<li><p><img src="../image/layout/menu/fire.jpg" />信息导出</p></li>
+		</ul>
+	</div>
+	<div class="menu_list">
+		<div class="menu_content" id="menu_content">
+			<div class="fct">
+				<div class="head">通用查询<em class="lap" title="折叠全部"></em></div>
+				<div class="box">
+					<dl class="box_dl">
+						<dt><a title="">信息检索</a></dt>
+						<dd><a href="../data_list/data_list.html" target="conframe">病人信息</a></dd>
+						<dd><a href="../data_list/data_list_ajax.html" target="conframe">质控标准</a></dd>
+						<dd><a href="../data_list/data_list_lap.html" target="conframe">医生信息</a></dd>
+						<dd><a href="../data_list/data_list_pics.html" target="conframe">ICD疾病信息</a></dd>
+					</dl>
+				</div>
+			</div>
+			<div class="fct">
+				<div class="head">系统管理<em class="lap" title="折叠全部"></em></div>
+				<div class="box">
+					<dl class="box_dl">
+					<dt><a title="">人员信息管理</a></dt>
+					<dd><a href="article_category.php?type=list" target="conframe">医护信息管理</a></dd>
+					<dd><a href="article.php?type=list" target="conframe">患者信息管理</a></dd>
+					<dd><a href="article.php?type=list" target="conframe">病室信息管理</a></dd>
+					<dd><a href="article.php?type=list" target="conframe">病床信息管理</a></dd>
+					</dl>
+				</div>
+				<div class="box">
+					<dl class="box_dl">
+					<dt><a title="">质控标准管理</a></dt>
+					<dd><a href="notice_category.php" target="conframe">危险因素评估</a></dd>
+					</dl>
+				</div>
+				<div class="box">
+					<dl class="box_dl">
+					<dt><a title="">系统属性配置</a></dt>
+					<dd><a href="notice_category.php" target="conframe">系统警告信息</a></dd>
+					<dd><a href="notice.php" target="conframe">系统通知信息</a></dd>
+					</dl>
+				</div>
+			</div>
+			
+			<div class="fct">
+				<div class="head">功能模块<em class="lap" title="折叠全部"></em></div>
+				<div class="box">
+					<dl class="box_dl">
+					<dt><a title="">商品管理</a></dt>
+					<dd><a href="goods_category.php" target="conframe">商品分类</a></dd>
+					<dd><a href="goods.php" target="conframe">商品列表</a></dd>
+					<dd><a href="goods_attribute.php" target="conframe">商品属性</a></dd>
+					</dl>
+				</div>
+				<div class="box">
+					<dl class="box_dl">
+					<dt><a title="">订单管理</a></dt>
+					<dd><a href="order.php" target="conframe">订单列表</a></dd>
+					<dd><a href="order.php?method=search" target="conframe">订单查询</a></dd>
+					</dl>
+				</div>
+				<div class="box">
+					<dl class="box_dl">
+					<dt><a title="">公司管理</a></dt>
+					<dd><a href="company_category.php" target="conframe">公司分类</a></dd>
+					<dd><a href="company.php" target="conframe">公司列表</a></dd>
+					</dl>
+				</div>
+				<div class="box">
+					<dl class="box_dl">
+					<dt><a title="">品牌管理</a></dt>
+					<dd><a href="brand_category.php" target="conframe">品牌分类</a></dd>
+					<dd><a href="brand.php" target="conframe">品牌列表</a></dd>
+					</dl>
+				</div>
+			</div>
+			<div class="fct">
+				<div class="head">信息导出<em class="lap" title="折叠全部"></em></div>
+				<div class="box">
+					<dl class="box_dl">
+					<dt><a title="">护理质量信息</a></dt>
+					<dd><a href="user.php?type=admin" target="conframe">护理质量信息</a></dd>
+					</dl>
+				</div>
+				<div class="box">
+					<dl class="box_dl">
+					<dt><a title="">报表信息统计</a></dt>
+					<dd><a href="user.php?type=user" target="conframe">时间</a></dd>
+					<dd><a href="user.php?type=user" target="conframe">病种</a></dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- js S -->
+	<script type="text/javascript" src="/public/static/libs/js/jquery/2.1.4/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="../js/menu.js"></script>
+	<!-- js E -->
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" class="default-background">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta charset="UTF-8"/>
+<!-- responsive -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/><!-- 让IE8在新模式下渲染（禁止兼容模式） -->
+<meta name="renderer" content="webkit"/><!-- 让360等多核模式浏览器默认用极速模式打开 -->
+<meta name="author" content="Heanes heanes.com email(heanes@163.com)"/>
+<meta name="keywords" content="软件,商务,HTML,tutorials,source codes"/>
+<meta name="description" content="描述，不超过150个字符"/>
+<!-- Favicon -->
+<link rel="shortcut icon" href="/public/static/image/favicon/favicon.ico"/>
+<link rel="bookmark" href="/public/static/image/favicon/favicon.ico"/>
+<!-- style -->
+<link rel="stylesheet" type="text/css" href="/public/static/libs/css/reset/reset.css"/>
+<link rel="stylesheet" type="text/css" href="/public/static/libs/css/base/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/style/style.css"/>
+<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+<link rel="stylesheet" type="text/css" href="../css/css.css"/>
+<title>文章列表</title>
+</head>
+<body>
+<div class="center wrap">
+    <!-- S 头部 S -->
+    <div class="header">
+        <!-- 顶部操作/导航/工具栏 -->
+        <div class="top-toolbar"></div>
+        <!-- 顶部导航栏 -->
+        <div class="header-toolbar"></div>
+    </div>
+    <!-- E 头部 E-->
+    <!-- S 主要内容 S -->
+    <div class="main">
+        <div class="main-top-content w-wrap"></div>
+        <!-- 主体内容 -->
+        <div class="main-content w-wrap">
+            <!--分类折叠导航-->
+            <div class="nav-category w-wrap fixed">
+                <div class="lap-category-wrap w-wrap" style="display:none;">
+                    <ul class="category-ul">
+                        <li>
+                            <a href="">最新资讯</a>
+                        </li>
+                        <li class="current">
+                            <a href="">网站公告</a>
+                        </li>
+                        <li>
+                            <a href="">最新奖励</a>
+                        </li>
+                        <li>
+                            <a href="">关于我们</a>
+                        </li>
+                        <li>
+                            <a href="">帮助中心</a>
+                        </li>
+                        <li>
+                            <a href="">招贤纳士</a>
+                        </li>
+                        <li class="li-group">
+                            <h2 class="group-title">资讯</h2>
+                            <ul class="category-group-ul">
+                                <li>
+                                    <a href="">互联网</a>
+                                </li>
+                                <li>
+                                    <a href="">IT资讯</a>
+                                </li>
+                                <li>
+                                    <a href="">安卓之家</a>
+                                </li>
+                                <li>
+                                    <a href="">数码之家</a>
+                                </li>
+                                <li>
+                                    <a href="">智能时代</a>
+                                </li>
+                                <li>
+                                    <a href="">科学</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="li-group">
+                            <h2 class="group-title">苹果</h2>
+                            <ul class="category-group-ul">
+                                <li>
+                                    <a href="">iPhone</a>
+                                </li>
+                                <li>
+                                    <a href="">iPad</a>
+                                </li>
+                                <li>
+                                    <a href="">Mac</a>
+                                </li>
+                                <li>
+                                    <a href="">iOS</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="li-group">
+                            <h2 class="group-title">资源</h2>
+                            <ul class="category-group-ul">
+                                <li>
+                                    <a href="">软件</a>
+                                </li>
+                                <li>
+                                    <a href="">主题</a>
+                                </li>
+                                <li>
+                                    <a href="">壁纸</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <span class="lap-icon-wrap"><i class="lap-icon"></i></span>
+                </div>
+                <div class="category-list-cross">
+                    <ul class="category-list-ul">
+                        <li class="">
+                            <a href="">最新资讯</a>
+                        </li>
+                        <li class="current">
+                            <a href="">网站公告</a>
+                        </li>
+                        <li class="">
+                            <a href="">最新奖励</a>
+                        </li>
+                        <li class="">
+                            <a href="">最新奖励</a>
+                        </li>
+                        <li class="">
+                            <a href="">最新奖励</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lap-category-wrap-placeholder"></div>
+            <div class="category-list-cross-placeholder"></div>
+        <!-- S 响应式幻灯部分 S -->
+            <div class="index-slide news-slide text-center" id="index_slide">
+                <a href="../image/slide/1.jpg">
+                    <img src="../image/slide/1.jpg" alt="slide1.jpg" />
+                    <p class="slide-title">苹果iPad Pro Apple Pencil体验：上手简单，使用高效</p>
+                </a>
+                <a href="../image/slide/2.jpg">
+                    <img src="../image/slide/2.jpg" alt="slide2.jpg" />
+                    <p class="slide-title">潘石屹：现在互联网的烧钱模式是不对的</p>
+                </a>
+                <a href="../image/slide/3.jpg">
+                    <img src="../image/slide/3.jpg" alt="slide3.jpg" />
+                    <p class="slide-title">熊孩子用手机软件做作业秒出答案，被换老人机熊（我是很长很长很长很长很长很长很长很长的文字）</p>
+                </a>
+                <a href="../image/slide/4.jpg">
+                    <img src="../image/slide/4.jpg" alt="slide4.jpg" />
+                    <p class="slide-title">温州首家支持支付宝菜市场诞生：买菜可扫二维码</p>
+                </a>
+                <a href="../image/slide/5.jpg">
+                    <img src="../image/slide/5.jpg" alt="slide5.jpg" />
+                    <p class="slide-title">五角大楼一再被黑，美国政府恼羞成怒</p>
+                </a>
+            </div>
+        <!-- E 响应式幻灯部分 E -->
+            <div class="news-list">
+                <div class="news-list-content img-style">
+                    <ul class="news-list-ul img-style">
+                        <li>
+                            <div class="no-result">
+                                <h2 class="no-result-title cell">暂无内容</h2>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="block">
+                                <div class="cell article-cover">
+                                    <img src="../image/article/cover/1.jpg" class="article-cover-img">
+                                </div>
+                                <div class="cell article-text-block">
+                                    <div class="article-title-block">
+                                        <h1>苹果iPad Pro Apple Pencil体验：上手简单，使用高效</h1>
+                                    </div>
+                                    <div class="article-meta-info">
+                                        <span class="cell meta-time">2015-09-14 09:17:14</span>
+                                        <span class="cell read-count"><i class="read-eye-icon"></i>302</span>
+                                        <span class="cell comment-count"><i class="article-comment-icon"></i>263</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="articleNormal.html" class="block">
+                                <div class="cell article-cover">
+                                    <img src="../image/article/cover/2.jpg" class="article-cover-img">
+                                </div>
+                                <div class="cell article-text-block">
+                                    <div class="article-title-block">
+                                        <h1>潘石屹：现在互联网的烧钱模式是不对的</h1>
+                                    </div>
+                                    <div class="article-meta-info">
+                                        <span class="cell meta-time">2015-09-14 09:17:14</span>
+                                        <span class="cell read-count"><i class="read-eye-icon"></i>302</span>
+                                        <span class="cell comment-count"><i class="article-comment-icon"></i>263</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="articleNormal.html" class="block">
+                                <div class="cell article-cover">
+                                    <img src="../image/article/cover/3.jpg" class="article-cover-img">
+                                </div>
+                                <div class="cell article-text-block">
+                                    <div class="article-title-block">
+                                        <h1>熊孩子用手机软件做作业秒出答案，被换老人机熊（我是很长很长很长很长很长很长很长很长的文字）</h1>
+                                    </div>
+                                    <div class="article-meta-info">
+                                        <span class="cell meta-time">2015-09-14 09:17:14</span>
+                                        <span class="cell read-count"><i class="read-eye-icon"></i>302</span>
+                                        <span class="cell comment-count"><i class="article-comment-icon"></i>263</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="articleNormal.html" class="block">
+                                <div class="cell article-cover">
+                                    <img src="../image/article/cover/4.jpg" class="article-cover-img">
+                                </div>
+                                <div class="cell article-text-block">
+                                    <div class="article-title-block">
+                                        <h1>温州首家支持支付宝菜市场诞生：买菜可扫二维码</h1>
+                                    </div>
+                                    <div class="article-meta-info">
+                                        <span class="cell meta-time">2015-09-14 09:17:14</span>
+                                        <span class="cell read-count"><i class="read-eye-icon"></i>302</span>
+                                        <span class="cell comment-count"><i class="article-comment-icon"></i>263</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="articleNormal.html" class="block">
+                                <div class="cell article-cover">
+                                    <img src="../image/article/cover/5.jpg" class="article-cover-img">
+                                </div>
+                                <div class="cell article-text-block">
+                                    <div class="article-title-block">
+                                        <h1>五角大楼一再被黑，美国政府恼羞成怒</h1>
+                                    </div>
+                                    <div class="article-meta-info">
+                                        <span class="cell meta-time">2015-09-14 09:17:14</span>
+                                        <span class="cell read-count"><i class="read-eye-icon"></i>302</span>
+                                        <span class="cell comment-count"><i class="article-comment-icon"></i>263</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="articleNormal.html" class="block">
+                                <div class="cell article-cover">
+                                    <img src="../image/article/cover/6.jpg" class="article-cover-img">
+                                </div>
+                                <div class="cell article-text-block">
+                                    <div class="article-title-block">
+                                        <h1>陈华：可能再过半年，这一波创业潮就彻底消失了</h1>
+                                    </div>
+                                    <div class="article-meta-info">
+                                        <span class="cell meta-time">2015-09-14 09:17:14</span>
+                                        <span class="cell read-count"><i class="read-eye-icon"></i>302</span>
+                                        <span class="cell comment-count"><i class="article-comment-icon"></i>263</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="news-list-page">
+                    <span class="pager">
+                        <a href="" class="turn-page pre-page-button">上一页</a>
+                        <a href="">1</a>
+                        <a href="">2</a>
+                        <em>...</em>
+                        <a class="pager-current">9</a>
+                        <em>...</em>
+                        <a href="">12</a>
+                        <a href="" class="turn-page next-page-button">下一页</a>
+                    </span>
+                </div>
+            </div>
+            <div class="blank"></div>
+        </div>
+    </div>
+    <!-- E 主要内容 E -->
+    <!-- S 脚部 S -->
+    <div class="footer">
+        <div class="footer-content footer-wrap">
+            <!-- 友情链接区域 -->
+            <div class="friend-link-block"></div>
+            <!-- 版权声明区域 -->
+            <div class="copyright"></div>
+        </div>
+    </div>
+    <!-- E 脚部 E -->
+</div>
+<cite>
+    <!-- S js S -->
+    <script type="text/javascript" src="/public/static/libs/js/jquery/2.1.4/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="/public/static/libs/js/Excolo-Slider/1.1.0/jquery.excoloSlider.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript">
+		$(function() {
+            /**
+             * @doc 折叠查看
+             * @author fanggang
+             * @time 2016-02-05 16:08:54 周五
+             */
+			$('.lap-icon-wrap').on('click', function() {
+				$('.lap-category-wrap').toggleClass('fixed-lap-on');
+				$('.lap-icon').toggleClass('open');
+				$('.lap-category-wrap-placeholder').toggle();
+			});
+			/**
+			 * 响应式幻灯，支持触摸滑动，将JS脚本放在html中是为了响应更快，避免未加载完成时造成页面排版错乱的情况
+			 * @author 方刚
+			 * @time 2014-11-28 14:02:12
+			 */
+			if (jQuery.isFunction(jQuery.fn.excoloSlider)) {
+				var slider=$("#index_slide").excoloSlider({
+					pagerClass: "index-slide-pager",
+					autoPlay: true,
+					height: 'auto'
+				});
+			}
+		})
+	</script>
+    <!-- E js E -->
+</cite>
+</body>
+</html>
