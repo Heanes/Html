@@ -7,4 +7,4 @@
 data/upload
 public/cache
 public/html
-public/static/libs
+# public/static/libs
