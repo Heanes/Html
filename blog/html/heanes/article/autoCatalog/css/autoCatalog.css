@@ -18,7 +18,7 @@
  * @author fanggang
  * @time 2016-04-08 16:43:42 周五
  */
-.side-catalog{width:270px;height:456px;position:fixed;bottom:10px;font-size:14px;font-family:宋体;line-height:19px}
+.side-catalog{visibility:hidden;opacity:0;width:270px;height:456px;position:fixed;bottom:10px;font-size:14px;font-family:宋体;line-height:19px}
 .side-catalog .side-bar{position:absolute;top:0;width:0;height:353px;background-color:#eaeaea;border:1px solid #eaeaea;border-top:0;border-bottom:0;left:5px}
 .side-catalog .side-bar .circle.start,.side-catalog .side-bar .circle.end{position:absolute;left:-5px;width:10px;height:10px;background:transparent url(../image/articleNavSideToolbar.gif) 0 -199px no-repeat;zoom:1;overflow:hidden}
 .side-catalog .side-bar .circle.start{top:0}
@@ -26,7 +26,7 @@
 .side-catalog .catalog-scroller{padding-top:15px;position:absolute;z-index:1;top:0;left:0;width:210px;height:330px;overflow:hidden}
 .side-catalog .catalog-scroller .catalog-list{width:228px;height:auto;position:relative;top:0;}
 .side-catalog .catalog-scroller .catalog-list .catalog-title{position:relative;margin-bottom:7px;padding-left:20px}
-.side-catalog .catalog-scroller .catalog-list .catalog-title .text{line-height:19px;display:block}
+.side-catalog .catalog-scroller .catalog-list .catalog-title .text{line-height:20px;display:block}
 .side-catalog .catalog-scroller .catalog-list .catalog-title .pointer{position:absolute;display:block;width:10px;height:10px;cursor:pointer;margin-top:4px;left:0;background:transparent url(../image/articleNavSideToolbar.gif) 3px -222px no-repeat}
 .side-catalog .catalog-scroller .catalog-list .catalog-title .pointer:hover{background-position:3px -245px}
 .side-catalog .catalog-scroller .catalog-list .catalog-title:hover .text{background:#f5f5f5;border-radius:2px;box-shadow:0 1px 0 #eaeaea}
