@@ -6,8 +6,21 @@
     <link rel="stylesheet" href="css/autoCatalog.css">
     <style>
         *{margin:0;padding:0;box-sizing:border-box;}
-        .wrap{width:1130px; overflow:hidden; margin:0 auto }
-        .content{float:left }
+        .wrap{width:1130px;overflow:hidden;margin:0 auto }
+        .content{float:left}
+        .placeholder{line-height:1.8em;}
+        .placeholder:before{content:"章节内容正文内容章节内容正文内容章节内容正文内容章节内容正文内容章节内容正文内容章节内容正文内容章节内容正文内容章节内容正文内容章节内容正文内容章节内容正文内容章节内容正文内容章节内容正文内容章节内容正文内容"}
+        .placeholder.ph-large{height:400px;}
+        .placeholder.ph-mini{height:50px;}
+
+        .main-content{float:left;width:790px;}
+        .side-content{float:right;width:270px;}
+
+        .para-title{padding:14px 0;}
+        .para-title h2{font-size:22px;}
+        .para-title.level-3{text-indent:2em;}
+        .para-title h3{font-size:16px;}
+        .para{text-indent:2em;font-size:14px;}
     </style>
 </head>
 <body>
@@ -15,11 +28,6 @@
     <div class="content">
         <div style="height:500px;"></div>
         <div class="main-content" id="mainContent">
-            <!--<div class="anchor-list">
-                <a name="1" class="lemma-anchor para-title anchor-address"></a>
-                <a name="sub1001_1" class="lemma-anchor-address"></a>
-                <a name="第一章" class="lemma-anchor anchor-name"></a>
-            </div>-->
             <div class="para-title level-2">
                 <h2 class="title-text">第一章</h2>
             </div>
@@ -126,7 +134,7 @@
 
 <script>
     /**
-     * @doc 插件形式
+     * @doc 仿百度百科自动生成文章目录导航
      * @authro fanggang
      * @time 2016-04-13 18:07:26
      */
