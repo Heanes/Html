@@ -4,7 +4,7 @@
  * @author fanggang
  * @time 2016-04-08 16:43:42 周五
  */
-.side-catalog{visibility:hidden;opacity:0;width:270px;height:456px;position:fixed;bottom:10px;font-size:14px;font-family:宋体;line-height:19px}
+.side-catalog{visibility:hidden;opacity:0;width:260px;height:456px;position:fixed;bottom:10px;font-size:14px;font-family:宋体;line-height:19px;background-color:#fff;}
 .side-catalog .side-bar{position:absolute;top:0;width:0;height:353px;background-color:#eaeaea;border:1px solid #eaeaea;border-top:0;border-bottom:0;left:5px}
 .side-catalog .side-bar .circle.start,.side-catalog .side-bar .circle.end{position:absolute;left:-5px;width:10px;height:10px;background:transparent url(../image/articleNavSideToolbar.gif) 0 -199px no-repeat;zoom:1;overflow:hidden}
 .side-catalog .side-bar .circle.start{top:0}

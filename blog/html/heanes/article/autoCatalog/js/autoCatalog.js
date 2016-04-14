@@ -118,6 +118,11 @@
                     $articleCatalog.css({'visibility':'hidden'}).animate({'opacity':0}, 'fast');
                 }
             }
+            if($(this).scrollTop() >= $content.position().top + $content.height()){
+                $articleCatalog.css({'visibility':'hidden'}).animate({'opacity':0}, 'fast');
+            }else{
+                $articleCatalog.css({'visibility':'visible'}).animate({'opacity':1}, 'fast');
+            }
 
             for (var i = $headerListLength - 1; i>=0; i--) {
                 var index = i;

@@ -75,19 +75,19 @@
 }
 /* 左侧工具栏 */
 .left-wrap{width:260px;}
-.left-block{background:#fff;border:1px solid #ddd;margin-right:16px;}
+.left-block{background:#fff;margin-right:16px;}
 .left-block{height:1000px;}
 
 
 /* 中心主体内容 */
-.main-content{margin-bottom:12px;}
+.main-content{margin-bottom:12px;background-color:#fff}
 .center-wrap{width:800px;}
-.center-block{background:#fff;border:1px solid #ddd;}
+.center-block{background:#fff;}
 .center-block{}
 
 /* 右侧工具栏 */
 .right-wrap{width:260px;}
-.right-block{background:#fff;border:1px solid #ddd;margin-left:16px;}
+.right-block{background:#fff;margin-left:16px;}
 .right-block{height:1000px;}
 .main-bottom-content{
     background:#fff;
