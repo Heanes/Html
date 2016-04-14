@@ -16,6 +16,7 @@
         .main-content{float:left;width:790px;}
         .side-content{float:right;width:270px;}
 
+        .article-title{text-align:center;margin:20px 0;}
         .para-title{padding:14px 0;}
         .para-title h2{font-size:22px;}
         .para-title.level-3{text-indent:2em;}
@@ -27,7 +28,10 @@
 <div class="wrap">
     <div class="content">
         <div style="height:500px;"></div>
-        <div class="main-content" id="mainContent">
+        <div class="article-title">
+            <h1>文章标题</h1>
+        </div>
+        <div class="main-content" id="mainContent" contenteditable="true">
             <div class="para-title level-2">
                 <h2 class="title-text">第一章</h2>
             </div>
@@ -132,15 +136,25 @@
 <script type="text/javascript" src="/public/static/libs/js/jquery/2.2.3/jquery.min.js"></script>
 <script type="text/javascript" src="js/autoCatalog.js"></script>
 
-<script>
-    /**
-     * @doc 仿百度百科自动生成文章目录导航
-     * @authro fanggang
-     * @time 2016-04-13 18:07:26
-     */
-    $('#mainContent').autoCatalog({
-        step:90,
-        alwaysShow:true
+<script type="text/javascript">
+    $(function() {
+        var $mainContent = $('#mainContent');
+        /**
+         * @doc 仿百度百科自动生成文章目录导航
+         * @authro fanggang
+         * @time 2016-04-13 18:07:26
+         */
+        $mainContent.autoCatalog({
+            step:90,
+            alwaysShow:true
+        });
+        $mainContent.on('input', function () {
+            $(this).autoCatalog({
+                step:90,
+                alwaysShow:true
+            });
+        });
+
     });
 </script>
 </body>

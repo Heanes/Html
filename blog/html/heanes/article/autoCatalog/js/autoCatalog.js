@@ -20,6 +20,9 @@
         var $headerListLength = $headerList.length;
         var $articleCatalogContainer = $(conf.catalogTarget);
 
+        // 先清一次content中的锚链接
+        $content.find('.anchor-list').remove();
+
         var catalogStructStr = '<div class="side-catalog">'
                                     +'<div class="side-bar">'
                                         +'<em class="circle start"></em>'
@@ -147,7 +150,7 @@
                 $goDownBtn.removeClass('disable');
                 $goUpBtn.removeClass('disable');
             }
-            $arrow.stop().animate({'top': that.position().top - that.height()/2 + $arrow.height()}, 'fast');
+            $arrow.stop().animate({'top': that.position().top + $arrow.height()/2 - 3}, 'fast');
             //console.log('that.height():' + that.height());
             //console.log('that.position().top:' + that.position().top);
             //console.log('$articleCatalog.offset().top:'+$articleCatalog.offset().top);
@@ -205,5 +208,8 @@
             $('body,html').animate({scrollTop: $content.position().top}, 'slow');
             return false;
         });
+
+        // 插件执行完毕后触发一次滚动事件
+        $(window).trigger('scroll');
     }
 }(jQuery, window));
