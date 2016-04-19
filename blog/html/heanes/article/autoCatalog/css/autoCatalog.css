@@ -10,7 +10,7 @@
 .side-catalog .side-bar .circle.start{top:0}
 .side-catalog .side-bar .circle.end{margin:0;bottom:0}
 .side-catalog .catalog-scroller{padding-top:15px;position:absolute;z-index:1;top:0;left:0;width:210px;height:330px;overflow:hidden}
-.side-catalog .catalog-scroller .catalog-list{width:228px;height:auto;position:relative;top:0;}
+.side-catalog .catalog-scroller .catalog-list{width:214px;height:auto;position:relative;top:0;}
 .side-catalog .catalog-scroller .catalog-list .catalog-title{position:relative;margin-bottom:7px;padding-left:20px}
 .side-catalog .catalog-scroller .catalog-list .catalog-title .text{line-height:20px;display:block}
 .side-catalog .catalog-scroller .catalog-list .catalog-title .pointer{position:absolute;display:block;width:10px;height:10px;cursor:pointer;margin-top:4px;left:0;background:transparent url(../image/articleNavSideToolbar.gif) 3px -222px no-repeat}
