@@ -389,17 +389,17 @@
     <script type="text/javascript" src="../js/common.js"></script>
     <script type="text/javascript">
         $(function() {
-            var $mainContent = $('#mainContent');
+            var $articleContent = $('.article-block');
             /**
              * @doc 仿百度百科自动生成文章目录导航
              * @authro fanggang
              * @time 2016-04-13 18:07:26
              */
-            $mainContent.autoCatalog({
+            $articleContent.autoCatalog({
                 step:90,
                 alwaysShow:true
             });
-            $mainContent.on('input', function () {
+            $articleContent.on('input', function () {
                 $(this).autoCatalog({
                     step:90,
                     alwaysShow:true
