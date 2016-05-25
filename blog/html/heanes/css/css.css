@@ -12,6 +12,7 @@
 .article-list-block .article-list-row{margin-bottom:20px;}
 .article-list-block .article-list-row .article-title{}
 .article-list-block .article-list-row .article-title .title{font-size:24px;font-weight:600;border-left:6px solid #008fb5;padding-left:24px;}
+.article-list-block .article-list-row .article-title .title a{line-height:30px;}
 .article-list-block .article-list-row .article-title .title a:hover{background-color:#008fb5;color:#fff;}
 .article-list-block .article-list-row .article-info{padding:10px 6px 6px 30px;border-bottom:1px #ddd dashed;color:#bbb;}
 .article-list-block .article-list-row .article-info dl,
@@ -21,13 +22,21 @@
 
 .article-list-block .article-list-row .article-tags{float:right;}
 .article-list-block .article-list-row .article-tags dd{padding-left:6px;}
+.article-list-block .article-list-row .article-tags dd a:hover{background-color:#008fb5;color:#fff;}
 /**************************************文章页面*******************************/
 .article-page{background:#fff;color:#000}
 .article-page .article-block{padding:10px}
+.article-page .article-block .article-title-block{position:relative;border-bottom:1px #ddd dashed;color:#bbb;}
+.article-page .article-block .article-title-block .article-operate{position:absolute;top:8px;right:18px;}
+.article-page .article-block .article-title-block .article-operate span{cursor:pointer;}
+.article-page .article-block .article-title-block .article-operate span:hover{background-color:#07adf9;color:#fff;}
+.article-page .article-block .article-title-block .article-operate .op-to-small-text{font-size:14px;}
+.article-page .article-block .article-title-block .article-operate .op-to-large-text{font-size:20px;}
+.article-page .article-block .article-title-block .article-operate .op-share-btn{font-size:18px;}
 .article-page .article-category{padding:10px 5px;border-bottom:1px solid #ddd}
 .article-page .article-block .article-title{padding:10px 0;text-align:center}
 .article-page .article-block .article-title .entry-title{font-size:18px}
-.article-page .article-info{color:#666;padding:10px 0;border-bottom:1px solid #ddd}
+.article-page .article-info{color:#666;padding:10px 0;}
 .article-page .article-info p{text-align:center;font-size:12px}
 .article-page .article-info p .comment-num{color:#666}
 /* 文章摘要 */
@@ -109,7 +118,7 @@
 /**************************************读书页面*******************************/
 .read-book-detail{padding:6px;font-size:0;}
 .read-book-detail .book-cover,
-.book-screenshot-list{display:inline-block;vertical-align:top;}
+.read-book-detail .book-screenshot-list{display:inline-block;vertical-align:top;}
 .read-book-detail .book-cover{width:200px;height:300px;border:1px solid #ddd;text-align:center;padding:6px;line-height:284px;overflow:hidden}
 .read-book-detail .book-cover img{max-width:100%;max-height:100%;}
 .read-book-detail .book-screenshot-list{width:586px;height:300px;vertical-align:middle;border:1px solid #ddd;margin-left:-1px;overflow-x:auto;}

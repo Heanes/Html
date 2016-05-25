@@ -16,10 +16,11 @@
     <!-- style -->
     <link rel="stylesheet" type="text/css" href="/public/static/libs/css/reset/reset.css" />
     <link rel="stylesheet" type="text/css" href="/public/static/libs/css/base/base.css" />
+    <link rel="stylesheet" type="text/css" href="/public/static/libs/js/autoCatalog/1.0/css/autoCatalog.css">
+    <link rel="stylesheet" type="text/css" href="/public/static/libs/fonts/font-awesome/4.5.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" type="text/css" href="../css/style/style-2015.css" />
     <link rel="stylesheet" type="text/css" href="../css/common.css" />
     <link rel="stylesheet" type="text/css" href="../css/css.css" />
-    <link rel="stylesheet" type="text/css" href="/public/static/libs/js/autoCatalog/1.0/css/autoCatalog.css">
     <title>文章详情</title>
 </head>
 <body>
@@ -47,25 +48,32 @@
                         </div>
                         <!-- 单篇文章 -->
                         <div class="article-block">
-                            <!-- 文章标题 -->
-                            <div class="article-title">
-                                <h1 class="entry-title">友谊的小船说翻就翻</h1>
+                            <div class="article-title-block">
+                                <!-- 文章标题 -->
+                                <div class="article-title">
+                                    <h1 class="entry-title">友谊的小船说翻就翻</h1>
+                                </div>
+                                <!-- 文章相关属性信息 -->
+                                <div class="article-info">
+                                    <p>
+                                        人气：987 <a href="#comment-list" class="comment-num">评论：2</a>
+                                        作者：Heanes 责编：风为马
+                                        2015-05-19 09:46:35 来源：原创
+                                    </p>
+                                </div>
+                                <div class="article-operate">
+                                    <span class="op-to-small-text" id="opToSmallTextBtn">A</span>
+                                    <span class="op-to-large-text" id="opToLargeTextBtn">A</span>
+                                    <span class="op-share-btn"><i class="fa fa-share-alt"></i></span>
+                                </div>
                             </div>
-                            <!-- 文章相关属性信息 -->
-                            <div class="article-info">
-                                <p>
-                                    人气：987 <a href="#comment-list" class="comment-num">评论：2</a>
-                                    作者：Heanes 责编：风为马
-                                    2015-05-19 09:46:35 来源：原创
-                                </p>
-                            </div>
-                            <!-- 文章摘要 -->
+                                <!-- 文章摘要 -->
                             <!--<div class="article-abstract">
                                 <strong>摘要：</strong>摘要内容....
                             </div>-->
                             <!-- 文章主体 -->
                             <div class="article-content">
-                                <div class="main-content" id="mainContent" contenteditable="true">
+                                <div class="main-content" id="mainContent">
                                     <div class="para">
                                         <p>最近有个句式在网上火了，那就是“友谊的小船说翻就翻”，相信你的朋友圈已经被这个句式刷屏了吧，那么它到底是什么梗呢，或者说这个句子的来源是哪里呢？</p>
                                         <p>据悉，该句式来自微博用户<a href="http://weibo.com/zld8">@喃东尼</a> 把翻船的过程画了出来的漫画《友谊的小船说翻就翻》，表达了友谊是一种很玄很玄的东西，它可以经受诱惑也坚韧不破，但也可以因为鸡毛蒜皮说翻就翻。不过也有网友表示这个句式已经在网上出现很长时间了。</p>
@@ -177,11 +185,10 @@
                                         <p>爱情的巨轮需要好好开</p>
                                         <p>祝你好运</p>
                                     </div>
-                                    <div style="height:600px;"></div>
                                 </div>
                             </div>
                             <div class="article-meta">
-                                <p class="article-tags">本文关键词：<strong><a href="">大数据</a></strong>，<strong><a href="">贷款</a></strong></p>
+                                <p class="article-tags">本文关键词：<strong><a href="">漫画</a></strong>，<strong><a href="">友情</a></strong></p>
                             </div>
                         </div>
                         <!-- 文章相关交互 -->
@@ -375,6 +382,7 @@
     <script type="text/javascript" src="/public/static/libs/js/jquery/2.1.4/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="/public/static/libs/js/autoCatalog/1.0/js/autoCatalog.min.js"></script>
     <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/js.js"></script>
     <script type="text/javascript">
         $(function() {
             var $articleContent = $('.article-block');
