@@ -10,13 +10,21 @@ $(function () {
      * @doc 文章详情页面滚动时,标题随之钉住在页面顶部显示
      * @author fanggang
      * @time 2016-05-24 01:56:00
-     * @type {jQuery|HTMLElement}
      */
     var $articleTitleBlock = $('.article-title-block');
     var articleTitleBlockTop = $articleTitleBlock.position().top;
+    var $articleTitleBlockPlaceholder = $('#articleTitleBlockPlaceholder');
+    var articleTitleBlockWidth = $articleTitleBlock.width();
+    var articleTitleBlockHeight = $articleTitleBlock.height();
     $(window).on('scroll', function () {
-        var articleTitleBlockWidth = $articleTitleBlock.width();
+        /**
+         * @doc 文章详情页面滚动时,标题随之钉住在页面顶部显示
+         * @author fanggang
+         * @time 2016-05-24 01:56:00
+         */
         if($(this).scrollTop() > articleTitleBlockTop){
+            // 填充高度
+            $articleTitleBlockPlaceholder.css('height', articleTitleBlockHeight);
             $articleTitleBlock.css({
                 'position':'fixed',
                 'top':0,
@@ -24,6 +32,7 @@ $(function () {
                 'background-color':'#fff'
             });
         }else{
+            $articleTitleBlockPlaceholder.css('height', '');
             $articleTitleBlock.css({
                 'position':'',
                 'top':'',
@@ -49,7 +58,6 @@ $(function () {
             fontChangeStep++;
         }
     });
-
     $('#opToSmallTextBtn').on('click', function () {
         var $articleMainContentAll = $articleMainContent.find('*');
         if(fontChangeStep >= 0){

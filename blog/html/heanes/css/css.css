@@ -27,15 +27,18 @@
 .article-page{background:#fff;color:#000}
 .article-page .article-block{padding:10px}
 .article-page .article-block .article-title-block{position:relative;border-bottom:1px #ddd dashed;color:#bbb;}
-.article-page .article-block .article-title-block .article-operate{position:absolute;top:8px;right:18px;}
+.article-page .article-block .article-title-block-placeholder{}
+/* 操作图标不允许选中 */
+.article-page .article-block .article-title-block .article-operate{position:absolute;top:8px;right:18px;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;}
 .article-page .article-block .article-title-block .article-operate span{cursor:pointer;}
-.article-page .article-block .article-title-block .article-operate span:hover{background-color:#07adf9;color:#fff;}
+.article-page .article-block .article-title-block .article-operate span:hover{color:#07adf9;}
+.article-page .article-block .article-title-block .article-operate span::selection{background-color:#fff;color:#07adf9;}
 .article-page .article-block .article-title-block .article-operate .op-to-small-text{font-size:14px;}
 .article-page .article-block .article-title-block .article-operate .op-to-large-text{font-size:20px;}
 .article-page .article-block .article-title-block .article-operate .op-share-btn{font-size:18px;}
 .article-page .article-category{padding:10px 5px;border-bottom:1px solid #ddd}
 .article-page .article-block .article-title{padding:10px 0;text-align:center}
-.article-page .article-block .article-title .entry-title{font-size:18px}
+.article-page .article-block .article-title .entry-title{font-size:23px}
 .article-page .article-info{color:#666;padding:10px 0;}
 .article-page .article-info p{text-align:center;font-size:12px}
 .article-page .article-info p .comment-num{color:#666}
@@ -43,7 +46,7 @@
 .article-page .article-abstract{font-size:12px;margin:20px auto;padding:16px 10px 14px;border:1px solid #bad7bb;background-color:#f1fff2}
 /* 文章正文 */
 .article-page .article-content{_border-top:1px solid #07adf9;padding:10px 0}
-.article-page .article-content p{margin-bottom:15px;text-indent:2em;line-height:2em;font-size:13px}
+.article-page .article-content p{margin-bottom:15px;text-indent:2em;line-height:2em;font-size:14px}
 .article-page .article-tags strong a{padding:2px;border-radius:3px}
 /* 文章相关操作 */
 .article-page .article-handle{padding:5px 10px}
