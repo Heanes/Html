@@ -50,11 +50,11 @@
 .header-nav-bar .header-nav{float:left;padding:0 20px;}
 .header-nav-bar .header-nav .nav{line-height:80px;}
 .header-nav-bar .header-nav .nav li{padding:0;display:inline-block;}
-.header-nav-bar .header-nav .nav .nav-a{font-size:16px;color:#233;padding:10px 14px;}
+.header-nav-bar .header-nav .nav .nav-a{font-size:14px;color:#233;padding:10px 14px;}
 .header-nav-bar .header-nav .nav .nav-a.current{color:#57adfd;}
 .header-nav-bar .header-nav .nav .nav-a:hover,
 .header-nav-bar .header-nav .nav .nav-a.nav-login{color:#fff;background-color:#57adfd;border-radius:20px;}
-.header-nav-bar .header-nav .nav .nav-a .icon-nav{font-size:15px;}
+.header-nav-bar .header-nav .nav .nav-a .icon-nav{font-size:14px;}
 .header-nav-bar .header-nav .nav .nav-a .icon-nav.icon-web-home{font-size:18px;}
 .header-nav-bar .header-search{float:left;height:80px;line-height:80px;}
 .header-nav-bar .header-search .search-input{border-radius:20px;border:1px solid #bbb;padding:6px 14px;width:190px;}
@@ -89,6 +89,7 @@
 .right-wrap{width:260px;}
 .right-block{background:#fff;margin-left:16px;}
 .right-block{height:1000px;}
+
 .main-bottom-content{
     background:#fff;
     margin-bottom:12px;

@@ -28,6 +28,8 @@
 .article-page .article-block{padding:10px}
 .article-page .article-block .article-title-block{position:relative;border-bottom:1px #ddd dashed;color:#bbb;}
 .article-page .article-block .article-title-block-placeholder{}
+/* 右侧文章目录导航 */
+#articleCatalog{background-color:#fff;}
 /* 操作图标不允许选中 */
 .article-page .article-block .article-title-block .article-operate{position:absolute;top:8px;right:18px;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;}
 .article-page .article-block .article-title-block .article-operate span{cursor:pointer;}
@@ -48,6 +50,8 @@
 .article-page .article-content{_border-top:1px solid #07adf9;padding:10px 0}
 .article-page .article-content p{margin-bottom:15px;text-indent:2em;line-height:2em;font-size:14px}
 .article-page .article-tags strong a{padding:2px;border-radius:3px}
+/* 文章正文图片浮上时放大 */
+.article-page .article-content img:hover{-webkit-transform:scale(1.01,1.01);-moz-transform:scale(1.01,1.01);-ms-transform:scale(1.01,1.01);-o-transform:scale(1.01,1.01);transform:scale(1.01,1.01);transition:.5s transform;-webkit-transition:.5s transform;border:0;box-shadow:0 0 13px 2px #aaa}
 /* 文章相关操作 */
 .article-page .article-handle{padding:5px 10px}
 .article-page .article-vote{padding:10px;text-align:right}
@@ -89,8 +93,8 @@
 .comment-list .comment-list-ul li:hover{background:#f5fafe;border-bottom:1px #D2E8FA solid}
 .comment-list .comment-info{color:#777;font-size:12px}
 .comment-list .comment-info .comment-floor .comment-floor-a{font-weight:bold;color:#666}
-.comment-list .comment-info .user-name-a{color:#326eb4;font-size:14px}
-.comment-list .comment-content{padding:5px 2px;font-size:13px}
+.comment-list .comment-info .user-name-a{color:#326eb4;font-size:13px}
+.comment-list .comment-content{padding:5px 2px;font-size:14px}
 .comment-list .comment-content p{line-height:24px}
 .comment-list .comment-handle{float:right;padding:10px 0;font-size:13px}
 .comment-list .comment-handle i{margin:0 2px}
