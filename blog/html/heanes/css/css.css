@@ -25,20 +25,21 @@
 .article-list-block .article-list-row .article-tags dd a:hover{background-color:#008fb5;color:#fff;}
 /**************************************文章页面*******************************/
 .article-page{background:#fff;color:#000}
-.article-page .article-block{padding:10px}
-.article-page .article-block .article-title-block{position:relative;border-bottom:1px #ddd dashed;color:#bbb;}
+.article-page .article-block{padding:0}
+.article-page .article-block .article-title-block{position:relative;border-bottom:1px #ddd dashed;color: #222;}
 .article-page .article-block .article-title-block-placeholder{}
 /* 右侧文章目录导航 */
 #articleCatalog{background-color:#fff;}
 /* 操作图标不允许选中 */
-.article-page .article-block .article-title-block .article-operate{position:absolute;top:8px;right:18px;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;}
+.article-page .article-block .article-title-block .article-operate{position:absolute;top:8px;right:18px;color: #777;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;}
 .article-page .article-block .article-title-block .article-operate span{cursor:pointer;}
 .article-page .article-block .article-title-block .article-operate span:hover{color:#07adf9;}
 .article-page .article-block .article-title-block .article-operate span::selection{background-color:#fff;color:#07adf9;}
 .article-page .article-block .article-title-block .article-operate .op-to-small-text{font-size:14px;}
 .article-page .article-block .article-title-block .article-operate .op-to-large-text{font-size:20px;}
 .article-page .article-block .article-title-block .article-operate .op-share-btn{font-size:18px;}
-.article-page .article-category{padding:10px 5px;border-bottom:1px solid #ddd}
+.article-page .article-category{padding:10px 5px;border-bottom: 3px solid #57adfd;line-height: 24px;}
+.article-page .article-category .nav-sub{color: #999;}
 .article-page .article-block .article-title{padding:10px 0;text-align:center}
 .article-page .article-block .article-title .entry-title{font-size:23px}
 .article-page .article-info{color:#666;padding:10px 0;}
@@ -48,7 +49,7 @@
 .article-page .article-abstract{font-size:12px;margin:20px auto;padding:16px 10px 14px;border:1px solid #bad7bb;background-color:#f1fff2}
 /* 文章正文 */
 .article-page .article-content{_border-top:1px solid #07adf9;padding:10px 0}
-.article-page .article-content p{margin-bottom:15px;text-indent:2em;line-height:2em;font-size:14px}
+.article-page .article-content p{margin-bottom:15px;text-indent:2em;line-height:2em;font-size: 13px;}
 .article-page .article-tags strong a{padding:2px;border-radius:3px}
 /* 文章正文图片浮上时放大 */
 .article-page .article-content img:hover{-webkit-transform:scale(1.01,1.01);-moz-transform:scale(1.01,1.01);-ms-transform:scale(1.01,1.01);-o-transform:scale(1.01,1.01);transform:scale(1.01,1.01);transition:.5s transform;-webkit-transition:.5s transform;border:0;box-shadow:0 0 13px 2px #aaa}

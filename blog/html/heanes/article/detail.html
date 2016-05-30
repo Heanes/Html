@@ -41,9 +41,9 @@
                         <!-- 文章分类 -->
                         <div class="article-category">
                             <a href="">首页</a>
-                            <span class="nav-sub">></span>
+                            <span class="nav-sub"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
                             <a href="">资讯</a>
-                            <span class="nav-sub">></span>
+                            <span class="nav-sub"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
                             <a href="">网络</a>
                         </div>
                         <!-- 单篇文章 -->
@@ -369,7 +369,86 @@
             </div>
             <!-- 右侧区域 -->
             <div class="right-block right-wrap float-block">
+                <!-- 文章目录导航 -->
                 <div class="side-content" id="articleCatalog"></div>
+                <!-- 右侧钉住样式 -->
+                <div class="right-fix-block">
+                    <div class="right-corner">
+                        <div class="handle-block hover-change-block">
+                            <div class="handle-content front">
+                                <a class="handle handle-icon"><i class="fa fa-angle-down" aria-hidden="true" style="font-size:54px;padding-top:5px;"></i></a>
+                            </div>
+                            <div class="handle-content backend">
+                                <a class="handle handle-icon go-to-bottom">去底部</a>
+                            </div>
+                        </div>
+                        <div class="handle-block hover-change-block">
+                            <div class="handle-content front">
+                                <a class="handle handle-icon"><i class="fa fa-home" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="handle-content backend">
+                                <a class="handle handle-icon go-to-home" href="/">回首页</a>
+                            </div>
+                        </div>
+                        <div class="handle-block hover-change-block">
+                            <div class="handle-content front">
+                                <a class="handle handle-icon"><i class="fa fa-refresh" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="handle-content backend">
+                                <a class="handle handle-icon refresh" onclick="window.location.reload();">刷新</a>
+                            </div>
+                        </div>
+                        <div class="handle-block hover-change-block">
+                            <div class="handle-content front">
+                                <a class="handle handle-icon"><i class="fa fa-comments-o" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="handle-content backend">
+                                <a class="handle handle-icon comment" href="#comment">评论</a>
+                            </div>
+                        </div>
+                        <div class="handle-block hover-change-block">
+                            <div class="handle-content front">
+                                <a class="handle handle-icon"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="handle-content backend">
+                                <a class="handle handle-icon share">分享</a>
+                            </div>
+                            <div class="hover-change-content qr-code-content">
+                                <!-- 百度分享 -->
+                                <div class="bdsharebuttonbox">
+                                    <a href="#" class="bds_more" data-cmd="more"></a>
+                                    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+                                    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                                    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                                    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣"></a>
+                                    <a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a>
+                                    <a class="bds_more" data-cmd="more"></a>
+                                    <a class="bds_count" data-cmd="count"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="handle-block hover-change-block">
+                            <div class="handle-content front">
+                                <a class="handle handle-icon"><i class="fa fa-qrcode" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="handle-content backend">
+                                <a class="handle handle-icon qr-code">二维码</a>
+                            </div>
+                            <div class="hover-change-content qr-code-content">
+                                <img src="../image/rightFixCorner/style1/qr-150.png">
+                            </div>
+                        </div>
+                        <div class="handle-block hover-change-block">
+                            <div class="handle-content front">
+                                <a class="handle handle-icon"><i class="fa fa-angle-up" aria-hidden="true" style="font-size:54px;padding-top:0"></i></a>
+                            </div>
+                            <div class="handle-content backend">
+                                <a class="handle handle-icon go-to-top">回顶部</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -389,7 +468,7 @@
             var $articleContent = $('.article-block');
             /**
              * @doc 仿百度百科自动生成文章目录导航
-             * @authro fanggang
+             * @author fanggang
              * @time 2016-04-13 18:07:26
              */
             $articleContent.autoCatalog({

@@ -16,6 +16,7 @@
 <!-- style -->
 <link rel="stylesheet" type="text/css" href="/public/static/libs/css/reset/reset.css"/>
 <link rel="stylesheet" type="text/css" href="/public/static/libs/css/base/base.css"/>
+<link rel="stylesheet" type="text/css" href="/public/static/libs/fonts/font-awesome/4.5.0/css/font-awesome.min.css"/>
 <link rel="stylesheet" type="text/css" href="../css/style/style-2015.css"/>
 <link rel="stylesheet" type="text/css" href="../css/common.css"/>
 <link rel="stylesheet" type="text/css" href="../css/css.css"/>
@@ -43,37 +44,63 @@
             <!-- E 中心区域 E -->
             <!-- S 右下角区域 S -->
             <div class="right-corner">
-                <div class="handle-block">
-                    <div class="handle-content">
-                        <a class="handle handle-icon go-to-top">回顶部</a>
+                <div class="handle-block hover-change-block">
+                    <div class="handle-content front">
+                        <a class="handle handle-icon"><i class="fa fa-angle-down" aria-hidden="true" style="font-size:54px;padding-top:5px;"></i></a>
                     </div>
-                </div>
-                <div class="handle-block">
-                    <div class="handle-content">
-                        <a class="handle handle-icon share">分享</a>
-                    </div>
-                </div>
-                <div class="handle-block">
-                    <div class="handle-content">
-                        <a class="handle handle-icon refresh">刷新</a>
-                    </div>
-                </div>
-                <div class="handle-block">
-                    <div class="handle-content">
-                        <a class="handle handle-icon go-to-home">回首页</a>
+                    <div class="handle-content backend">
+                        <a class="handle handle-icon go-to-bottom">去底部</a>
                     </div>
                 </div>
                 <div class="handle-block hover-change-block">
-                    <div class="handle-content">
+                    <div class="handle-content front">
+                        <a class="handle handle-icon"><i class="fa fa-home" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="handle-content backend">
+                        <a class="handle handle-icon go-to-home" href="/">回首页</a>
+                    </div>
+                </div>
+                <div class="handle-block hover-change-block">
+                    <div class="handle-content front">
+                        <a class="handle handle-icon"><i class="fa fa-refresh" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="handle-content backend">
+                        <a class="handle handle-icon refresh" onclick="window.location.reload();">刷新</a>
+                    </div>
+                </div>
+                <div class="handle-block hover-change-block">
+                    <div class="handle-content front">
+                        <a class="handle handle-icon"><i class="fa fa-comments-o" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="handle-content backend">
+                        <a class="handle handle-icon comment" href="#comment">评论</a>
+                    </div>
+                </div>
+                <div class="handle-block hover-change-block">
+                    <div class="handle-content front">
+                        <a class="handle handle-icon"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="handle-content backend">
+                        <a class="handle handle-icon share">分享</a>
+                    </div>
+                </div>
+                <div class="handle-block hover-change-block">
+                    <div class="handle-content front">
+                        <a class="handle handle-icon"><i class="fa fa-qrcode" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="handle-content backend">
                         <a class="handle handle-icon qr-code">二维码</a>
                     </div>
                     <div class="hover-change-content qr-code-content">
-                        <img src="../image/rightCorner/style1/qr-150.png">
+                        <img src="../image/rightFixCorner/style1/qr-150.png">
                     </div>
                 </div>
-                <div class="handle-block">
-                    <div class="handle-content">
-                        <a class="handle handle-icon go-to-bottom">回底部</a>
+                <div class="handle-block hover-change-block">
+                    <div class="handle-content front">
+                        <a class="handle handle-icon"><i class="fa fa-angle-up" aria-hidden="true" style="font-size:54px;padding-top:0"></i></a>
+                    </div>
+                    <div class="handle-content backend">
+                        <a class="handle handle-icon go-to-top">回顶部</a>
                     </div>
                 </div>
             </div>
@@ -96,6 +123,7 @@
     <!-- S js S -->
     <script type="text/javascript" src="/public/static/libs/js/jquery/2.1.4/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/rightCorner-style2.js"></script>
     <!-- E js E -->
 </cite>
 </body>

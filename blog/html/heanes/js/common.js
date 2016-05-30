@@ -4,6 +4,29 @@
  * @time 2016-02-22 20:23:35 周一
  */
 
+// rely on jQuery2.x
+$(function () {
+
+    var $body = $('body');
+    /**
+     * @doc 回顶部
+     * @author Heanes
+     * @time 2016-02-04 15:36:18 周四
+     */
+    $('.handle.go-to-top').on('click', function () {
+        $body.animate({scrollTop: 0}, 'slow');
+    });
+    /**
+     * @doc 回底部
+     * @author Heanes
+     * @time 2016-02-04 15:36:18 周四
+     */
+    $('.handle.go-to-bottom').on('click', function () {
+        $body.animate({scrollTop: $body.height()}, 'slow');
+    });
+
+});
+
 
 /**
  * @doc 原生js使iframe自适应宽度高度
