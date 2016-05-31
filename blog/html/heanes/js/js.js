@@ -12,26 +12,28 @@ $(function () {
      * @time 2016-05-24 01:56:00
      */
     var $articleTitleBlock = $('.article-title-block');
-    var articleTitleBlockTop = $articleTitleBlock.position().top;
+    var articleTitleBlockTop = $articleTitleBlock.offset().top;
     var $articleTitleBlockPlaceholder = $('#articleTitleBlockPlaceholder');
     var articleTitleBlockWidth = $articleTitleBlock.width();
     var articleTitleBlockHeight = $articleTitleBlock.height();
 
     var $rightFixLittleCat = $('#rightFixLittleCat');
     var $iframeFooter = $('.iframe-footer');
-    var iframeFooterTop = $iframeFooter.position().top;
-    $(window).on('scroll', function () {
+    var iframeFooterTop = $iframeFooter.offset().top;
+    var $window = $(window);
+    $window.on('scroll', function () {
         /**
          * @doc 文章详情页面滚动时,标题随之钉住在页面顶部显示
          * @author fanggang
          * @time 2016-05-24 01:56:00
          */
-        if($(this).scrollTop() > articleTitleBlockTop){
+        if($window.scrollTop() > articleTitleBlockTop){
             // 填充高度
             $articleTitleBlockPlaceholder.css('height', articleTitleBlockHeight);
             $articleTitleBlock.css({
                 'position':'fixed',
                 'top':0,
+                'z-index':2,
                 'width':articleTitleBlockWidth,
                 'background-color':'#fff'
             });
@@ -39,6 +41,7 @@ $(function () {
             $articleTitleBlockPlaceholder.css('height', '');
             $articleTitleBlock.css({
                 'position':'',
+                'z-index':'',
                 'top':'',
                 'width':'',
                 'background-color':''
@@ -50,15 +53,14 @@ $(function () {
          * @author fanggang
          * @time 2016-05-30 22:24:10
          */
-        if($(this).scrollTop() > (iframeFooterTop - 1024)){
-            console.log('yes');
+        if($window.scrollTop() > (iframeFooterTop -1000)){
             $rightFixLittleCat.css('visibility', 'hidden');
         }else{
             $rightFixLittleCat.css('visibility', '');
         }
-        //console.log($(this).scrollTop());
-        //console.log(articleTitleBlockTop);
-        //console.log(iframeFooterTop);
+        // console.log($window.scrollTop());
+        // console.log(articleTitleBlockTop);
+        // console.log(iframeFooterTop);
     });
 
     /**
@@ -85,5 +87,18 @@ $(function () {
             });
             fontChangeStep--;
         }
+    });
+
+    /**
+     * @doc 到评论位置（因为页面头部有钉住栏，故不能直接用锚链接跳转形式）
+     * @author fanggang
+     * @time 2016-05-31 14:26:18 周二
+     */
+    var $goToArticleCommentBtn = $('#goToArticleCommentBtn');
+    // 顶部钉住区域高度偏移量
+    var topOffsetHeight = 100;
+    $goToArticleCommentBtn.on('click', function () {
+        $window.scrollTop($('#comment').offset().top - topOffsetHeight);
+        return false;
     });
 });
