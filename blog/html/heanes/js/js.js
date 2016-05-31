@@ -16,6 +16,10 @@ $(function () {
     var $articleTitleBlockPlaceholder = $('#articleTitleBlockPlaceholder');
     var articleTitleBlockWidth = $articleTitleBlock.width();
     var articleTitleBlockHeight = $articleTitleBlock.height();
+
+    var $rightFixLittleCat = $('#rightFixLittleCat');
+    var $iframeFooter = $('.iframe-footer');
+    var iframeFooterTop = $iframeFooter.position().top;
     $(window).on('scroll', function () {
         /**
          * @doc 文章详情页面滚动时,标题随之钉住在页面顶部显示
@@ -40,6 +44,21 @@ $(function () {
                 'background-color':''
             });
         }
+
+        /**
+         * @doc 侧面"小猫咪"到底部后自动隐藏
+         * @author fanggang
+         * @time 2016-05-30 22:24:10
+         */
+        if($(this).scrollTop() > (iframeFooterTop - 1024)){
+            console.log('yes');
+            $rightFixLittleCat.css('visibility', 'hidden');
+        }else{
+            $rightFixLittleCat.css('visibility', '');
+        }
+        //console.log($(this).scrollTop());
+        //console.log(articleTitleBlockTop);
+        //console.log(iframeFooterTop);
     });
 
     /**
