@@ -47,7 +47,7 @@
 .header-nav-bar .header-logo{padding:10px;float:left;}
 .header-nav-bar .header-logo .logo-a{display:inline-block;width:64px;height:64px;}
 .header-nav-bar .header-logo .logo-a img{width:100%;height:100%;}
-.header-nav-bar .header-nav{float:left;padding:0 20px;}
+.header-nav-bar .header-nav{float:left;padding:0 8px;}
 .header-nav-bar .header-nav .nav{line-height:80px;}
 .header-nav-bar .header-nav .nav li{padding:0;display:inline-block;}
 .header-nav-bar .header-nav .nav .nav-a{font-size:14px;color:#233;padding:10px 14px;}
@@ -87,7 +87,7 @@
 
 /* 右侧工具栏 */
 .right-wrap{width:260px;}
-.right-block{background:#fff;margin-left:16px;}
+.right-block{background:#fff;margin-left:20px;}
 .right-block{height:1000px;}
 
 .main-bottom-content{
@@ -98,33 +98,33 @@
     background:#fff;
     margin-bottom:12px;
 }
-.right-corner{position:fixed;left:50%;bottom:10px;margin-left:676px;}
-.right-corner .handle-block{width:60px;height:60px;margin-bottom:3px}
-.right-corner .handle-block .handle-content.front{position:absolute;width:100%;height:100%;z-index:3;}
-.right-corner .handle-block .handle-content.front:hover{z-index:1;}
-.right-corner .handle-block .handle-content.backend{position:absolute;width:100%;height:100%;z-index:2;}
-.right-corner .handle-block .handle-content.backend:hover{z-index:4;}
-.right-corner .handle-block.relative{position:relative}
-.right-corner .handle-block .handle{width:60px;height:60px;line-height:60px;display:block;}
-.right-corner .handle-block .handle.handle-icon{background-color:rgba(133,194,242,.72);color:#fff;text-align:center;cursor:pointer}
-.right-corner .handle-block .handle.handle-icon:hover{background-color:#2d96e9}
-.right-corner .handle-block .front .handle.handle-icon{background-color:rgba(133,194,242,1);}
-.right-corner .handle-block .handle.handle-icon i{font-size:40px;display:block;height:60px;padding-top:11px;}
-.right-corner .handle-block .go-to-top{}
-.right-corner .handle-block .go-to-top:hover{}
-.right-corner .handle-block .refresh{}
-.right-corner .handle-block .refresh:hover{}
-.right-corner .handle-block .go-to-home{}
-.right-corner .handle-block .go-to-home:hover{}
-.right-corner .handle-block .qr-code{}
-.right-corner .handle-block .qr-code:hover{}
-.right-corner .handle-block.hover-change-block{position:relative;}
-.right-corner .handle-block.hover-change-block:hover .hover-change-content{display:block;}
-.right-corner .handle-block.hover-change-block .hover-change-content{display:none;position:absolute;top:-50%;}
-.right-corner .handle-block .qr-code-content{right:60px}
+.right-fix-block .right-corner{position:fixed;left:50%;bottom:10px;margin-left:600px;}
+.right-fix-block .right-corner .handle-block{width:60px;height:60px;margin-bottom:3px}
+.right-fix-block .right-corner .handle-block .handle-content.front{position:absolute;width:100%;height:100%;z-index:3;}
+.right-fix-block .right-corner .handle-block .handle-content.front:hover{z-index:1;}
+.right-fix-block .right-corner .handle-block .handle-content.backend{position:absolute;width:100%;height:100%;z-index:2;}
+.right-fix-block .right-corner .handle-block .handle-content.backend:hover{z-index:4;}
+.right-fix-block .right-corner .handle-block.relative{position:relative}
+.right-fix-block .right-corner .handle-block .handle{width:60px;height:60px;line-height:60px;display:block;}
+.right-fix-block .right-corner .handle-block .handle.handle-icon{background-color:rgba(133,194,242,.72);color:#fff;text-align:center;cursor:pointer}
+.right-fix-block .right-corner .handle-block .handle.handle-icon:hover{background-color:#2d96e9}
+.right-fix-block .right-corner .handle-block .front .handle.handle-icon{background-color:rgba(133,194,242,1);}
+.right-fix-block .right-corner .handle-block .handle.handle-icon i{font-size:40px;display:block;height:60px;padding-top:11px;}
+.right-fix-block .right-corner .handle-block .go-to-top{}
+.right-fix-block .right-corner .handle-block .go-to-top:hover{}
+.right-fix-block .right-corner .handle-block .refresh{}
+.right-fix-block .right-corner .handle-block .refresh:hover{}
+.right-fix-block .right-corner .handle-block .go-to-home{}
+.right-fix-block .right-corner .handle-block .go-to-home:hover{}
+.right-fix-block .right-corner .handle-block .qr-code{}
+.right-fix-block .right-corner .handle-block .qr-code:hover{}
+.right-fix-block .right-corner .handle-block.hover-change-block{position:relative;}
+.right-fix-block .right-corner .handle-block.hover-change-block:hover .hover-change-content{display:block;}
+.right-fix-block .right-corner .handle-block.hover-change-block .hover-change-content{display:none;position:absolute;top:-50%;}
+.right-fix-block .right-corner .handle-block .qr-code-content{right:60px}
 
-.right-corner .handle-block.decorate-cat{margin-top:30px;}
-.right-corner .handle-block.decorate-cat .handle-content{padding-left:20px;padding-top:23px;}
+.right-fix-block .right-corner .handle-block.decorate-cat{margin-top:30px;}
+.right-fix-block .right-corner .handle-block.decorate-cat .handle-content{padding-left:20px;padding-top:23px;}
 
 /* E 中间主体 E */
 /* S 脚部 S */
@@ -132,7 +132,7 @@
 .footer-wrap{width:100%;}
 .footer-content{background:#686b6c;}
 
-.footer-content .footer-website-logo{float:left;width:160px;padding:20px 0;text-align:center}
+.footer-content .footer-website-logo{float:left;width:120px;padding:20px 0;text-align:center}
 .footer-content .footer-website-logo .footer-website-home-link{display:block;}
 .footer-content .footer-website-logo .footer-website-home-link img{max-width:120px;}
 .footer-content .add-link{float:left;padding-left:50px;}
@@ -196,17 +196,18 @@
 
 
 /* PC */
-@media screen and (min-width:1352px){
+@media screen and (min-width:1367px){
     .w-wrap{
-        width:1352px
+        width:1358px
     }
+    .right-fix-block .right-corner{margin-left:679px;}
 }
-@media screen and (max-width:1352px){
+@media screen and (max-width:1366px){
     .w-wrap{
+        width:1200px
     }
-    .center-block{margin:0 auto;float:none;width:100%;}
+    .center-block{width:920px;}
     .left-block{display:none;}
-    .right-block{display:none;}
 }
 /* iPhone 3 4 5 */
 @media screen and (min-width:320px) and (max-width:374px){

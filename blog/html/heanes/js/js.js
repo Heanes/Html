@@ -11,16 +11,28 @@ $(function () {
      * @author fanggang
      * @time 2016-05-24 01:56:00
      */
+    var $mainContent = $('.center .main .main-content');
     var $articleTitleBlock = $('.article-title-block');
     var articleTitleBlockTop = $articleTitleBlock.offset().top;
     var $articleTitleBlockPlaceholder = $('#articleTitleBlockPlaceholder');
     var articleTitleBlockWidth = $articleTitleBlock.width();
     var articleTitleBlockHeight = $articleTitleBlock.height();
 
+    var $rightFixBlockRightCorner = $('.right-fix-block .right-corner');
+
     var $rightFixLittleCat = $('#rightFixLittleCat');
     var $iframeFooter = $('.iframe-footer');
     var iframeFooterTop = $iframeFooter.offset().top;
     var $window = $(window);
+    $window.on('resize', function () {
+        /**
+         * @doc 窗口大小改变时改变右侧钉住栏的位置，使其始终贴住'main-content'
+         */
+        var mainContentWidth = $mainContent.width();
+        $rightFixBlockRightCorner.css({
+            'margin-left': mainContentWidth / 2
+        });
+    });
     $window.on('scroll', function () {
         /**
          * @doc 文章详情页面滚动时,标题随之钉住在页面顶部显示

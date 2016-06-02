@@ -24,7 +24,7 @@
 .article-list-block .article-list-row .article-tags dd{padding-left:6px;}
 .article-list-block .article-list-row .article-tags dd a:hover{background-color:#008fb5;color:#fff;}
 /**************************************文章页面*******************************/
-.article-page{background:#fff;color:#000}
+.article-page{background:#fff;color:#000;padding:10px;}
 .article-page .article-block{padding:0}
 .article-page .article-block .article-title-block{position:relative;border-bottom:1px #ddd dashed;color:#222;}
 .article-page .article-block .article-title-block-placeholder{}
@@ -48,9 +48,10 @@
 /* 文章摘要 */
 .article-page .article-abstract{font-size:12px;margin:20px auto;padding:16px 10px 14px;border:1px solid #bad7bb;background-color:#f1fff2}
 /* 文章正文 */
-.article-page .article-content{_border-top:1px solid #07adf9;padding:10px 0}
+.article-page .article-content{_border-top:1px solid #07adf9;padding:10px 30px;}
 .article-page .article-content p{margin-bottom:15px;text-indent:2em;line-height:2em;font-size:13px;}
-.article-page .article-tags strong a{padding:2px;border-radius:3px}
+.article-page .article-meta{margin:10px 0;padding:0 30px;}
+.article-page .article-meta .article-page .article-tags strong a{padding:2px;border-radius:3px}
 /* 文章正文图片浮上时放大 */
 .article-page .article-content img:hover{-webkit-transform:scale(1.01,1.01);-moz-transform:scale(1.01,1.01);-ms-transform:scale(1.01,1.01);-o-transform:scale(1.01,1.01);transform:scale(1.01,1.01);transition:.5s transform;-webkit-transition:.5s transform;border:0;box-shadow:0 0 13px 2px #aaa}
 /* 文章相关操作 */
