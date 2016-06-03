@@ -38,7 +38,7 @@ body::-webkit-scrollbar{width:10px}
 body::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);_-webkit-border-radius:10px;_border-radius:10px}
 body::-webkit-scrollbar-thumb{background:rgba(0,0,0,0.31);_-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);_-webkit-border-radius:10px;_border-radius:10px}
 /* 头部样式 */
-.header,.w-wrap{margin:0 auto}
+.header,.main-wrap{margin:0 auto}
 /* 顶部 */
 .header-top-wrap{width:100%;background:#F4F4F4;border-bottom:1px solid #E8E8E8;box-shadow:0 2px 10px rgba(217,224,247,0.56)}
 .header-topbar{padding:0 10px;height:30px;line-height:30px;box-sizing:border-box}
@@ -140,7 +140,7 @@ ul.friendlink-ul li a{display:block;background:#E4E4E4}
 .foot-trust .trust4{display:inline-block;background:url("../image/common/index_sprite.png");width:130px;height:57px;background-position:184px 236px;cursor:pointer}
 .foot-trust .trust4:hover{background-position:184px 179px}
 /* PC */
-@media screen and (min-width:1366px){.w-wrap{width:1100px}
+@media screen and (min-width:1366px){.main-wrap{width:1100px}
 }/* iPhone 3 4 5 */
 @media screen and (min-width:320px) and (max-width:374px){body{_background-color:green}
 }/* iPhone 6 */

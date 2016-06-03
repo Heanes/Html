@@ -18,7 +18,7 @@
 .clear-left{clear:left;content:" ";display:block}
 .clear-right{clear:right;content:" ";display:block}
 .wrap{width:100%;margin:0 auto}
-.w-wrap{width:100%;margin:0 auto}
+.main-wrap{width:100%;margin:0 auto}
 .main,.footer{margin:0 auto;padding:0}
 .main-content{_width:414px;margin:0 auto;}
 div.blank{display:block;height:1px}
@@ -362,7 +362,7 @@ p.boot-nav a{padding:10px 18px;background:#E5EFEE;border:1px solid #ddd;border-r
 }
 /* PC */
 @media screen and (min-width:1366px) {
-	.w-wrap {
+	.main-wrap {
 		width: 414px;
 		min-width: 210px
 	}

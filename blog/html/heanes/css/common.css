@@ -14,10 +14,15 @@
 .text-right{text-align:right;}
 .for-eye-protect{background:#e3edcd;}
 .none{display:none}
+
+.main-wrap{
+    width:1200px
+}
+.left-block{display:none;}
 /* 通用命名下的样式 */
 .wrap{width:100%;}
 .wrap,
-.w-wrap,
+.main-wrap,
 .header,
 .main,
 .footer,
@@ -81,7 +86,7 @@
 
 /* 中心主体内容 */
 .main-content{margin-bottom:12px;background-color:#fff}
-.center-wrap{width:800px;}
+.center-wrap{width:920px;}
 .center-block{background:#fff;}
 .center-block{}
 
@@ -197,16 +202,16 @@
 
 /* PC */
 @media screen and (min-width:1367px){
-    .w-wrap{
+    /*.main-wrap{
         width:1358px
     }
-    .right-fix-block .right-corner{margin-left:679px;}
+    .right-fix-block .right-corner{margin-left:679px;}*/
 }
 @media screen and (max-width:1366px){
-    .w-wrap{
+    .main-wrap{
         width:1200px
     }
-    .center-block{width:920px;}
+    .center-wrap{width:920px;}
     .left-block{display:none;}
 }
 /* iPhone 3 4 5 */

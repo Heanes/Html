@@ -22,7 +22,7 @@ div.blank{display:block;height:1px}
 /* 通用命名下的样式 */
 .wrap{width:100%;}
 .wrap,
-.w-wrap,
+.main-wrap,
 .header,
 .main,
 .footer,
@@ -44,13 +44,13 @@ div.blank{display:block;height:1px}
 
 /* PC */
 @media screen and (min-width:1352px){
-    .w-wrap {
+    .main-wrap {
         width: 414px;
         min-width: 210px
     }
 }
 @media screen and (max-width:1352px){
-    .w-wrap{
+    .main-wrap{
     }
 }
 /* iPhone 3 4 5 */

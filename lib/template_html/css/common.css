@@ -16,7 +16,7 @@
 /* 通用命名下的样式 */
 .wrap{width:100%;}
 .wrap,
-.w-wrap,
+.main-wrap,
 .header,
 .main,
 .footer,
@@ -113,12 +113,12 @@
 
 /* PC */
 @media screen and (min-width:1352px){
-    .w-wrap{
+    .main-wrap{
         width:1352px
     }
 }
 @media screen and (max-width:1352px){
-    .w-wrap{
+    .main-wrap{
     }
     .center-block{margin:0 auto;float:none;width:100%;}
     .left-block{display:none;}

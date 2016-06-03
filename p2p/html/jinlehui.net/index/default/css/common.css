@@ -21,7 +21,7 @@
 div.blank{display:block;height:1px}
 
 /* 公共样式 */
-.w-wrap{max-width:1000px;margin:0 auto;}
+.main-wrap{max-width:1000px;margin:0 auto;}
 .cell{display:table-cell;}
 /* 顶部导航栏 */
 .header-nav-block{display:table;width:100%;background-color:#fff;}
