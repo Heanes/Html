@@ -143,7 +143,7 @@
 .footer-content .add-link{float:left;padding-left:50px;}
 .footer-content .add-link-ul{}
 .footer-content .add-link-ul>li{display:inline-block;width:160px;padding:20px 0}
-.footer-content .add-link-ul li:hover{background-color:#565656}
+.footer-content .add-link-ul li:hover{}
 .footer-content .add-link-ul li h3.link-category{font-size:14px;height:26px;color:#8c8c8c;padding-left:10px}
 .footer-content .add-link-ul .link-list-ul li{padding-left:10px;height:30px;line-height:30px;overflow:hidden;}
 .footer-content .add-link-ul .link-list-ul a{color:#b5b5b5;font-size:13px;}

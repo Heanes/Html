@@ -49,6 +49,8 @@
 .article-page .article-abstract{font-size:12px;margin:20px auto;padding:16px 10px 14px;border:1px solid #bad7bb;background-color:#f1fff2}
 /* 文章正文 */
 .article-page .article-content{_border-top:1px solid #07adf9;padding:10px 30px;}
+.article-page .article-content h2.title-text{margin-bottom:46px;}
+.article-page .article-content h3.title-text{margin-bottom:30px;}
 .article-page .article-content p{margin-bottom:15px;text-indent:2em;line-height:2em;font-size:13px;}
 .article-page .article-meta{margin:10px 0;padding:0 30px;}
 .article-page .article-meta .article-page .article-tags strong a{padding:2px;border-radius:3px}
