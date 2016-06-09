@@ -25,6 +25,21 @@ $(function () {
         $body.animate({scrollTop: $body.height()}, 'slow');
     });
 
+    /**
+     * @doc 顶部更换字体功能
+     * @author fanggang
+     * @time 2016-06-09 12:30:05
+     */
+    // 读取cookie里的字体设置
+    $('#textSongti').on('click', function () {
+        $body.css({'font-family':'sans-serif'});
+        // 操作cookie,存入配置
+    });
+    $('#textYahei').on('click', function () {
+        $body.css({'font-family':'Microsoft Yahei'});
+        // 操作cookie
+    });
+
 });
 
 

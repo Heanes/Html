@@ -14,7 +14,7 @@
 .text-right{text-align:right;}
 .for-eye-protect{background:#e3edcd;}
 .none{display:none}
-
+.relative{position:relative}
 .main-wrap{
     width:1200px
 }
@@ -38,6 +38,7 @@
     box-shadow:0 2px 10px rgba(217,224,247,0.56);
     margin-bottom:16px;
 }
+/* 顶部工具栏 */
 .top-toolbar{
     height:36px;
     background:#F4F4F4;
@@ -46,6 +47,22 @@
     -moz-box-shadow:0 3px 6px rgba(0,0,0,.3);
     box-shadow:0 3px 6px rgba(0,0,0,.3);
 }
+.top-toolbar .top-handle-block{position:absolute;right:0;display:inline-block;}
+.top-toolbar .top-handle-block .handle-block{height:36px;line-height:36px;padding:0 14px;}
+.top-toolbar .top-handle-block .handle-block.hover-change-block:hover{height:auto;}
+.top-toolbar .top-handle-block .handle-block.hover-change-block:hover .handle-content.backend{visibility:visible;}
+.top-toolbar .top-handle-block .handle-block .handle-content{}
+.top-toolbar .top-handle-block .handle-block .handle-content.backend{visibility:hidden;}
+.top-toolbar .top-handle-block .handle-block .handle-content a{display:inline-block;cursor:pointer;}
+.top-toolbar .top-handle-block .handle-block.font-setting:hover{-webkit-box-shadow:0 3px 6px rgba(0,0,0,.3);-moz-box-shadow:0 3px 6px rgba(0,0,0,.3);box-shadow:0 3px 6px rgba(0,0,0,.3);}
+.top-toolbar .top-handle-block .handle-block.font-setting .handle-content.backend{font-size:20px;background-color:#fff;}
+.top-toolbar .top-handle-block .handle-block.font-setting .handle-content.backend .text-songti,
+.top-toolbar .top-handle-block .handle-block.font-setting .handle-content.backend .test-yahei{display:block;font-size:12px;padding-left:10px;cursor:pointer}
+.top-toolbar .top-handle-block .handle-block.font-setting .handle-content.backend .text-songti{font-family:'sans-serif',serif}
+.top-toolbar .top-handle-block .handle-block.font-setting .handle-content.backend .test-yahei{font-family:'Microsoft Yahei',serif}
+.top-toolbar .top-handle-block .handle-block.font-setting:hover{background-color:#fff;}
+
+
 .header-nav-bar{height:80px;background-color:#fff;}
 
 /* header-style1 */
