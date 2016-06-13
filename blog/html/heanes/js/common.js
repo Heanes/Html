@@ -8,6 +8,7 @@
 $(function () {
 
     var $body = $('body');
+    var parentDocument = window.parent.document;
     /**
      * @doc 回顶部
      * @author Heanes
@@ -33,12 +34,32 @@ $(function () {
     // 读取cookie里的字体设置
     $('#textSongti').on('click', function () {
         $body.css({'font-family':'sans-serif'});
-        // 操作cookie,存入配置
+        // iframe也设置字体
+        $('body', window.parent.document).css({'font-family':'sans-serif'});
+        $('iframe', window.parent.document).contents().find('body').css({'font-family':'sans-serif'});
+        if($.cookie != null){
+            // 操作cookie,存入配置
+            $.cookie('font-family', 'sans-serif', {expires: 365});
+        }
     });
     $('#textYahei').on('click', function () {
         $body.css({'font-family':'Microsoft Yahei'});
-        // 操作cookie
+        // iframe也设置字体
+        $('body', window.parent.document).css({'font-family':'Microsoft Yahei'});
+        $('iframe', window.parent.document).contents().find('body').css({'font-family':'Microsoft Yahei'});
+        if($.cookie != null){
+            // 操作cookie
+            $.cookie('font-family', 'Microsoft Yahei', {expires: 365});
+        }
     });
+
+    if($.cookie != null && $.cookie('font-family') != null && $.cookie('font-family') != 'sans-serif'){
+        var cookieFontFamily = $.cookie('font-family');
+        $body.css({'font-family':cookieFontFamily});
+        // iframe也设置字体
+        $('body', window.parent.document).css({'font-family':cookieFontFamily});
+        $('iframe', window.parent.document).contents().find('body').css({'font-family':cookieFontFamily});
+    }
 
 });
 
