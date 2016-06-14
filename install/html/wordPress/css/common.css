@@ -44,7 +44,8 @@ input[type="text"]:focus{border-color:rgba(82,168,236,0.8);outline:0;outline:thi
 	display:inline-block;
 	width:100px;
 	text-align:right;
-	vertical-align: middle;
+	vertical-align:middle;
+    font-size:14px;
 }
 .install-normal-input{
 	line-height:25px;
@@ -54,6 +55,10 @@ input[type="text"]:focus{border-color:rgba(82,168,236,0.8);outline:0;outline:thi
 	width:280px;
 	padding-left:20px;
 	vertical-align: middle;
+}
+
+.input-tips .tips{
+    font-size:13px;
 }
 
 .form-handle{
