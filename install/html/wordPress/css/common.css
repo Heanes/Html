@@ -38,7 +38,7 @@ input[type="text"]:focus{border-color:rgba(82,168,236,0.8);outline:0;outline:thi
 
 .input-field{
 	display:inline-block;
-	width:320px;
+	width:300px;
 }
 .input-field label{
 	display:inline-block;
@@ -53,12 +53,15 @@ input[type="text"]:focus{border-color:rgba(82,168,236,0.8);outline:0;outline:thi
 .input-tips{
 	display:inline-block;
 	width:280px;
-	padding-left:20px;
 	vertical-align: middle;
 }
 
 .input-tips .tips{
     font-size:13px;
+    color:#999;
+}
+.input-tips:hover .tips{
+    color:#000;
 }
 
 .form-handle{
