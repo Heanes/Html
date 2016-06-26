@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8" />
+    <!-- responsive -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- 让IE8在新模式下渲染（禁止兼容模式） -->
+    <meta name="renderer" content="webkit" /><!-- 让360等多核模式浏览器默认用极速模式打开 -->
+    <meta name="author" content="Heanes heanes.com email(heanes@163.com)" />
+    <meta name="keywords" content="软件,商务,HTML,tutorials,source codes" />
+    <meta name="description" content="描述，不超过150个字符" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/public/static/image/favicon/favicon.ico" />
+    <link rel="bookmark" href="/public/static/image/favicon/favicon.ico" />
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="/public/static/libs/css/reset/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/public/static/libs/css/base/base.css" />
+    <link rel="stylesheet" type="text/css" href="/public/static/libs/js/autoCatalog/1.0/css/autoCatalog.css">
+    <link rel="stylesheet" type="text/css" href="/public/static/libs/fonts/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/style/style-2016.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/css.css" />
+    <title>文章详情</title>
+</head>
+<body>
+<div class="center wrap">
+    <!-- S 头部 S -->
+    <iframe src="../layout/header.html"></iframe>
+    <!-- E 头部 E-->
+    <!-- S 主要内容 S -->
+    <div class="main">
+        <!-- 主体内容 -->
+        <div class="main-content main-wrap clearfix">
+            <!-- 左侧区域 -->
+            <div class="left-block left-wrap float-block"></div>
+            <!-- 中心区域 -->
+            <div class="center-block center-wrap float-block">
+                <div class="page-content">
+                    <div class="article-page">
+                        <!-- 文章分类 -->
+                        <div class="article-category">
+                            <a href="">首页</a>
+                            <span class="nav-sub"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                            <a href="">资讯</a>
+                            <span class="nav-sub"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                            <a href="">网络</a>
+                        </div>
+                        <!-- 单篇文章 -->
+                        <div class="article-block">
+                            <div class="article-title-block">
+                                <!-- 文章标题 -->
+                                <div class="article-title">
+                                    <h1 class="entry-title">友谊的小船说翻就翻</h1>
+                                </div>
+                                <!-- 文章相关属性信息 -->
+                                <div class="article-info">
+                                    <p>
+                                        人气：987 <a href="#comment-list" class="comment-num">评论：2</a>
+                                        作者：Heanes 责编：风为马
+                                        2015-05-19 09:46:35 来源：原创
+                                    </p>
+                                </div>
+                                <div class="article-operate">
+                                    <span class="op-to-small-text" id="opToSmallTextBtn">A</span>
+                                    <span class="op-to-large-text" id="opToLargeTextBtn">A</span>
+                                    <span class="op-share-btn"><i class="fa fa-share-alt"></i></span>
+                                </div>
+                            </div>
+                            <div class="article-title-block-placeholder" id="articleTitleBlockPlaceholder"></div>
+                            <!-- 文章摘要 -->
+                            <!--<div class="article-abstract">
+                                <strong>摘要：</strong>摘要内容....
+                            </div>-->
+                            <!-- 文章主体 -->
+                            <div class="article-content">
+                                <div class="main-content" id="mainContent">
+                                    <p>最近有个句式在网上火了，那就是“友谊的小船说翻就翻”，相信你的朋友圈已经被这个句式刷屏了吧，那么它到底是什么梗呢，或者说这个句子的来源是哪里呢？</p>
+                                    <p>据悉，该句式来自微博用户<a href="http://weibo.com/zld8">@喃东尼</a> 把翻船的过程画了出来的漫画《友谊的小船说翻就翻》，表达了友谊是一种很玄很玄的东西，它可以经受诱惑也坚韧不破，但也可以因为鸡毛蒜皮说翻就翻。不过也有网友表示这个句式已经在网上出现很长时间了。</p>
+                                    <p>看了那么多“改编”的句式，不妨来看一下原版的漫画是怎么说的吧：</p>
+                                    <h2 class="title-text">初版</h2>
+                                    <h3 class="title-text">第一种</h3>
+                                    <p style="text-align:center"><img src="../image/friendShip/1.jpg"></p>
+                                    <h3 class="title-text">第二种</h3>
+                                    <p style="text-align:center"><img src="../image/friendShip/2.jpg"></p>
+                                    <h3 class="title-text">第三种</h3>
+                                    <p style="text-align:center"><img src="../image/friendShip/3.jpg"></p>
+                                    <h2 class="title-text">女生版</h2>
+                                    <h3 class="title-text">（一）</h3>
+                                    <p style="text-align:center"><img src="../image/friendShip/4.jpg"></p>
+                                    <h3 class="title-text">（二）</h3>
+                                    <p style="text-align:center"><img src="../image/friendShip/5.jpg"></p>
+                                    <h2 class="title-text">第六种</h2>
+                                    <p style="text-align:center"><img src="../image/friendShip/6.jpg"></p>
+                                    <h2 class="title-text">第七种</h2>
+                                    <p style="text-align:center"><img src="../image/friendShip/7_1.jpg"></p>
+                                    <p style="text-align:center"><img src="../image/friendShip/7_2.jpg"></p>
+                                    <p>至于爱情的巨轮说沉就沉，原因主要有—— </p>
+                                    <h2 class="title-text">【爱情的巨轮说沉就沉】</h2>
+                                    <h3 class="title-text">第一种</h3>
+                                    <p style="text-align:center"><img src="../image/friendShip/8.jpg"></p>
+                                    <h3 class="title-text">第二种</h3>
+                                    <p style="text-align:center"><img src="../image/friendShip/9.jpg"></p>
+                                    <h3 class="title-text">第三种</h3>
+                                    <p style="text-align:center"><img src="../image/friendShip/10.jpg"></p>
+                                    <h3 class="title-text">第四种</h3>
+                                    <p style="text-align:center"><img src="../image/friendShip/11.jpg"></p>
+                                    <h3 class="title-text">第五种</h3>
+                                    <p style="text-align:center"><img src="../image/friendShip/12_1.jpg"></p>
+                                    <p style="text-align:center"><img src="../image/friendShip/12_2.jpg"></p>
+                                    <h3 class="title-text">第六种</h3>
+                                    <p style="text-align:center"><img src="../image/friendShip/13.jpg"></p>
+                                    <h3 class="title-text">第七种</h3>
+                                    <p style="text-align:center"><img src="../image/friendShip/14.jpg"></p>
+                                    <h2 class="title-text">最后</h2>
+                                    <p style="text-align:center"><img src="../image/friendShip/15.jpg"></p>
+                                    <p>爱情的巨轮需要好好开</p>
+                                    <p>祝你好运</p>
+                                </div>
+                            </div>
+                            <div class="article-meta">
+                                <p class="article-tags">本文关键词：<strong><a href="">漫画</a></strong>，<strong><a href="">友情</a></strong></p>
+                            </div>
+                        </div>
+                        <!-- 文章相关交互 -->
+                        <div class="article-handle">
+                            <div class="article-vote">
+                                <span><a href="" class="count-read-num">阅读数(19734)</a></span>
+                                <i class="border-separate"></i>
+                                <span><a href="" class="vote-up">点赞(847)</a></span>
+                            </div>
+                            <!-- 文章分享按钮 -->
+                            <div class="article-share-block">
+                                <div class="share-title">
+                                    <span class="share-title-text">分享给小伙伴</span>
+                                </div>
+                                <!-- 百度分享 -->
+                                <div class="bdsharebuttonbox">
+                                    <a href="#" class="bds_more" data-cmd="more"></a>
+                                    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+                                    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                                    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                                    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣"></a>
+                                    <a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a>
+                                    <a class="bds_more" data-cmd="more"></a>
+                                    <a class="bds_count" data-cmd="count"></a>
+                                </div>
+                                <script>
+                                    window._bd_share_config = {
+                                        "common": {
+                                            "bdSnsKey": {},
+                                            "bdText": "",
+                                            "bdMini": "2",
+                                            "bdMiniList": false,
+                                            "bdPic": "",
+                                            "bdStyle": "0",
+                                            "bdSize": "24"
+                                        },
+                                        "share": {}
+                                    };
+                                    with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src =
+                                            'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+                                </script>
+                            </div>
+                        </div>
+                        <!-- 前后文章 -->
+                        <div class="article-preview-forward">
+                            <p>» 上一条：没有啦！</p>
+                            <p>» 下一条：<a href="/news/show-444.html">大学毕业季，校园学生搬家怎么办？</a></p>
+                        </div>
+                        <!-- 相关文章 -->
+                        <div class="article-relate-block">
+                            <div class="article-relate-text">
+                                <h1 class="relate-title"><a id="relate-article">相关文章</a></h1>
+                                <ul class="relate-text-ul">
+                                    <li>
+                                        <a href="" class="relate-li-a">腾讯旗下微众银行推出首款小额贷款产品“微粒贷”</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="relate-li-a">腾讯旗下微众银行推出首款小额贷款产品“微粒贷”</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="article-relate-img">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 评论区域 -->
+                        <div class="article-comment-block" id="comment">
+                            <div class="add-comment-block">
+                                <h1 class="add-comment-title"><a id="add-comment">发表评论</a></h1>
+                                <p class="add-comment-remind">愿您的每句评论，都能给大家的生活添色彩，带来共鸣，带来思索，带来快乐。</p>
+                                <div class="add-comment">
+                                    <form action="" method="post">
+                                        <textarea rows="8" class="comment-textarea"></textarea>
+                                        <div class="add-comment-handle">
+                                            <input type="submit" class="submit-button button-normal" />
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="comment-list">
+                                <h3 class="comment-list-title"><a id="comment-list">评论列表</a></h3>
+                                <ul class="comment-list-ul">
+                                    <li>
+                                        <div class="comment-info">
+                                            <span class="comment-floor"><a id="comment-floor-4" class="comment-floor-a">4楼</a></span>
+                                            <span class="comment-user-name"><a href="" class="user-name-a">蒲常莹</a></span>
+                                            <span class="comment-user-ip">北京海淀</span>
+                                            <span>2015-05-19 17:26:28</span>
+                                        </div>
+                                        <div class="comment-content">
+                                            <p>楼下的一看就是小白。阿里微贷的1年利息接近10%。是工行的2倍，至于广发 平安更是高达17%-20%</p>
+                                        </div>
+                                        <div class="comment-handle">
+                                            <span class="comment-complain"><a href="">举报</a></span>
+                                            <i class="border-separate"></i>
+                                            <span class="comment-vote-up"><a href="">支持(46)</a></span>
+                                            <i class="border-separate"></i>
+                                            <span class="comment-vote-down"><a href="">反对(0)</a></span>
+                                            <i class="border-separate"></i>
+                                            <span class="comment-reply"><a href="">回复</a></span>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </li>
+                                    <li>
+                                        <div class="comment-info">
+                                            <span class="comment-floor"><a id="comment-floor-3" class="comment-floor-a">3楼</a></span>
+                                            <span class="comment-user-name"><a href="" class="user-name-a">蒲常莹</a></span>
+                                            <span class="comment-user-ip">北京海淀</span>
+                                            <span>2015-05-19 17:26:28</span>
+                                        </div>
+                                        <div class="comment-content">
+                                            <p>扯淡！就目前大数的利息来看还不是跟银行差不多？！根本就没有解决他所说的40%~70%的企业融资难的问题，准入条件还是限制了很多企业！
+                                            小编了解还很少！还有平安，南粤，友金所等等那些！</p>
+                                        </div>
+                                        <div class="comment-handle">
+                                            <span class="comment-complain"><a href="">举报</a></span>
+                                            <i class="border-separate"></i>
+                                            <span class="comment-vote-up"><a href="">支持(46)</a></span>
+                                            <i class="border-separate"></i>
+                                            <span class="comment-vote-down"><a href="">反对(0)</a></span>
+                                            <i class="border-separate"></i>
+                                            <span class="comment-reply"><a href="">回复</a></span>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </li>
+                                    <li>
+                                        <div class="comment-info">
+                                            <span class="comment-floor"><a id="comment-floor-2" class="comment-floor-a">2楼</a></span>
+                                            <span class="comment-user-name"><a href="" class="user-name-a">蒲常莹</a></span>
+                                            <span class="comment-user-ip">北京海淀</span>
+                                            <span>2015-05-19 17:26:28</span>
+                                        </div>
+                                        <div class="comment-content">
+                                            <p>缺钱，小企业普遍遇到的问题。</p>
+                                        </div>
+                                        <div class="comment-handle">
+                                            <span class="comment-complain"><a href="">举报</a></span>
+                                            <i class="border-separate"></i>
+                                            <span class="comment-vote-up"><a href="">支持(46)</a></span>
+                                            <i class="border-separate"></i>
+                                            <span class="comment-vote-down"><a href="">反对(0)</a></span>
+                                            <i class="border-separate"></i>
+                                            <span class="comment-reply"><a href="">回复</a></span>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </li>
+                                    <li>
+                                        <div class="comment-info">
+                                            <span class="comment-floor"><a id="comment-floor-1" class="comment-floor-a">1楼</a></span>
+                                            <span class="comment-user-name"><a href="" class="user-name-a">蒲常莹</a></span>
+                                            <span class="comment-user-ip">北京海淀</span>
+                                            <span>2015-05-19 17:26:28</span>
+                                        </div>
+                                        <div class="comment-content">
+                                            <p>呵呵</p>
+                                        </div>
+                                        <div class="comment-handle">
+                                            <span class="comment-complain"><a href="">举报</a></span>
+                                            <i class="border-separate"></i>
+                                            <span class="comment-vote-up"><a href="">支持(46)</a></span>
+                                            <i class="border-separate"></i>
+                                            <span class="comment-vote-down"><a href="">反对(0)</a></span>
+                                            <i class="border-separate"></i>
+                                            <span class="comment-reply"><a href="">回复</a></span>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 右侧区域 -->
+            <div class="right-block right-wrap float-block">
+                <!-- 文章目录导航 -->
+                <div class="side-content" id="articleCatalog"></div>
+                <!-- 右侧钉住样式 -->
+                <div class="right-fix-block">
+                    <div class="right-corner">
+                        <div class="handle-block hover-change-block">
+                            <div class="handle-content front">
+                                <a class="handle handle-icon"><i class="fa fa-angle-down" aria-hidden="true" style="font-size:54px;padding-top:5px;"></i></a>
+                            </div>
+                            <div class="handle-content backend">
+                                <a class="handle handle-icon go-to-bottom">去底部</a>
+                            </div>
+                        </div>
+                        <div class="handle-block hover-change-block">
+                            <div class="handle-content front">
+                                <a class="handle handle-icon"><i class="fa fa-home" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="handle-content backend">
+                                <a class="handle handle-icon go-to-home" href="/">回首页</a>
+                            </div>
+                        </div>
+                        <div class="handle-block hover-change-block">
+                            <div class="handle-content front">
+                                <a class="handle handle-icon"><i class="fa fa-refresh" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="handle-content backend">
+                                <a class="handle handle-icon refresh" onclick="window.location.reload();">刷新</a>
+                            </div>
+                        </div>
+                        <div class="handle-block hover-change-block" id="goToArticleCommentBtn">
+                            <div class="handle-content front">
+                                <a class="handle handle-icon"><i class="fa fa-comments-o" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="handle-content backend">
+                                <a class="handle handle-icon comment" href="#comment">评论</a>
+                            </div>
+                        </div>
+                        <div class="handle-block hover-change-block">
+                            <div class="handle-content front">
+                                <a class="handle handle-icon"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="handle-content backend">
+                                <a class="handle handle-icon share">分享</a>
+                            </div>
+                            <div class="hover-change-content qr-code-content">
+                                <!-- 百度分享 -->
+                                <div class="bdsharebuttonbox" style="width:72px;background-color:#fff;padding-left:10px;">
+                                    <a href="#" class="bds_more" data-cmd="more"></a>
+                                    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+                                    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                                    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                                    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣"></a>
+                                    <a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a>
+                                    <a class="bds_more" data-cmd="more"></a>
+                                    <a class="bds_count" data-cmd="count"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="handle-block hover-change-block">
+                            <div class="handle-content front">
+                                <a class="handle handle-icon"><i class="fa fa-qrcode" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="handle-content backend">
+                                <a class="handle handle-icon qr-code">二维码</a>
+                            </div>
+                            <div class="hover-change-content qr-code-content">
+                                <img src="../image/rightFixCorner/style1/qr-150.png">
+                            </div>
+                        </div>
+                        <!-- 关灯（背景黑） -->
+                        <div class="handle-block hover-change-block none">
+                            <div class="handle-content front">
+                                <a class="handle handle-icon"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="handle-content backend">
+                                <a class="handle handle-icon turn-off-light">关灯</a>
+                            </div>
+                        </div>
+                        <div class="handle-block hover-change-block">
+                            <div class="handle-content front">
+                                <a class="handle handle-icon"><i class="fa fa-angle-up" aria-hidden="true" style="font-size:54px;padding-top:0"></i></a>
+                            </div>
+                            <div class="handle-content backend">
+                                <a class="handle handle-icon go-to-top">回顶部</a>
+                            </div>
+                        </div>
+                        <div class="handle-block decorate-cat">
+                            <div class="handle-content front" id="rightFixLittleCat">
+                                <img src="../image/footer/other/little-cat.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E 主要内容 E -->
+    <!-- S 脚部 S -->
+    <iframe src="../layout/footer.html" class="iframe-footer"></iframe>
+    <!-- E 脚部 E -->
+</div>
+<cite>
+    <!-- S js S -->
+    <script type="text/javascript" src="/public/static/libs/js/jquery/2.1.4/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="/public/static/libs/js/autoCatalog/1.0/js/autoCatalog.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/js.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            var $articleContent = $('.article-block');
+            /**
+             * @doc 仿百度百科自动生成文章目录导航
+             * @author fanggang
+             * @time 2016-04-13 18:07:26
+             */
+            $articleContent.autoCatalog({
+                step:90,
+                alwaysShow:true
+            });
+        });
+    </script>
+    <!-- E js E -->
+</cite>
+</body>
+</html>
