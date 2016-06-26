@@ -16,6 +16,7 @@
 .none{display:none}
 .relative{position:relative}
 .main-wrap{
+    width:1100px;
 }
 /* 通用命名下的样式 */
 .wrap{width:100%;}
@@ -68,7 +69,7 @@
 
 /* 中心主体内容 */
 .main-content{margin-bottom:12px;background-color:#fff}
-.center-wrap{width:1028px;}
+.center-wrap{}
 .center-block{background:#fff;}
 .center-block{}
 
@@ -110,7 +111,7 @@
 .center-block .index-publicity .publicity-one .content .second-content ul.honeycomb li .honeycomb-one.odd{background-image:url("../image/index/border/border-honeycomb-white.png");margin-top:14px;}
 .center-block .index-publicity .publicity-one .content .second-content ul.honeycomb li .honeycomb-one.even{background-image:url("../image/index/border/border-honeycomb-brown.png");color:#fff;}
 /* 总部支持 */
-.main-content .center-block .index-publicity .publicity-one .content .third-content{margin:0 auto;}
+.main-content .center-block .index-publicity .publicity-one .content .third-content{width:800px;margin:0 auto;}
 .main-content .center-block .index-publicity .publicity-one .content .third-content ul.index-icon-block{}
 .main-content .center-block .index-publicity .publicity-one .content .third-content ul.index-icon-block.second{text-align:right;}
 .main-content .center-block .index-publicity .publicity-one .content .third-content ul.index-icon-block li{display:inline-block;width:136px;margin:0 auto;padding:14px;cursor:pointer;}
@@ -164,10 +165,13 @@
 .main-content .center-block .index-publicity .publicity-one .content .eighth-content .process-list .process-row h3.chinese{border-bottom:1px dashed #fff;padding-bottom:4px;}
 .main-content .center-block .index-publicity .publicity-one .content .eighth-content .process-list .process-next-icon{display:inline-block;float:left;width:0;height:0;border-top:10px solid transparent;border-left:20px solid #aaa;border-bottom:10px solid transparent;vertical-align:middle;margin-top:64px;}
 
-.bottom-fixed{position:fixed;bottom:0;width:100%;}
-.bottom-fixed .apply-banner{height:62px;background-color:#ff9600;color:#fff;}
+.bottom-fixed{position:fixed;left:0;bottom:0;width:100%;background-color:#ff9600;}
+.bottom-fixed .apply-banner{width:1000px;margin:0 auto;height:62px;background-color:#ff9600;color:#fff;}
 .bottom-fixed .apply-banner .dynamic-news{display:inline-block;line-height:62px;}
+.bottom-fixed .apply-banner .dynamic-news a{color:#fff;}
 .bottom-fixed .apply-banner .dynamic-news .article-category{font-style:italic;font-weight:600;}
+
+.bottom-fixed-placeholder{height:62px;width:100%;}
 
 .bottom-fixed .apply-banner .apply-now{display:inline-block;float:right;line-height:62px;height:62px;vertical-align:top;margin-right:60px;}
 .bottom-fixed .apply-banner .apply-now .apply-number{font-size:34px;}
@@ -213,7 +217,7 @@
 .footer-content .footer-website-logo .footer-website-home-link img{max-width:120px;}
 .footer-content .add-link{float:left;padding-left:50px;}
 .footer-content .add-link-ul{}
-.footer-content .add-link-ul>li{display:inline-block;width:160px;padding:20px 0}
+.footer-content .add-link-ul>li{display:inline-block;width:150px;padding:20px 0}
 .footer-content .add-link-ul li:hover{}
 .footer-content .add-link-ul li h3.link-category{font-size:14px;height:26px;color:#8c8c8c;padding-left:10px}
 .footer-content .add-link-ul .link-list-ul li{padding-left:10px;height:30px;line-height:30px;overflow:hidden;}
@@ -280,8 +284,9 @@
 }
 @media screen and (max-width:1366px){
     .main-wrap{
+        width:1100px;
     }
-    .center-wrap{width:1100px;}
+    .center-wrap{}
 }
 /* iPhone 3 4 5 */
 @media screen and (min-width:320px) and (max-width:374px){
