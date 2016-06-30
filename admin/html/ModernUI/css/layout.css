@@ -3,178 +3,77 @@
  * @doc 布局样式
  * @copyright heanes.com
  * @author Heanes
- * @time 2015-04-08 17:34:33
+ * @time 2016-06-29 22:51:07
  */
-body{
-	height:100%;
+
+.header{
+    position:fixed;
+    z-index:3;
+    width:100%;
+    height:80px;
+    background-color:#3d848a;
 }
 
-/* 全局块 */
-.main{
+.left-block{
+    position:fixed;
+    width:240px;
+    height:100%;
+    z-index:2;
+    background-color:#758e86;
+    padding-top:80px;
+}
+.center-block{
+    position:absolute;
+    width:100%;
+    background-color:#f0f8ff;
+    padding-left:240px;
+    padding-top:80px;
+}
+/* 头部logo及菜单 */
+.header .admin-logo{
+    float:left;
+    width:180px;
+    height:100%;
+    padding:10px;
+}
+.header .admin-logo .admin-log-img{
+    min-width:150px;
+    max-width:100%;
+    min-height:60px;
+    max-height:100%;
+}
+.header .menu-top{}
+.header .menu-top .menu-list li{
+    float:left;
+    width:auto;
+    height:80px;
+    color:#fff;
+}
+.header .menu-top .menu-list li:hover{
+    background-color:#2b91af;
+}
+.header .menu-top .menu-list li a{
+    display:block;
+    line-height:80px;
+    color:#fff;
+    padding:0 30px;
 }
 
-.admin-layout-table{
-	width:100%;
-	height:100%;
+/* 侧边菜单 */
+.menu-left-block{
 }
-.admin-layout-table tbody tr:first-child td:first-child{
-	width:200px;
-	height:70px;
-}
-.admin-layout-table tbody tr:first-child td{
-	border-right:1px solid #38c4ca;
-}
-.admin-layout-table tbody tr:first-child td:last-child{
-	width:350px;
-	background:#a6c7ff;
-	border-right:none;
-}
-.admin-layout-table tbody tr:nth-child(2){
-	border-top:1px solid #38c4ca;
-}
+.menu-left{
 
-.admin-logo{
-	width:150px;
 }
-
-/* 顶部导航样式 */
-.admin-header-top{
-	height:70px;
-	_background-color:#95cff2;
-	border-bottom:1px solid #38c4ca;
+.menu-left li{
+    line-height:26px;
+    color:#fff;
 }
-.admin-header-top div{
-	float:left;
-	border-right:1px solid #38c4ca;
+.menu-left li:hover{
+    background-color:#2b91af;
 }
-
-.admin-header-top .top-admin-logo{
-	display:inline-block;
-	height:100%;
-	width:150px;
-	background:#eee;
+.menu-left li a{
+    display:block;
+    padding:10px 16px;
+    color:inherit;
 }
-
-.admin-header-top .top-admin-logo .admin-logo{
-	width:120px;
-	height:45px;
-}
-
-/* S 顶部菜单 S */
-.top-admin-nav{
-	height:100%;
-	background:rgba(70, 238, 51, 0.36);
-}
-
-.top-admin-nav .admin-nav-list{
-	height:35px;
-	line-height:35px;
-	background-color:#59b8c0;
-	margin-top:13px;
-}
-
-.top-admin-nav .admin-nav-list .nav-ul{
-	font-size:15px;
-}
-
-.top-admin-nav .admin-nav-list .nav-ul li{
-	display:inline-block;
-	cursor:pointer;
-	padding:5px 10px;
-	border:1px solid #59b8c0
-}
-
-.top-admin-nav .admin-nav-list .nav-ul li:hover{
-	color:white;
-	background-color:#61d5df;
-	border:1px solid #61d5df;
-}
-
-.top-admin-nav .nav-location{
-	margin:5px 0 0 10px;
-	background:#036;
-}
-
-.admin-header-top .top-admin-tools{
-	display:inline-block;
-	width:300px;
-	height:100%;
-	background:#fcca32;
-}
-
-/* E 顶部菜单 E */
-/* S 左侧菜单 S */
-.admin-main-left{
-	width:150px;
-	height:100%;
-	background-color:#edf3f7;
-	padding:10px 0;
-	border-right:1px solid #38c4ca;
-}
-
-.left-admin-menu{
-	width:auto;
-	background-color:white;
-}
-
-.left-admin-menu dl.menu,
-.left-admin-menu dl.menu_hide{
-	display:block;
-	padding:0 5px;
-	cursor:pointer;
-	margin-bottom:3px;
-}
-
-.left-admin-menu dl.menu dt,
-.left-admin-menu dl.menu_hide dt{
-	background-color:#00860c;
-	padding:5px;
-	color:white;
-	font-size:14px;
-	font-weight:bold;
-}
-
-.left-admin-menu dl.menu dt{
-	background:url(../image/menu/vh.gif) no-repeat 95% -45px #00860c;
-}
-
-.left-admin-menu dl.menu_hide dt{
-	background:url(../image/menu/vh.gif) no-repeat 95% 10px #7b9870;
-}
-
-.left-admin-menu dl.menu dt:hover,
-.left-admin-menu dl.menu_hide dt:hover{
-	background-color:#06bd3e;
-	color:white;
-}
-
-.left-admin-menu dl.menu dd{
-	display:block;
-	padding:8px 15px;
-	margin:2px 0;
-}
-
-.left-admin-menu dl.menu dd:hover{
-	background-color:#63cfe8;
-	color:#b01414;
-}
-
-.left-admin-menu dl.menu_hide dd{
-	display:none;
-}
-
-/* E 左侧菜单 E */
-
-/* S 右侧内容部分 S */
-.admin-main-right{
-	width:100%;
-	height:100%;
-}
-
-.admin-main-right .right-content{
-	width:100%;
-	height:100%;
-}
-
-
-/* E 右侧内容部分 E */

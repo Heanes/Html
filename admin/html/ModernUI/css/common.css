@@ -5,3 +5,7 @@
  * @author Heanes
  * @time 2015-04-08 17:34:33
  */
+
+.float-block{
+    float:left;
+}
