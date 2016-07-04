@@ -34,8 +34,8 @@
                     </a>
                 </div>
                 <div class="menu-top">
-                    <ul class="menu-list">
-                        <li><a href="javascript:;">首页</a></li>
+                    <ul class="menu-list" id="menuTopUl">
+                        <li class="active"><a href="javascript:;">首页</a></li>
                         <li><a href="javascript:;">文章</a></li>
                     </ul>
                 </div>
@@ -46,10 +46,33 @@
             <!-- 左侧区域 -->
             <div class="left-block left-wrap">
                 <div class="menu-left-block">
-                    <ul class="menu-left">
-                        <li><a href="javascript:;">文章列表</a></li>
-                        <li><a href="javascript:;">文章分类</a></li>
-                    </ul>
+                    <div class="menu-left-family active">
+                        <ul class="menu-left-group">
+                            <li><a href="javascript:;">文章列表</a></li>
+                            <li><a href="javascript:;">文章分类</a></li>
+                            <li>
+                                <a href="javascript:;" class="menu-parent">父菜单</a>
+                                <ul class="menu-left-group close">
+                                    <li><a href="javascript:;">子菜单1</a></li>
+                                    <li><a href="javascript:;">子菜单2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="menu-left-group">
+                            <li><a href="javascript:;">文章列表</a></li>
+                            <li><a href="javascript:;">文章分类</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-left-family">
+                        <ul class="menu-left-group">
+                            <li><a href="javascript:;">系统设置</a></li>
+                            <li><a href="javascript:;">系统设置</a></li>
+                        </ul>
+                        <ul class="menu-left-group">
+                            <li><a href="javascript:;">系统设置</a></li>
+                            <li><a href="javascript:;">系统设置</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <!-- 中心区域 -->
@@ -70,6 +93,7 @@
 <cite>
     <!-- S js S -->
     <script type="text/javascript" src="/public/static/libs/js/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/layout.js"></script>
     <script type="text/javascript" src="js/common/common.js"></script>
     <!-- E js E -->
 </cite>

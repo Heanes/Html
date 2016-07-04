@@ -64,6 +64,7 @@
     height:80px;
     color:#fff;
 }
+.header .menu-top .menu-list li.active,
 .header .menu-top .menu-list li:hover{
     background-color:#2b91af;
 }
@@ -77,17 +78,38 @@
 /* 侧边菜单 */
 .menu-left-block{
 }
-.menu-left{
-
+.menu-left-family{
+    display:none;
 }
-.menu-left li{
+.menu-left-family.active{
+    display:block;
+}
+.menu-left-group{
+}
+.menu-left-group.close{
+    display:none;
+}
+.menu-left-group li{
     line-height:26px;
     color:#fff;
 }
-.menu-left li:hover{
+.menu-left-group li .menu-parent{
+    display:block;
+    padding:10px 16px;
+    color:inherit;
+}
+.menu-left-group li:nth-child(2n){
+    background-color:#78948b;
+}
+.menu-left-group li > ul.menu-left-group{
+    padding-left:12px;
+}
+.menu-left-group li .menu-parent:hover,
+.menu-left-group li.active > a,
+.menu-left-group li:hover > a:not(.menu-parent){
     background-color:#2b91af;
 }
-.menu-left li a{
+.menu-left-group li a{
     display:block;
     padding:10px 16px;
     color:inherit;
