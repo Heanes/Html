@@ -36,6 +36,21 @@
     height:100%;
     padding:10px;
 }
+.header .admin-logo .admin-icon,
+.header .admin-logo .admin-title-text{
+    display:inline-block;
+    vertical-align:middle;
+    height:60px;
+    line-height:60px;
+}
+.header .admin-logo .admin-icon{
+    font-size:50px;
+    color:#fff;
+}
+.header .admin-logo .admin-title-text{
+    font-size:24px;
+    color:#fff;
+}
 .header .admin-logo .admin-log-img{
     min-width:150px;
     max-width:100%;
