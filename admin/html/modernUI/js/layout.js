@@ -19,8 +19,10 @@ $(function () {
     var $menuLeftGroupLiList = $menuLeftGroup.find('li');
     $menuLeftGroupLiList.each(function (i, item) {
         if($(item).find('ul.menu-left-group').length > 0){
-            $(item).find('.menu-parent').on('click', function () {
-                $(item).find('ul.menu-left-group').toggleClass('close');
+            $(item).find('.menu-parent').first().on('click', function () {
+                $(this).toggleClass('active');
+                $(this).find('.menu-lap').first().toggleClass('triangle-down triangle-right');
+                $(item).find('ul.menu-left-group').first().toggleClass('close');
             });
         }
     });
