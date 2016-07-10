@@ -28,6 +28,7 @@
 .article-page .article-block{padding-top:20px;}
 .article-page .article-category{padding:10px 5px;border-bottom:3px solid #57adfd;line-height:24px;}
 .article-page .article-block .article-title-block{position:relative;border-bottom:1px #ddd dashed;color:#222;}
+.article-page .article-block .article-title-block.fixed{position:fixed;top:0;z-index:2;width:900px;background-color:rgb(255, 255, 255);}
 .article-page .article-block .article-title-block-placeholder{}
 /* 右侧文章目录导航 */
 #articleCatalog{background-color:#fff;}
@@ -94,7 +95,7 @@
 .comment-list .comment-list-title a{color:#fff}
 .comment-list .comment-list-title{font-size:17px;background:#07adf9;padding:6px 10px}
 .comment-list .comment-list-ul{}
-.comment-list .comment-list-ul li{border-bottom:1px #e7e7e7 solid;padding:10px;overflow:hidden}
+.comment-list .comment-list-ul li{border-bottom:1px #e7e7e7 dotted;padding:10px;overflow:hidden}
 .comment-list .comment-list-ul li:hover{background:#f5fafe;border-bottom:1px #D2E8FA solid}
 .comment-list .comment-info{color:#777;font-size:12px}
 .comment-list .comment-info .comment-floor .comment-floor-a{font-weight:bold;color:#666}
@@ -103,6 +104,10 @@
 .comment-list .comment-content p{line-height:24px}
 .comment-list .comment-handle{float:right;padding:10px 0;font-size:13px}
 .comment-list .comment-handle i{margin:0 2px}
+/*
+.comment-list .comment-handle .comment-complain{visibility:hidden;}
+.comment-list .comment-list-ul li:hover .comment-handle .comment-complain{visibility:visible;}
+*/
 .comment-list .comment-handle .comment-complain a{color:#dea47a}
 .comment-list .comment-handle .comment-vote-up a{color:#289692}
 .comment-list .comment-handle .comment-vote-down a{color:#f00}
