@@ -121,6 +121,7 @@
                 </div>
             </div>
         </div>
+        <div class="header-nav-bar-placeholder" id="headerNavBarPlaceholder"></div>
     </div>
     <!-- E 头部 E-->
     <!-- S 主要内容 S -->
@@ -157,9 +158,9 @@
                                     </p>
                                 </div>
                                 <div class="article-operate">
-                                    <span class="op-to-small-text" id="opToSmallTextBtn">A</span>
-                                    <span class="op-to-large-text" id="opToLargeTextBtn">A</span>
-                                    <span class="op-share-btn"><i class="fa fa-share-alt"></i></span>
+                                    <span class="op-to-small-text" id="opToSmallTextBtn" title="减小正文字体">T</span>
+                                    <span class="op-to-large-text" id="opToLargeTextBtn" title="增大正文字体">T</span>
+                                    <!--<span class="op-share-btn"><i class="fa fa-share-alt"></i></span>-->
                                 </div>
                             </div>
                             <div class="article-title-block-placeholder" id="articleTitleBlockPlaceholder"></div>
@@ -215,6 +216,8 @@
                                 <p class="article-tags">本文关键词：<strong><a href="">漫画</a></strong>，<strong><a href="">友情</a></strong></p>
                             </div>
                         </div>
+                        <!-- 作者相关信息 -->
+                        <div class="article-author-info"></div>
                         <!-- 文章相关交互 -->
                         <div class="article-handle">
                             <div class="article-vote">
@@ -288,7 +291,7 @@
                                 <h1 class="add-comment-title"><a id="add-comment">发表评论</a></h1>
                                 <p class="add-comment-remind">愿您的每句评论，都能给大家的生活添色彩，带来共鸣，带来思索，带来快乐。</p>
                                 <div class="add-comment">
-                                    <form action="" method="post">
+                                    <form id="commentAddForm">
                                         <textarea rows="8" class="comment-textarea"></textarea>
                                         <div class="add-comment-handle">
                                             <input type="submit" class="submit-button button-normal" />
@@ -300,9 +303,14 @@
                                 <h3 class="comment-list-title"><a id="comment-list">评论列表</a></h3>
                                 <ul class="comment-list-ul">
                                     <li>
+                                        <div class="no-data">
+                                            <p>暂无评论</p>
+                                        </div>
+                                    </li>
+                                    <li>
                                         <div class="comment-info">
                                             <span class="comment-floor"><a id="comment-floor-4" class="comment-floor-a">4楼</a></span>
-                                            <span class="comment-user-name"><a href="" class="user-name-a">蒲常莹</a></span>
+                                            <span class="comment-user-name"><a href="javascript:;" class="user-name-a">蒲常莹</a></span>
                                             <span class="comment-user-ip">北京海淀</span>
                                             <span>2015-05-19 17:26:28</span>
                                         </div>
@@ -323,7 +331,7 @@
                                     <li>
                                         <div class="comment-info">
                                             <span class="comment-floor"><a id="comment-floor-3" class="comment-floor-a">3楼</a></span>
-                                            <span class="comment-user-name"><a href="" class="user-name-a">蒲常莹</a></span>
+                                            <span class="comment-user-name"><a href="javascript:;" class="user-name-a">蒲常莹</a></span>
                                             <span class="comment-user-ip">北京海淀</span>
                                             <span>2015-05-19 17:26:28</span>
                                         </div>
@@ -345,7 +353,7 @@
                                     <li>
                                         <div class="comment-info">
                                             <span class="comment-floor"><a id="comment-floor-2" class="comment-floor-a">2楼</a></span>
-                                            <span class="comment-user-name"><a href="" class="user-name-a">蒲常莹</a></span>
+                                            <span class="comment-user-name"><a href="javascript:;" class="user-name-a">蒲常莹</a></span>
                                             <span class="comment-user-ip">北京海淀</span>
                                             <span>2015-05-19 17:26:28</span>
                                         </div>
@@ -366,7 +374,7 @@
                                     <li>
                                         <div class="comment-info">
                                             <span class="comment-floor"><a id="comment-floor-1" class="comment-floor-a">1楼</a></span>
-                                            <span class="comment-user-name"><a href="" class="user-name-a">蒲常莹</a></span>
+                                            <span class="comment-user-name"><a href="javascript:;" class="user-name-a">蒲常莹</a></span>
                                             <span class="comment-user-ip">北京海淀</span>
                                             <span>2015-05-19 17:26:28</span>
                                         </div>

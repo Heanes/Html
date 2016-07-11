@@ -15,7 +15,6 @@ $(function () {
     var $articleTitleBlock = $('.article-title-block');
     var articleTitleBlockTop = $articleTitleBlock.length > 0 ? $articleTitleBlock.offset().top : null;
     var $articleTitleBlockPlaceholder = $('#articleTitleBlockPlaceholder');
-    var articleTitleBlockWidth = $articleTitleBlock.width();
     var articleTitleBlockHeight = $articleTitleBlock.height();
 
     var $rightFixBlockRightCorner = $('.right-fix-block .right-corner');
@@ -36,6 +35,7 @@ $(function () {
 
 
     var $headerNavBar = $('#headerNavBar');
+    var $headerNavBarPlaceholder = $('#headerNavBarPlaceholder');
     var headerNavBarTop = $headerNavBar.length > 0 ? $headerNavBar.offset().top : null;
     $window.on('scroll', function () {
 
@@ -46,8 +46,10 @@ $(function () {
          */
         if(headerNavBarTop != null && headerNavBarTop < $window.scrollTop()){
             $headerNavBar.addClass('nav-fix');
+            $headerNavBarPlaceholder.show();
         }else{
             $headerNavBar.removeClass('nav-fix');
+            $headerNavBarPlaceholder.hide();
         }
 
         /**
@@ -85,6 +87,10 @@ $(function () {
      * @time 2016-05-25 14:27:37
      */
     var $articleContent = $('#articleContent');
+    if($.cookie != null && $.cookie('article-content-font-size') != null){
+        var cookieArticleContentFontSize = $.cookie('article-content-font-size');
+        $articleContent.css({'font-size': cookieArticleContentFontSize});
+    }
     var fontChangeStep = 10;
     $('#opToLargeTextBtn').on('click', function () {
         var $articleContentAll = $articleContent.find('*');
@@ -94,6 +100,11 @@ $(function () {
             });
             fontChangeStep++;
         }
+        // 保存字体大小到cookie中
+        if($.cookie != null){
+            // 操作cookie
+            $.cookie('article-content-font-size', $(item).css('font-size'), {expires: 365});
+        }
     });
     $('#opToSmallTextBtn').on('click', function () {
         var $articleContentAll = $articleContent.find('*');
@@ -102,6 +113,11 @@ $(function () {
                 $(item).css('font-size', parseInt($(item).css('font-size')) - 1);
             });
             fontChangeStep--;
+        }
+        // 保存字体大小到cookie中
+        if($.cookie != null){
+            // 操作cookie
+            $.cookie('article-content-font-size', $(item).css('font-size'), {expires: 365});
         }
     });
 
