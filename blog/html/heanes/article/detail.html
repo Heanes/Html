@@ -212,18 +212,65 @@
                                 <p>爱情的巨轮需要好好开</p>
                                 <p>祝你好运</p>
                             </div>
-                            <div class="article-meta">
-                                <p class="article-tags">本文关键词：<strong><a href="">漫画</a></strong>，<strong><a href="">友情</a></strong></p>
-                            </div>
                         </div>
                         <!-- 作者相关信息 -->
-                        <div class="article-author-info"></div>
+                        <div class="article-author-info relative">
+                            <div class="author-avatar inline-block">
+                                <img src="../image/user/avatar/default.png" class="avatar-img"/>
+                            </div>
+                            <div class="author-info inline-block">
+                                <a href="javascript:;"><strong class="author-nickname inline-block">Heanes</strong></a>
+                                <p class="author-about">津乐网创始人，一个全栈爱好者</p>
+                                <p class="author-description">喜欢各种技术</p>
+                                <p class="author-links">
+                                    <a href="javascript:;" class="donate-to-author"><i class="fa fa-coffee" aria-hidden="true"></i>  请作者喝杯咖啡?</a>
+                                    <span class="vertical-line-margin">|</span>
+                                    <a href="javascript:;">看他的专栏</a>
+                                    <span class="vertical-line-margin">|</span>
+                                    <a href="javascript:;">新浪微博</a>
+                                    <span class="vertical-line-margin">|</span>
+                                    <a href="javascript:;">邮箱</a>
+                                </p>
+                            </div>
+                            <div class="article-author-info-title absolute">
+                                <i class="fa fa-edit" aria-hidden="true"></i>
+                                <span>关于本文的作者</span>
+                            </div>
+                        </div>
+                        <div class="article-meta">
+                            <dl class="meta-define-list">
+                                <dt>本文分类：</dt>
+                                <dd><a href="javascript:;">闲言碎语</a></dd>
+                            </dl>
+                            <dl class="meta-define-list">
+                                <dt>本文标签：</dt>
+                                <dd><a href="javascript:;">漫画</a></dd>
+                                <dd>，<a href="javascript:;">友谊</a></dd>
+                                <dd>，<a href="javascript:;">网络</a></dd>
+                            </dl>
+                            <dl class="meta-define-list">
+                                <dt>流行热度：</dt>
+                                <dd>已超过 6,998 人围观了本文</dd>
+                            </dl>
+                            <dl class="meta-define-list">
+                                <dt>生产日期：</dt>
+                                <dd>异次纪元 16年07月8日 - 21时36分08秒</dd>
+                            </dl>
+                            <dl class="meta-define-list">
+                                <dt>文章链接：</dt>
+                                <dd>
+                                    <strong>http://blog.heanes.com/article/1.html</strong>
+                                    <span class="copy-link">[<a href="javascript:;" id="copyUrl">复制</a>]</span>
+                                    <span>(转载时请注明本文出处及文章链接)</span>
+                                </dd>
+                            </dl>
+                        </div>
                         <!-- 文章相关交互 -->
                         <div class="article-handle">
                             <div class="article-vote">
-                                <span><a href="" class="count-read-num">阅读数(19734)</a></span>
+                                <span><a href="" class="count-read-num"><i class="fa fa-star" aria-hidden="true"></i>收藏(19734)</a></span>
                                 <i class="border-separate"></i>
-                                <span><a href="" class="vote-up">点赞(847)</a></span>
+                                <span><a href="" class="vote-up"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>点赞(847)</a></span>
                             </div>
                             <!-- 文章分享按钮 -->
                             <div class="article-share-block">
@@ -263,7 +310,7 @@
                         <!-- 前后文章 -->
                         <div class="article-preview-forward">
                             <p>» 上一条：没有啦！</p>
-                            <p>» 下一条：<a href="/news/show-444.html">大学毕业季，校园学生搬家怎么办？</a></p>
+                            <p>» 下一条：<a href="detail.html">大学毕业季，校园学生搬家怎么办？</a></p>
                         </div>
                         <!-- 相关文章 -->
                         <div class="article-relate-block">
@@ -291,15 +338,40 @@
                                 <h1 class="add-comment-title"><a id="add-comment">发表评论</a></h1>
                                 <p class="add-comment-remind">愿您的每句评论，都能给大家的生活添色彩，带来共鸣，带来思索，带来快乐。</p>
                                 <div class="add-comment">
-                                    <form id="commentAddForm">
-                                        <textarea rows="8" class="comment-textarea"></textarea>
+                                    <form class="comment-add-form" id="commentAddForm">
+                                        <div class="input-group inline">
+                                            <label for="userName">姓名：</label>
+                                            <input type="text" name="userName" id="userName" />
+                                        </div>
+                                        <div class="input-group inline">
+                                            <label for="email">E-Mail：</label>
+                                            <input type="text" name="email" id="email" />
+                                        </div>
+                                        <div class="input-group inline">
+                                            <label for="website">你的网站：</label>
+                                            <input type="text" name="website" id="website" />
+                                        </div>
+                                        <div class="input-group">
+                                            <label for="commentContent"></label>
+                                            <textarea name="commentContent" id="commentContent" class="comment-textarea"></textarea>
+                                        </div>
                                         <div class="add-comment-handle">
                                             <input type="submit" class="submit-button button-normal" />
                                         </div>
                                     </form>
                                 </div>
                             </div>
-                            <div class="comment-list">
+                            <div class="comment-list relative">
+                                <!-- 评论列表刷新、排序 -->
+                                <div class="comment-list-handle">
+                                    <div class="input-row inline-block">
+                                        <a href="javascript:;" id="refreshCommentList" class="refresh-comment-list">刷新</a>
+                                        <input type="radio" name="sort" id="newest"/>
+                                        <label for="newest">最新</label>
+                                        <input type="radio" name="sort" id="earliest"/>
+                                        <label for="earliest">最早</label>
+                                    </div>
+                                </div>
                                 <h3 class="comment-list-title"><a id="comment-list">评论列表</a></h3>
                                 <ul class="comment-list-ul">
                                     <li>
