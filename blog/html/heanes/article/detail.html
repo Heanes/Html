@@ -24,13 +24,13 @@
     <title>文章详情</title>
 </head>
 <body>
-<div class="center wrap">
+<div class="center wrap clearfix">
     <!-- S 头部 S -->
     <!--<iframe src="../layout/header.html"></iframe>-->
     <div class="header">
         <!-- 顶部操作/导航/工具栏 -->
-        <div class="top-toolbar">
-            <div class="main-wrap clearfix relative">
+        <div class="top-toolbar clearfix">
+            <div class="main-wrap relative">
                 <div class="top-menu"></div>
                 <!-- 顶部右侧工具栏 -->
                 <div class="top-handle-block">
@@ -47,8 +47,8 @@
             </div>
         </div>
         <!-- 顶部导航栏 -->
-        <div class="header-nav-bar" id="headerNavBar">
-            <div class="main-wrap clearfix">
+        <div class="header-nav-bar clearfix" id="headerNavBar">
+            <div class="main-wrap">
                 <!-- 头部logo区域 -->
                 <div class="header-logo">
                     <a href="javascript:" class="logo-a">
@@ -216,7 +216,7 @@
                         <!-- 作者相关信息 -->
                         <div class="article-author-info relative">
                             <div class="author-avatar inline-block">
-                                <i style="background-image:url('../image/user/avatar/default.png')" class="avatar-img"></i>
+                                <i style="background-image:url('../image/user/avatar/anonymous.jpg')" class="avatar-img"></i>
                             </div>
                             <div class="author-info inline-block">
                                 <a href="javascript:;"><strong class="author-nickname inline-block">Heanes</strong></a>
@@ -237,6 +237,7 @@
                                 <span>关于本文的作者</span>
                             </div>
                         </div>
+                        <!-- 文章相关信息 -->
                         <div class="article-meta">
                             <dl class="meta-define-list">
                                 <dt>本文分类：</dt>
@@ -268,8 +269,8 @@
                         <!-- 文章相关交互 -->
                         <div class="article-handle">
                             <div class="article-vote">
-                                <span class="article-collect"><a href="javascript:;" class="count-read-num"><i class="fa fa-star" aria-hidden="true"></i>收藏(134)</a></span>
-                                <span class="article-thumb-up"><a href="javascript:;" class="vote-up"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>点赞(247)</a></span>
+                                <span class="article-collect"><a href="javascript:;" class="collect-count" id="collectArticle"><i class="fa fa-star" aria-hidden="true"></i>收藏(<span id="articleCollectCount">134</span>)</a></span>
+                                <span class="article-thumbs-up"><a href="javascript:;" class="thumbs-up" id="thumbsUpArticle"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>点赞(<span id="articleThumbsUpCount">247</span>)</a></span>
                             </div>
                             <!-- 文章分享按钮 -->
                             <div class="article-share-block">
@@ -355,7 +356,7 @@
                                             <textarea name="commentContent" id="commentContent" class="comment-textarea"></textarea>
                                         </div>
                                         <div class="add-comment-handle">
-                                            <input type="submit" class="submit-button button-normal" />
+                                            <input type="submit" class="submit-button button-normal" id="commentAddSubmit" />
                                         </div>
                                     </form>
                                 </div>
@@ -378,12 +379,18 @@
                                             <p>暂无评论</p>
                                         </div>
                                     </li>
+                                    <li class="get-data-error" id="getCommentListDataError">
+                                        <div class="no-data">
+                                            <p>暂无评论</p>
+                                        </div>
+                                    </li>
                                     <li>
                                         <div class="comment-info">
-                                            <span class="comment-floor"><a id="comment-floor-4" class="comment-floor-a">4楼</a></span>
+                                            <span class="comment-user-avatar"><i class="user-avatar" style="background-image:url('../image/user/avatar/anonymous.jpg')"></i></span>
                                             <span class="comment-user-name"><a href="javascript:;" class="user-name-a">蒲常莹</a></span>
                                             <span class="comment-user-ip">北京海淀</span>
                                             <span>2015-05-19 17:26:28</span>
+                                            <span class="comment-floor"><a id="comment-floor-4" class="comment-floor-a">4楼</a></span>
                                         </div>
                                         <div class="comment-content">
                                             <p>楼下的一看就是小白。阿里微贷的1年利息接近10%。是工行的2倍，至于广发 平安更是高达17%-20%</p>
@@ -397,14 +404,14 @@
                                             <i class="border-separate"></i>
                                             <span class="comment-reply"><a href="javascript:;">回复</a></span>
                                         </div>
-                                        <div class="clear"></div>
                                     </li>
                                     <li>
                                         <div class="comment-info">
-                                            <span class="comment-floor"><a id="comment-floor-3" class="comment-floor-a">3楼</a></span>
+                                            <span class="comment-user-avatar"><i class="user-avatar" style="background-image:url('../image/user/avatar/anonymous.jpg')"></i></span>
                                             <span class="comment-user-name"><a href="javascript:;" class="user-name-a">蒲常莹</a></span>
                                             <span class="comment-user-ip">北京海淀</span>
                                             <span>2015-05-19 17:26:28</span>
+                                            <span class="comment-floor"><a id="comment-floor-3" class="comment-floor-a">3楼</a></span>
                                         </div>
                                         <div class="comment-content">
                                             <p>扯淡！就目前大数的利息来看还不是跟银行差不多？！根本就没有解决他所说的40%~70%的企业融资难的问题，准入条件还是限制了很多企业！
@@ -419,14 +426,14 @@
                                             <i class="border-separate"></i>
                                             <span class="comment-reply"><a href="javascript:;">回复</a></span>
                                         </div>
-                                        <div class="clear"></div>
                                     </li>
                                     <li>
                                         <div class="comment-info">
-                                            <span class="comment-floor"><a id="comment-floor-2" class="comment-floor-a">2楼</a></span>
+                                            <span class="comment-user-avatar"><i class="user-avatar" style="background-image:url('../image/user/avatar/anonymous.jpg')"></i></span>
                                             <span class="comment-user-name"><a href="javascript:;" class="user-name-a">蒲常莹</a></span>
                                             <span class="comment-user-ip">北京海淀</span>
                                             <span>2015-05-19 17:26:28</span>
+                                            <span class="comment-floor"><a id="comment-floor-2" class="comment-floor-a">2楼</a></span>
                                         </div>
                                         <div class="comment-content">
                                             <p>缺钱，小企业普遍遇到的问题。</p>
@@ -440,14 +447,14 @@
                                             <i class="border-separate"></i>
                                             <span class="comment-reply"><a href="javascript:;">回复</a></span>
                                         </div>
-                                        <div class="clear"></div>
                                     </li>
                                     <li>
                                         <div class="comment-info">
-                                            <span class="comment-floor"><a id="comment-floor-1" class="comment-floor-a">1楼</a></span>
+                                            <span class="comment-user-avatar"><i class="user-avatar" style="background-image:url('../image/user/avatar/anonymous.jpg')"></i></span>
                                             <span class="comment-user-name"><a href="javascript:;" class="user-name-a">蒲常莹</a></span>
                                             <span class="comment-user-ip">北京海淀</span>
                                             <span>2015-05-19 17:26:28</span>
+                                            <span class="comment-floor"><a id="comment-floor-1" class="comment-floor-a">1楼</a></span>
                                         </div>
                                         <div class="comment-content">
                                             <p>呵呵</p>
@@ -461,7 +468,6 @@
                                             <i class="border-separate"></i>
                                             <span class="comment-reply"><a href="javascript:;">回复</a></span>
                                         </div>
-                                        <div class="clear"></div>
                                     </li>
                                 </ul>
                             </div>
@@ -745,6 +751,27 @@
                 step:90,
                 alwaysShow:true
             });
+
+            /**
+             * @doc 收藏文章操作
+             * @author Heanes
+             * @time 2016-07-13 18:11:57
+             */
+            $('#collectArticle').on('click', function () {
+                var $articleCollectCount = $('#articleCollectCount');
+                $articleCollectCount.text(parseInt($articleCollectCount.text()) + 1);
+            });
+
+            /**
+             * @doc 文章点赞操作
+             * @author Heanes
+             * @time 2016-07-14 11:03:09
+             */
+            $('#thumbsUpArticle').on('click', function () {
+                var $articleThumbsUpCount = $('#articleThumbsUpCount');
+                $articleThumbsUpCount.text(parseInt($articleThumbsUpCount.text()) + 1);
+            });
+
         });
     </script>
     <!-- E js E -->
