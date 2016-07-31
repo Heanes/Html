@@ -12,9 +12,9 @@
 .header .admin-logo{float:left;width:180px;height:100%;padding:10px}
 .header .admin-logo .admin-log-href{display:block;height:100%}
 .header .admin-logo .admin-log-href .admin-icon,
-.header .admin-logo .admin-log-href .admin-title-text{vertical-align:middle;color:#fff;height:100%}
+.header .admin-logo .admin-log-href .admin-title-text{display:inline-block;vertical-align:middle;color:#fff;height:100%}
 .header .admin-logo .admin-log-href .admin-icon{font-size:34px}
-.header .admin-logo .admin-log-href .admin-title-text{font-size:22px}
+.header .admin-logo .admin-log-href .admin-title-text{font-size:22px;padding:0 10px;}
 .header .admin-logo .admin-log-img{min-width:150px;max-width:100%;min-height:60px;max-height:100%}
 .header .menu-top{float:left;height:50px;line-height:50px}
 .header .menu-top .menu-list li{float:left;width:auto;color:#fff}
