@@ -1,0 +1,22 @@
+@charset "UTF-8";
+.main-center{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height:400px;
+    width:400px;
+    margin:auto;
+    z-index:3;
+    background-color:rgba(80,80,80,.8);
+}
+.inline-center{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height:80px;
+    margin:auto;
+}

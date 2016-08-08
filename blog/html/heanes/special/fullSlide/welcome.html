@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit">
+<meta name="author" content="Heanes heanes.com email(heanes@163.com)">
+<meta name="keywords" content="软件,商务,HTML,tutorials,source codes">
+<meta name="description" content="描述">
+<link rel="shortcut icon" href="/public/static/image/favicon/favicon.ico"/>
+<link rel="bookmark" href="/public/static/image/favicon/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="/public/static/libs/css/reset/reset.css"/>
+<link rel="stylesheet" type="text/css" href="/public/static/libs/css/base/base.css"/>
+<link rel="stylesheet" type="text/css" href="css/slippry.css"/>
+<link rel="stylesheet" type="text/css" href="css/css.css"/>
+<title>欢迎</title>
+</head>
+<body>
+<!-- E 左侧功能区 E -->
+<div class="center wrap">
+    <!-- S 主要内容 S -->
+    <div class="main">
+        <!-- 主体内容 -->
+        <div class="main-content main-wrap clearfix">
+            <div class="sy-slides-wrap">
+                <div class="sy-slides-crop">
+                    <div class="sy-box">
+                        <div class="sy-slides-wrap">
+                            <div class="sy-slides-crop">
+                                <ul id="slider" class="hde sy-list">
+                                    <li class="sy-slide kenburns useCSS">
+                                        <img src="image/slide/1.jpg">
+                                    </li>
+                                    <li class="sy-slide kenburns useCSS">
+                                        <img src="image/slide/2.jpg">
+                                    </li>
+                                    <li class="sy-slide kenburns useCSS">
+                                        <img src="image/slide/3.jpg">
+                                    </li>
+                                    <li class="sy-slide kenburns useCSS sy-ken transition">
+                                        <img src="image/slide/4.jpg">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sy-caption-wrap">
+                                <div class="sy-caption"></div>
+                            </div>
+                            <div class="sy-filler ready"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sy-caption-wrap">
+                    <div class="sy-caption"></div>
+                </div>
+                <div class="sy-filler ready"></div>
+            </div>
+            <div class="main-center">
+                <div class="inline-center">
+                    <h1 style="text-align:center;">欢迎你！</h1>
+                </div>
+                
+            </div>
+        </div>
+        <!-- E 主要内容 E -->
+    </div>
+</div>
+<cite>
+    <!-- S js S -->
+    <script type="text/javascript" src="/public/static/libs/js/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/public/static/libs/js/slippry/1.3.1/slippry.min.js"></script>
+	<script type="text/javascript">
+        $(function () {
+            /**
+             * @doc 全背景幻灯插件
+             * @author Heanes
+             * @time 2016-08-08 16:22:24 周一
+             */
+            $("#slider").slippry({
+                transition: 'kenburns',
+                useCSS: true,
+                speed: 5000,
+                pause: 9000,
+                auto: true,
+                controls: false,
+                preload: 'visible',
+                autoHover: false,
+                pager: false
+            });
+        });
+    </script>
+    <!-- E js E -->
+</cite>
+</body>
+</html>
