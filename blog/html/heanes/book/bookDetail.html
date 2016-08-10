@@ -20,6 +20,7 @@
 <link rel="stylesheet" type="text/css" href="../css/style/style-2016.css"/>
 <link rel="stylesheet" type="text/css" href="../css/common.css"/>
 <link rel="stylesheet" type="text/css" href="../css/css.css"/>
+<link rel="stylesheet" type="text/css" href="css/imageScaleShow.css"/>
 <title>图书阅读详情</title>
 </head>
 <body>
@@ -39,60 +40,92 @@
                 <div class="read-book-detail">
                     <!-- 图书封面 -->
                     <div class="book-cover">
-                        <ul>
-                            <li><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-front-big.jpg"></li>
-                            <li><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-behind-big.jpg"></li>
-                        </ul>
+                        <div class="image-scale-show" id="imageScaleShow">
+                            <div class="image-show">
+                                <ul class="show-list">
+                                    <li class="show"><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-front-big.jpg"></li>
+                                    <li><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-behind-big.jpg"></li>
+                                    <li><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-front-big.jpg"></li>
+                                    <li><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-behind-big.jpg"></li>
+                                    <li><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-front-big.jpg"></li>
+                                    <li><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-behind-big.jpg"></li>
+                                    <li><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-front-big.jpg"></li>
+                                    <li><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-behind-big.jpg"></li>
+                                </ul>
+                                <div class="cursor-select-area" id="cursorSelectArea"></div>
+                            </div>
+                            <div class="image-thumb">
+                                <a class="thumb-nav left" id="thumbNavLeft"><</a>
+                                <ul class="thumb-list">
+                                    <li><a href="javascript:;" class="selected"><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-front-small.jpg"></a></li>
+                                    <li><a href="javascript:;"><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-behind-small.jpg"></a></li>
+                                    <li><a href="javascript:;"><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-front-small.jpg"></a></li>
+                                    <li><a href="javascript:;"><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-behind-small.jpg"></a></li>
+                                    <li><a href="javascript:;"><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-front-small.jpg"></a></li>
+                                    <li><a href="javascript:;"><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-behind-small.jpg"></a></li>
+                                    <li><a href="javascript:;"><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-front-small.jpg"></a></li>
+                                    <li><a href="javascript:;"><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-behind-small.jpg"></a></li>
+                                </ul>
+                                <a class="thumb-nav right" id="thumbNavRight">></a>
+                            </div>
+                            <div class="image-show-big"></div>
+                        </div>
                     </div>
-                    <div class="book-screenshot-list">
-                        <ul>
-                            <li><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-front-small.jpg"></li>
-                            <li><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-behind-small.jpg"></li>
-                        </ul>
+                    <!-- 图书简介 -->
+                    <div class="book-info-block">
+                        <div class="book-info">
+                            <dl class="book-info-row">
+                                <dt>书名:</dt>
+                                <dd>《追风筝的人》</dd>
+                            </dl>
+                            <dl class="book-info-row">
+                                <dt>原书名:</dt>
+                                <dd>The Kite Runner</dd>
+                            </dl>
+                            <dl class="book-info-row">
+                                <dt>作者:</dt>
+                                <dd><a href="http://baike.baidu.com/link?url=eEVpN9WfHPSIJwQWIDIP657Hv-ioi7-fSdBXGZ1RUymjc1jr1z7GmhuQvKIi3NbX-C4dRPJMNyEvhPtPk9NqR_">[美] 卡勒德·胡赛尼</a></dd>
+                            </dl>
+                            <dl class="book-info-row">
+                                <dt>译者:</dt>
+                                <dd><a href="http://baike.baidu.com/link?url=ZNL_1s8_vl7LlxPJ_4J41VpCm2GjolEsoG930kT4Vo2xyqXB9fhFJxz9THVvZP1Aa14_GqewPpXN0d3DRD-R0_r-4av-qMFQ2Nq8Nanm9ce">李继宏</a></dd>
+                            </dl>
+                            <dl class="book-info-row">
+                                <dt>页数:</dt>
+                                <dd>362</dd>
+                            </dl>
+                            <dl class="book-info-row">
+                                <dt>出版社:</dt>
+                                <dd>上海人民出版社</dd>
+                            </dl>
+                        </div>
+                        <div class="book-read-info">
+                            <dl class="book-info-row">
+                                <dt>开始阅读:</dt>
+                                <dd>2015-11-21</dd>
+                            </dl>
+                            <dl class="book-info-row">
+                                <dt>完成耗时:</dt>
+                                <dd>7天</dd>
+                            </dl>
+                            <dl class="book-info-row">
+                                <dt>当前:</dt>
+                                <dd>2016-02-22</dd>
+                            </dl>
+                            <dl class="book-info-row">
+                                <dt>进度:</dt>
+                                <dd>19%</dd>
+                            </dl>
+                        </div>
                     </div>
-                    <div class="book-info">
-                        <dl class="book-info-row">
-                            <dt>书名:</dt>
-                            <dd>《追风筝的人》</dd>
-                        </dl>
-                        <dl class="book-info-row">
-                            <dt>原书名:</dt>
-                            <dd>The Kite Runner</dd>
-                        </dl>
-                        <dl class="book-info-row">
-                            <dt>作者:</dt>
-                            <dd><a href="http://baike.baidu.com/link?url=eEVpN9WfHPSIJwQWIDIP657Hv-ioi7-fSdBXGZ1RUymjc1jr1z7GmhuQvKIi3NbX-C4dRPJMNyEvhPtPk9NqR_">[美] 卡勒德·胡赛尼</a></dd>
-                        </dl>
-                        <dl class="book-info-row">
-                            <dt>译者:</dt>
-                            <dd><a href="http://baike.baidu.com/link?url=ZNL_1s8_vl7LlxPJ_4J41VpCm2GjolEsoG930kT4Vo2xyqXB9fhFJxz9THVvZP1Aa14_GqewPpXN0d3DRD-R0_r-4av-qMFQ2Nq8Nanm9ce">李继宏</a></dd>
-                        </dl>
-                        <dl class="book-info-row">
-                            <dt>页数:</dt>
-                            <dd>362</dd>
-                        </dl>
-                        <dl class="book-info-row">
-                            <dt>出版社:</dt>
-                            <dd>上海人民出版社</dd>
-                        </dl>
-                    </div>
-                    <div class="book-read-info">
-                        <dl class="book-info-row">
-                            <dt>开始阅读:</dt>
-                            <dd>2015-11-21</dd>
-                        </dl>
-                        <dl class="book-info-row">
-                            <dt>完成耗时:</dt>
-                            <dd>7天</dd>
-                        </dl>
-                        <dl class="book-info-row">
-                            <dt>当前:</dt>
-                            <dd>2016-02-22</dd>
-                        </dl>
-                        <dl class="book-info-row">
-                            <dt>进度:</dt>
-                            <dd>19%</dd>
-                        </dl>
+                    <!-- 书籍详细介绍 tab切换 -->
+                    <div class="book-detail-block">
+                        <!-- 内容简介 -->
+                        <div class="desc-content"></div>
+                        <!-- 作者简介 -->
+                        <div class="desc-author"></div>
+                        <!-- 目录 -->
+                        <div class="book-catalog"></div>
                     </div>
                 </div>
             </div>
@@ -167,6 +200,12 @@
     <!-- S js S -->
     <script type="text/javascript" src="/public/static/libs/js/jquery/2.1.4/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="js/imageScaleShow.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#imageScaleShow').imageScaleShow();
+        });
+    </script>
     <!-- E js E -->
 </cite>
 </body>
