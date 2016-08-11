@@ -188,8 +188,25 @@
 /**************************************读书页面*******************************/
 .read-book-detail{padding:6px;}
 .read-book-detail .book-cover,
-.read-book-detail .book-info-block{padding:6px;display:inline-block;vertical-align:top;}
+.read-book-detail .book-info-block{padding:6px;display:inline-block;vertical-align:top;line-height:22px;}
 .read-book-detail .book-info-block{width:468px;}
+
+.book-detail-tab-nav{}
+.book-detail-tab-nav .desc-content,
+.book-detail-tab-nav .desc-author,
+.book-detail-tab-nav .book-catalog{padding:10px;font-size:13px;line-height:22px;text-indent:2em;}
+.book-detail-tab-nav .desc-content p,
+.book-detail-tab-nav .desc-author p{margin-bottom:10px;}
+
+/* 书本详情页面tab切换 */
+.tab-nav-block{}
+.tab-nav-block .tab-title-block{background-color:#f5f5f5;padding:10px;font-size:0;}
+.tab-nav-block .tab-title-block .tab-nav-one{display:inline-block;border:1px solid #ddd;border-right-width:0;line-height:28px;padding:0 10px;font-size:14px;}
+.tab-nav-block .tab-title-block .tab-nav-one.active{background-color:#fff;}
+.tab-nav-block .tab-title-block .tab-nav-one:last-child{border-right-width:1px;}
+
+.tab-nav-block .tab-nav-content-block .tab-content-one{display:none;}
+.tab-nav-block .tab-nav-content-block .tab-content-one.active{display:block;}
 
 /* 书本信息 */
 .read-book-detail .book-info,
