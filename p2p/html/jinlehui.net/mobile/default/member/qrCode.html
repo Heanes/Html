@@ -57,6 +57,7 @@
                 </div>
 				<div class="Center-Block Absolute-Center is-Fixed" style="width:300px;padding-bottom:100px;">
                     <div id="qrcode_user" class="Center-Content"></div>
+					<img src="/public/static/image/logo/logo.png" style="display:none;" id="imgBuffer"/>
                 </div>
 			</div>
 		</div>
@@ -70,8 +71,7 @@
 	<cite>
 		<!-- S js S -->
 		<script type="text/javascript" src="/public/static/libs/js/jquery/2.1.4/jquery-2.1.4.min.js"></script>
-		<script type="text/javascript" src="/public/static/libs/js/validation/jquery-validation/1.13.1/jquery.validate.min.js"></script>
-        <script type="text/javascript" src="/public/static/libs/js/jQuery.qrcode/1.0/jquery.qrcode.min.js"></script>
+        <script type="text/javascript" src="/public/static/libs/js/qrcode/jquery-qrcode/0.14.0/jquery-qrcode.min.js"></script>
 		<script type="text/javascript" src="../js/common.js"></script>
 		<script type="text/javascript" src="../js/js.js"></script>
         <script type="text/javascript">
@@ -79,9 +79,46 @@
                 $('#confirm').on('click', function () {
                     var text = $('#inputText').val() || 'https://www.baidu.com';
                     $('#qrcode_user').empty().qrcode({
+                        // render method: 'canvas', 'image' or 'div'
+                        render: 'canvas',
+                        // version range somewhere in 1 .. 40
+                        minVersion: 4,
+                        maxVersion: 40,
+    
+                        // error correction level: 'L', 'M', 'Q' or 'H'
+                        ecLevel: 'H',
+    
+                        // offset in pixel if drawn onto existing canvas
+                        left: 0,
+                        top: 0,
+                        // size in pixel
+                        size: 300,
+                        // code color or image element
+                        fill: '#000',
+                        // background color or image element, null for transparent background
+                        background: '#fff',
+                        // content
                         text: text,
-                        width: '250',
-                        height: '250'
+                        // corner radius relative to module width: 0.0 .. 0.5
+                        radius: 0,
+                        // quiet zone in modules
+                        quiet: 2,
+                        // modes
+                        // 0: normal
+                        // 1: label strip
+                        // 2: label box
+                        // 3: image strip
+                        // 4: image box
+                        mode: 4,
+    
+                        mSize: 0.2,
+                        mPosX: 0.5,
+                        mPosY: 0.5,
+    
+                        label: '',
+                        fontname: 'sans',
+                        fontcolor: '#000',
+                        image: $('#imgBuffer')[0]
                     });
                 });
                 $('#confirm').trigger('click');
