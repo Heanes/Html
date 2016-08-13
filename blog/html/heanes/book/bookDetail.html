@@ -45,9 +45,9 @@
                                 <ul class="show-list">
                                     <li class="show"><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-front-big.jpg"></li>
                                     <li><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-behind-big.jpg"></li>
-                                    <li><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-front-big.jpg"></li>
-                                    <li><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-behind-big.jpg"></li>
-                                    <li><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-front-big.jpg"></li>
+                                    <li><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-read-one-big.png"></li>
+                                    <li><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-package-big.jpg"></li>
+                                    <li><img src="../image/book/1/cover/author-big.jpg"></li>
                                     <li><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-behind-big.jpg"></li>
                                     <li><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-front-big.jpg"></li>
                                     <li><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-behind-big.jpg"></li>
@@ -59,9 +59,9 @@
                                 <ul class="thumb-list">
                                     <li><a href="javascript:;" class="selected"><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-front-small.jpg"></a></li>
                                     <li><a href="javascript:;"><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-behind-small.jpg"></a></li>
-                                    <li><a href="javascript:;"><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-front-small.jpg"></a></li>
-                                    <li><a href="javascript:;"><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-behind-small.jpg"></a></li>
-                                    <li><a href="javascript:;"><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-front-small.jpg"></a></li>
+                                    <li><a href="javascript:;"><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-read-one-small.png"></a></li>
+                                    <li><a href="javascript:;"><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-package-small.png"></a></li>
+                                    <li><a href="javascript:;"><img src="../image/book/1/cover/author-small.jpg"></a></li>
                                     <li><a href="javascript:;"><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-behind-small.jpg"></a></li>
                                     <li><a href="javascript:;"><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-front-small.jpg"></a></li>
                                     <li><a href="javascript:;"><img src="../image/book/1/cover/zhui-feng-zheng-de-ren-behind-small.jpg"></a></li>
@@ -273,7 +273,7 @@
             
             $('#readOnlineTab').on('click', function () {
                 if(!$(this).hasClass('clicked')){
-                    $(this).addClass('clicked')
+                    $(this).addClass('clicked');
                     $('<iframe src="pdfjs/web/viewer.html" class="center-wrap read-online-iframe"></iframe>').appendTo($('#readOnlineContent'));
                 }
             });
@@ -301,9 +301,11 @@
                     if($bookTabNavPositionTop <= $(this).scrollTop()){
                         $tabTitleBlockPlaceholder.show();
                         $tabList.addClass('fixed');
+                        $hideTabNavFixed.show();
                     }else{
                         $tabTitleBlockPlaceholder.hide();
                         $tabList.removeClass('fixed');
+                        $hideTabNavFixed.hide();
                     }
                 }
             });
