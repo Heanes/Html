@@ -186,32 +186,31 @@
 /* 底部“不容错过”推荐文章样式 */
 
 /**************************************读书页面*******************************/
-.read-book-detail{}
-.read-book-detail .book-cover,
-.read-book-detail .book-info-block{padding:6px;display:inline-block;vertical-align:top;line-height:22px;}
-.read-book-detail .book-info-block{width:468px;}
-.read-book-detail .book-detail-block{margin-bottom:20px;}
+.read-book-page{}
+.read-book-page .book-cover,
+.read-book-page .book-info-block{padding:6px;display:inline-block;vertical-align:top;line-height:22px;}
+.read-book-page .book-info-block{width:468px;}
+.read-book-page .book-detail-block{margin-bottom:20px;}
 
 /* 书本信息 */
-.read-book-detail .book-info,
-.read-book-detail .book-read-info{display:inline-block;width:360px;vertical-align:top;padding:20px 10px;font-size:13px;}
+.read-book-page .book-info,
+.read-book-page .book-read-info{display:inline-block;width:360px;vertical-align:top;padding:20px 10px;font-size:13px;}
 
-.read-book-detail .book-info{}
-.read-book-detail .book-info .book-info-row{}
-.read-book-detail .book-info .book-info-row dt,
-.read-book-detail .book-info .book-info-row dd{display:inline-block;vertical-align:top;}
-.read-book-detail .book-info .book-info-row dt{color:#888;padding:0 6px;}
-.read-book-detail .book-info .book-info-row dd{font-weight:600;}
-.read-book-detail .book-info .book-info-row dd.unit{color:#555;}
+.read-book-page .book-info{}
+.read-book-page .book-info .book-info-row{}
+.read-book-page .book-info .book-info-row dt,
+.read-book-page .book-info .book-info-row dd{display:inline-block;vertical-align:top;}
+.read-book-page .book-info .book-info-row dt{color:#888;padding:0 6px;}
+.read-book-page .book-info .book-info-row dd{font-weight:600;}
+.read-book-page .book-info .book-info-row dd.unit{color:#555;}
 
 /* 个人阅读相关信息 */
-.read-book-detail .book-read-info{padding-top:20px}
-.read-book-detail .book-read-info .book-info-row dt,
-.read-book-detail .book-read-info .book-info-row dd{display:inline-block;vertical-align:top;}
-.read-book-detail .book-read-info .book-info-row dt{color:#888;padding:0 6px;}
-.read-book-detail .book-read-info .book-info-row dd{font-weight:600;}
-.read-book-detail .book-read-info .book-info-row dd.unit{color:#555;}
-
+.read-book-page .book-read-info{padding-top:20px}
+.read-book-page .book-read-info .book-info-row dt,
+.read-book-page .book-read-info .book-info-row dd{display:inline-block;vertical-align:top;}
+.read-book-page .book-read-info .book-info-row dt{color:#888;padding:0 6px;}
+.read-book-page .book-read-info .book-info-row dd{font-weight:600;}
+.read-book-page .book-read-info .book-info-row dd.unit{color:#555;}
 
 /* 书本详情页面tab切换 */
 .tab-nav-block{}
@@ -239,3 +238,6 @@
 .book-detail-block .book-detail-tab-nav .desc-author p{margin-bottom:10px;}
 .book-detail-block .book-detail-tab-nav .read-online{margin-top:10px;}
 .book-detail-block .book-detail-tab-nav .read-online .read-online-iframe{height:860px;}
+
+/* 评论 */
+.book-comment-block{padding: 10px 20px;}

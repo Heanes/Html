@@ -37,7 +37,7 @@
             <!-- 中心区域 -->
             <div class="center-block center-wrap float-block">
                 <!-- 已读图书详情 -->
-                <div class="read-book-detail">
+                <div class="read-book-page">
                     <!-- 图书封面 -->
                     <div class="book-cover">
                         <div class="image-scale-show" id="imageScaleShow"></div>
@@ -196,6 +196,28 @@
                             </div>
                         </div>
                         
+                    </div>
+                    <!-- 书籍评论 -->
+                    <div class="book-comment-block" id="comment">
+                        <style type="text/css">
+                            .ds-powered-by{display:none !important;}
+                        </style>
+                        <!-- 多说评论框 start -->
+                        <div class="ds-thread" data-thread-key="1" data-title="图书阅读详情" data-url="http://html.heanes.com/blog/html/heanes/book/bookDetail.html"></div>
+                        <!-- 多说评论框 end -->
+                        <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+                        <script type="text/javascript">
+                        var duoshuoQuery = {short_name:"heanes"};
+                        (function() {
+                            var ds = document.createElement('script');
+                            ds.type = 'text/javascript';ds.async = true;
+                            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                            ds.charset = 'UTF-8';
+                            (document.getElementsByTagName('head')[0]
+                            || document.getElementsByTagName('body')[0]).appendChild(ds);
+                        })();
+                        </script>
+                        <!-- 多说公共JS代码 end -->
                     </div>
                 </div>
             </div>
