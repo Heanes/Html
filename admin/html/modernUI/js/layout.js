@@ -32,4 +32,32 @@ $(function () {
         }
     });
 
+    var $leftBlock = $('.left-block');
+    var lapHandleClick = false;
+    $('#lapHandle').on('click', function () {
+        if(lapHandleClick){
+            //$menuLeftFamily.removeClass('lapped');
+            $('.menu-left-family .menu-left-group > li > a .triangle-right,.menu-left-family .menu-left-group > li > a .menu-text').fadeIn();
+            $('.center-block').animate({
+                'padding-left': '240px'
+            });
+            $leftBlock.animate({
+                'width': '240px'
+            });
+            lapHandleClick = false;
+        }else{
+            //$menuLeftFamily.addClass('lapped');
+            // 菜单相关隐藏
+            $('.menu-left-family .menu-left-group > li > a .triangle-right,.menu-left-family .menu-left-group > li > a .menu-text').fadeOut();
+            $('.center-block').animate({
+                'padding-left': '30px'
+            });
+            $leftBlock.animate({
+                'width': '30px'
+            });
+            lapHandleClick = true;
+        }
+
+    });
+
 });

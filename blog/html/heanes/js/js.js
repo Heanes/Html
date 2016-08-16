@@ -71,7 +71,7 @@ $(function () {
          * @author fanggang
          * @time 2016-05-30 22:24:10
          */
-        if(footerTop != null && $window.scrollTop() > footerTop ){
+        if(footerTop != null && $window.scrollTop() > (footerTop - $window.height()) ){
             $rightFixLittleCat.css('visibility', 'hidden');
         }else{
             $rightFixLittleCat.css('visibility', '');
