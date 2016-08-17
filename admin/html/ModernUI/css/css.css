@@ -5,11 +5,8 @@
  * @author Heanes
  * @time 2015-04-08 17:34:33
  */
-body{background-color:#ecf0f5;}
+body.start{background-color:#ecf0f5;}
 .main-content .center-block{padding:0 10px;}
-    
-    
-    
 /**
  * @doc 欢迎页面
  * @author Heanes
