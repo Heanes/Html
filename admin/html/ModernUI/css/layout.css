@@ -5,9 +5,10 @@
  * @time 2016-06-29 22:51:07
  */
 
-.header{position:fixed;z-index:3;width:100%;height:50px;background-color:#00a2ca}
-.left-block{position:fixed;width:240px;height:100%;z-index:2;background-color:#86b4bf;padding-top:50px}
-.center-block{position:absolute;width:100%;background-color:#f0f8ff;padding-left:240px;padding-top:50px}
+.layout .header{position:fixed;z-index:3;width:100%;height:50px;background-color:#00a2ca}
+.layout .left-block{position:fixed;width:240px;height:100%;z-index:2;background-color:#86b4bf;padding-top:50px}
+.layout .center-block{position:absolute;width:100%;height:100%;padding-left:240px;padding-top:50px;}
+.layout .right-iframe{background-color:#ecf0f5;}
 /* 头部logo及菜单 */
 .header .admin-logo{float:left;width:180px;height:100%;padding:10px}
 .header .admin-logo .admin-log-href{display:block;height:100%}

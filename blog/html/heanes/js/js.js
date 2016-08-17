@@ -71,10 +71,10 @@ $(function () {
          * @author fanggang
          * @time 2016-05-30 22:24:10
          */
-        if(footerTop != null && $window.scrollTop() > (footerTop - $window.height()) ){
-            $rightFixLittleCat.css('visibility', 'hidden');
+        if($footer.offset().top != null && $window.scrollTop() > ($footer.offset().top - $window.height()) ){
+            $rightFixLittleCat.fadeOut();
         }else{
-            $rightFixLittleCat.css('visibility', '');
+            $rightFixLittleCat.fadeIn();
         }
         // console.log($window.scrollTop());
         // console.log(articleTitleBlockTop);

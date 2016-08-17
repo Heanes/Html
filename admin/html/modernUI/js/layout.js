@@ -37,7 +37,7 @@ $(function () {
     $('#lapHandle').on('click', function () {
         if(lapHandleClick){
             //$menuLeftFamily.removeClass('lapped');
-            $('.menu-left-family .menu-left-group > li > a .triangle-right,.menu-left-family .menu-left-group > li > a .menu-text').fadeIn();
+            $('.menu-left-family .menu-left-group > li > a .menu-lap,.menu-left-family .menu-left-group > li > a .menu-text').fadeIn();
             $('.center-block').animate({
                 'padding-left': '240px'
             });
@@ -48,7 +48,7 @@ $(function () {
         }else{
             //$menuLeftFamily.addClass('lapped');
             // 菜单相关隐藏
-            $('.menu-left-family .menu-left-group > li > a .triangle-right,.menu-left-family .menu-left-group > li > a .menu-text').fadeOut();
+            $('.menu-left-family .menu-left-group > li > a .menu-lap,.menu-left-family .menu-left-group > li > a .menu-text').fadeOut();
             $('.center-block').animate({
                 'padding-left': '30px'
             });
