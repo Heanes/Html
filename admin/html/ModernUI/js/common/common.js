@@ -22,10 +22,12 @@ jQuery(function() {
 
 
 
+    /*
 	$('iframe').on('load', function () {
 		var thisHeight = $(this).contents().height();
 		$(this).css('height', thisHeight);
 		var thisWidth = $(this).contents().width();
 		$(this).css('width', thisWidth);
 	});
+	*/
 });

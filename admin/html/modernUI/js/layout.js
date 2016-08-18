@@ -34,7 +34,7 @@ $(function () {
 
     var $leftBlock = $('.left-block');
     var lapHandleClick = false;
-    $('#lapHandle').on('click', function () {
+    $('.left-menu-lap-handle').on('click', function () {
         if(lapHandleClick){
             //$menuLeftFamily.removeClass('lapped');
             $('.menu-left-family .menu-left-group > li > a .menu-lap,.menu-left-family .menu-left-group > li > a .menu-text').fadeIn();
