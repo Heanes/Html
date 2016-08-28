@@ -75,21 +75,24 @@
 .header-nav-bar .header-nav .nav{padding:0 10px;}
 .header-nav-bar .header-nav .nav li{padding:0;display:inline-block;position:relative;line-height:36px;}
 .header-nav-bar .header-nav .nav .nav-a{display:block;position:relative;font-size:14px;color:#233;padding:0 12px;white-space:nowrap;}
+.header-nav-bar .header-nav .nav .nav-a.has-children{padding-right:22px;}
 .header-nav-bar .header-nav .nav .nav-a:hover,
 .header-nav-bar .header-nav .nav .nav-a.current{color:#fff;background-color:#57adfd;border-radius:20px;}
 .header-nav-bar .header-nav .nav .nav-a:hover{margin-bottom:10px;}
 .header-nav-bar .header-nav .nav .nav-a.nav-login{color:#fff;background-color:#48a57d;border-radius:20px;}
 .header-nav-bar .header-nav .nav .nav-a .icon-nav{font-size:14px;}
 .header-nav-bar .header-nav .nav .nav-a .icon-nav.icon-web-home{font-size:18px;}
-.header-nav-bar .header-nav .nav li .triangle-right{position:absolute;right:6px;top:8px;color:#999;}
-.header-nav-bar .header-nav .nav li .triangle-down{position:absolute;right:3px;top:10px;color:#444;}
-.header-nav-bar .header-nav .nav li:hover .triangle-down{color:#fff;}
+.header-nav-bar .header-nav .nav li .triangle-right{position:absolute;right:16px;top:8px;color:#999;}
+.header-nav-bar .header-nav .nav li .nav-a:hover + .triangle-right{color:#fff;}
+.header-nav-bar .header-nav .nav li .triangle-down{position:absolute;right:8px;top:10px;color:#444;}
+.header-nav-bar .header-nav .nav li .nav-a:hover + .triangle-down{color:#fff;}
 
 .header-nav-bar .header-nav .nav .nav{display:none;position:absolute;left:4px;top:40px;background-color:#fff;font-size:14px;padding:2px 0;box-shadow:3px 2px 12px 2px  rgba(0,0,0,.175);border-radius:4px;}
 .header-nav-bar .header-nav .nav .nav li{line-height:30px;display:block;border-bottom:1px solid #ddd;}
 .header-nav-bar .header-nav .nav .nav li:last-child{border-bottom:none;}
 .header-nav-bar .header-nav .nav .nav li:hover{display:block;}
-.header-nav-bar .header-nav .nav .nav li .nav-a{margin:4px 14px 4px 8px;padding:0 10px;}
+.header-nav-bar .header-nav .nav .nav li .nav-a{margin:4px 8px;padding:0 10px;}
+.header-nav-bar .header-nav .nav .nav li .nav-a.has-children{padding-right:18px;}
 .header-nav-bar .header-nav .nav .nav li .nav-a:hover{}
 .header-nav-bar .header-nav .nav li:hover > .nav{display:inline-block;}
 .header-nav-bar .header-nav .nav .nav i.icon-nav{font-size:16px !important;}
