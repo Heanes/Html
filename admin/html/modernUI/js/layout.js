@@ -79,7 +79,33 @@ $(function () {
             });
             lapHandleClick = true;
         }
-
     });
+
+    // 所有菜单链接的target指向右侧区域
+    $menuLeftGroupLiList.find('.menu-link').attr('target', 'iframeRightContent');
+    var $menuLink = $menuLeftGroupLiList.find('.menu-link');
+    $menuLink.on('click', function () {
+        $menuLink.removeClass('active');
+        $(this).addClass('active');
+        // cookie记录上次访问的url,避免刷新需要重复寻找菜单
+        if($.cookie != null){
+            $.cookie('admin-last-url', $(this).attr('href'), {expires: 365});
+        }
+    });
+    // 如果存在上次访问的url的cookie，则设置相关内容
+    // 设置url
+    if($.cookie != null && $.cookie('admin-last-url') != null){
+        $('#iframeRightContent').attr('src', $.cookie('admin-last-url'));
+    }
+    // 设置链接激活样式
+    var menuLinkArr = [];
+    $menuLeftFamily.each(function(i, item){
+        $(item).find();
+    });
+    $('#homeStartHref').on('click', function () {
+        $.cookie('admin-last-url', '', {expires: 0});
+    });
+
+
 
 });

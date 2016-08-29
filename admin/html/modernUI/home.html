@@ -19,7 +19,6 @@
 <title>首页-后台管理-modernUI</title>
 </head>
 <body>
-<!-- E 左侧功能区 E -->
 <div class="center wrap layout">
     <!-- S 主要内容 S -->
     <div class="main">
@@ -28,7 +27,7 @@
             <div class="header">
                 <div class="admin-logo left-width">
                     <!--<img class="admin-log-img" src="image/common/admin_head_logo.png">-->
-                    <a href="javascript:;" class="admin-log-href">
+                    <a href="home.html" class="admin-log-href" id="homeStartHref">
                         <i class="fa fa-gears admin-icon" aria-hidden="true"></i>
                         <span class="admin-title-text">管理后台</span>
                     </a>
@@ -61,20 +60,20 @@
                             <li>
                                 <a href="javascript:;" class="menu-parent"><i class="menu-lap triangle-right" aria-hidden="true"></i><i class="fa fa-list menu-icon" aria-hidden="true"></i><span class="menu-text">数据列表</span></a>
                                 <ul class="menu-left-group close">
-                                    <li><a href="javascript:;"><i class="fa fa-list-alt menu-icon" aria-hidden="true"></i><span class="menu-text">普通数据列表</span></a></li>
-                                    <li><a href="javascript:;"><i class="fa fa-picture-o menu-icon" aria-hidden="true"></i><span class="menu-text">图片列表</span></a></li>
+                                    <li><a href="dataList/normal.html" class="menu-link"><i class="fa fa-list-alt menu-icon" aria-hidden="true"></i><span class="menu-text">普通数据列表</span></a></li>
+                                    <li><a href="javascript:;" class="menu-link"><i class="fa fa-picture-o menu-icon" aria-hidden="true"></i><span class="menu-text">图片列表</span></a></li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="javascript:;" class="menu-parent"><i class="menu-lap triangle-right" aria-hidden="true"></i><i class="fa fa-edit menu-icon" aria-hidden="true"></i><span class="menu-text">数据编辑</span></a>
                                 <ul class="menu-left-group close">
-                                    <li><a href="javascript:;"><i class="fa fa-file-text-o menu-icon" aria-hidden="true"></i><span class="menu-text">多类型数据编辑</span></a></li>
+                                    <li><a href="javascript:;" class="menu-link"><i class="fa fa-file-text-o menu-icon" aria-hidden="true"></i><span class="menu-text">多类型数据编辑</span></a></li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="javascript:;" class="menu-parent"><i class="menu-lap triangle-right" aria-hidden="true"></i><i class="fa fa-info-circle menu-icon" aria-hidden="true"></i><span class="menu-text">结果提示</span></a>
                                 <ul class="menu-left-group close">
-                                    <li><a href="javascript:;"><i class="fa fa-check-square menu-icon" aria-hidden="true"></i><span class="menu-text">整页提示信息</span></a></li>
+                                    <li><a href="javascript:;" class="menu-link"><i class="fa fa-check-square menu-icon" aria-hidden="true"></i><span class="menu-text">整页提示信息</span></a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -85,13 +84,13 @@
                             <li>
                                 <a href="javascript:;" class="menu-parent"><i class="menu-lap triangle-right" aria-hidden="true"></i><i class="fa fa-th-list menu-icon" aria-hidden="true"></i><span class="menu-text">菜单2</span></a>
                                 <ul class="menu-left-group close">
-                                    <li><a href="javascript:;"><i class="fa fa-table menu-icon" aria-hidden="true"></i><span class="menu-text">子菜单2.1</span></a></li>
-                                    <li><a href="javascript:;"><i class="fa fa-table menu-icon" aria-hidden="true"></i><span class="menu-text">子菜单2.2</span></a></li>
+                                    <li><a href="javascript:;" class="menu-link"><i class="fa fa-table menu-icon" aria-hidden="true"></i><span class="menu-text">子菜单2.1</span></a></li>
+                                    <li><a href="javascript:;" class="menu-link"><i class="fa fa-table menu-icon" aria-hidden="true"></i><span class="menu-text">子菜单2.2</span></a></li>
                                     <li>
                                         <a href="javascript:;" class="menu-parent"><i class="menu-lap triangle-right" aria-hidden="true"></i><i class="fa fa-th-list menu-icon" aria-hidden="true"></i><span class="menu-text">子菜单2.3</span></a>
                                         <ul class="menu-left-group close">
-                                            <li><a href="javascript:;"><i class="fa fa-table menu-icon" aria-hidden="true"></i><span class="menu-text">子菜单2.3.1</span></a></li>
-                                            <li><a href="javascript:;"><i class="fa fa-table menu-icon" aria-hidden="true"></i><span class="menu-text">子菜单2.3.2</span></a></li>
+                                            <li><a href="javascript:;" class="menu-link"><i class="fa fa-table menu-icon" aria-hidden="true"></i><span class="menu-text">子菜单2.3.1</span></a></li>
+                                            <li><a href="javascript:;" class="menu-link"><i class="fa fa-table menu-icon" aria-hidden="true"></i><span class="menu-text">子菜单2.3.2</span></a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -100,17 +99,17 @@
                     </div>
                     <div class="menu-left-family">
                         <ul class="menu-left-group">
-                            <li><a href="javascript:;"><i class="fa fa-th-list menu-icon" aria-hidden="true"></i><span class="menu-text">菜单3</span></a></li>
+                            <li><a href="javascript:;" class="menu-link"><i class="fa fa-th-list menu-icon" aria-hidden="true"></i><span class="menu-text">菜单3</span></a></li>
                             <li>
                                 <a href="javascript:;" class="menu-parent"><i class="menu-lap triangle-right" aria-hidden="true"></i><i class="fa fa-th-list menu-icon" aria-hidden="true"></i><span class="menu-text">菜单4</span></a>
                                 <ul class="menu-left-group close">
-                                    <li><a href="javascript:;"><i class="fa fa-table menu-icon" aria-hidden="true"></i><span class="menu-text">子菜单4.1</span></a></li>
-                                    <li><a href="javascript:;"><i class="fa fa-table menu-icon" aria-hidden="true"></i><span class="menu-text">子菜单4.2</span></a></li>
+                                    <li><a href="javascript:;" class="menu-link"><i class="fa fa-table menu-icon" aria-hidden="true"></i><span class="menu-text">子菜单4.1</span></a></li>
+                                    <li><a href="javascript:;" class="menu-link"><i class="fa fa-table menu-icon" aria-hidden="true"></i><span class="menu-text">子菜单4.2</span></a></li>
                                     <li>
                                         <a href="javascript:;" class="menu-parent"><i class="menu-lap triangle-right" aria-hidden="true"></i><i class="fa fa-th-list menu-icon" aria-hidden="true"></i><span class="menu-text">子菜单4.3</span></a>
                                         <ul class="menu-left-group close">
-                                            <li><a href="javascript:;"><i class="fa fa-table menu-icon" aria-hidden="true"></i><span class="menu-text">子菜单2.3.1</span></a></li>
-                                            <li><a href="javascript:;"><i class="fa fa-table menu-icon" aria-hidden="true"></i><span class="menu-text">子菜单2.3.2</span></a></li>
+                                            <li><a href="javascript:;" class="menu-link"><i class="fa fa-table menu-icon" aria-hidden="true"></i><span class="menu-text">子菜单2.3.1</span></a></li>
+                                            <li><a href="javascript:;" class="menu-link"><i class="fa fa-table menu-icon" aria-hidden="true"></i><span class="menu-text">子菜单2.3.2</span></a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -119,14 +118,14 @@
                     </div>
                     <div class="menu-left-family">
                         <ul class="menu-left-group">
-                            <li><a href="javascript:;"><i class="fa fa-th-list menu-icon" aria-hidden="true"></i><span class="menu-text">菜单3</span></a></li>
+                            <li><a href="javascript:;" class="menu-link"><i class="fa fa-th-list menu-icon" aria-hidden="true"></i><span class="menu-text">菜单3</span></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <!-- 中心区域 -->
             <div class="center-block center-wrap">
-                <iframe src="start.html" class="right-iframe"></iframe>
+                <iframe src="start.html" class="right-iframe" name="iframeRightContent" id="iframeRightContent"></iframe>
             </div>
             <!-- 右侧区域 -->
             <div class="right-block right-wrap"></div>
@@ -142,6 +141,7 @@
 <cite>
     <!-- S js S -->
     <script type="text/javascript" src="/public/static/libs/js/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/public/static/libs/js/jquery.cookie/1.4.1/jquery.cookie.js"></script>
     <script type="text/javascript" src="js/layout.js"></script>
     <script type="text/javascript" src="js/common/common.js"></script>
     <!-- E js E -->

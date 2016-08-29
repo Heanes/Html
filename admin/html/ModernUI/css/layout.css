@@ -43,6 +43,7 @@
 .menu-left-group li .menu-parent.active,
 .menu-left-group li.active > a,
 .menu-left-group li:hover > a:not(.menu-parent){background-color:#2b91af}
+.menu-left-group .menu-link.active{background-color:#3c7794;}
 
 .left-block .left-lap{}
 .left-block .left-lap .lap-handle{color:#fff;background-color:#759ea9;display:block;height:30px;line-height:30px;text-align:center;}

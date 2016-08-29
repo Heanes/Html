@@ -130,21 +130,22 @@
                 </div>
                 <!-- 网站报表展示信息 -->
                 <div class="report-chart-block">
-                    <!-- 文章,评论,用户等统计信息图表展示 -->
                     <div class="box report-chart count-number">
                         <div class="title-bock"></div>
-                        <div class="content-block" id="countNumber"></div>
+                        <div class="content-block">
+                            <!-- 文章,评论,用户等统计信息图表展示 -->
+                            <div class="count-report count-number" id="countNumber"></div>
+                        </div>
                     </div>
-                    <!-- 网站访客地区统计图表展示 -->
+                    
                     <div class="box report-chart count-visitor">
                         <div class="title-bock"></div>
-                        <div class="content-block" id="countVisitor"></div>
-                        <div class="content-block count-browser" id="countVisitorBrowser"></div>
-                    </div>
-                    <!-- 网站访客使用浏览器统计图表展示 -->
-                    <div class="box report-chart count-browser">
-                        <div class="title-bock"></div>
-                        <div class="content-block" id="countVisitorBrowse1r"></div>
+                        <div class="content-block">
+                            <!-- 网站访客地区统计图表展示 -->
+                            <div class="count-report count-visitor" id="countVisitor"></div>
+                            <!-- 网站访客使用浏览器统计图表展示 -->
+                            <div class="count-report count-browser" id="countVisitorBrowser"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -218,7 +219,6 @@
             var chartVisitorOption = {
                 title: {
                     text: '访客数统计',
-                    subtext: '纯属虚构',
                     left: 'center'
                 },
                 tooltip: {
@@ -307,7 +307,6 @@
             var chartVisitorBrowserOption = {
                 title : {
                     text: '访问浏览器统计',
-                    subtext: '纯属虚构',
                     x:'center'
                 },
                 tooltip : {
