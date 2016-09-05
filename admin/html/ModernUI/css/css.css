@@ -6,7 +6,7 @@
  * @time 2015-04-08 17:34:33
  */
 body.start{background-color:#ecf0f5;}
-.main-content .center-block{padding:0 10px;}
+.main-content .center-block.right-content{padding:20px;}
 /**
  * @doc 欢迎页面
  * @author Heanes
@@ -24,10 +24,10 @@ body.start{background-color:#ecf0f5;}
 .report-count-block .report-count-one .report-icon-field .report-icon{font-size:28px;line-height:60px;color:#fff;}
 .report-count-block .report-count-one .report-content{margin-right:10px;vertical-align:top;min-width:180px;}
 .report-count-block .report-count-one .report-content .report{display:block;line-height:18px;color:#555;margin:0 10px;}
-.report-count-block .report-count-one .report-content .report.main{font-size:17px;line-height:36px;margin-top:10px;}
+.report-count-block .report-count-one .report-content .report.main{font-size:17px;line-height:30px;margin:8px 10px 4px;}
 .report-count-block .report-count-one .report-content .report dt,
 .report-count-block .report-count-one .report-content .report dd{display:inline-block;}
-.report-count-block .report-count-one .report-content .report .value{font-weight:600;color:#000;}
+.report-count-block .report-count-one .report-content .report .value{font-weight:600;color:#000;margin-right:5px;}
 .report-count-block .report-count-one .report-content .report .title{font-weight:300;text-align:right;}
 
 .report-chart-block{_max-width:900px;}
@@ -35,3 +35,18 @@ body.start{background-color:#ecf0f5;}
 .report-chart-block .report-chart .content-block .count-report{display:inline-block;width:70%;height:400px;margin-right:4%;}
 .report-chart-block .report-chart .content-block .count-report:last-child{padding-right:0;margin-right:0;}
 .report-chart-block .report-chart .content-block .count-report.count-browser{width:26%;}
+
+
+.search-form{position:relative;margin-bottom:20px;}
+.search-form .input-block,
+.search-form .form-handle{display:table-cell;}
+.search-form .line-group{margin-bottom:20px;}
+.search-form .line-group.last,
+.search-form .line-group:last-child{margin-bottom:0;}
+.search-form .line-group .control-label{min-width:84px;text-align:right;}
+.search-form .line-group .control-label.text-center{text-align:center;}
+.search-form .form-handle{vertical-align:middle;padding:0 50px 0;}
+.search-form .form-handle .handle-inline{display:inline-block;vertical-align:bottom;margin-right:20px;}
+.search-form .form-handle .handle-inline:last-child{margin-right:0;}
+.search-form .form-handle .handle-inline input[type="reset"],
+.search-form .form-handle .handle-inline button[type="reset"]{margin-left:40px;}
