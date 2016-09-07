@@ -68,6 +68,10 @@
                         </div>
                     </form>
                 </div>
+                <!-- 全局消息显示区域 -->
+                <div class="global-message" id="globalMessage"></div>
+                <!-- 数据操作区域 -->
+                <div class="date-handle"></div>
                 <!-- 数据列表区域 -->
                 <div class="data-list">
                     <div class="table-responsive">
@@ -150,11 +154,31 @@
     <!-- S js S -->
     <script type="text/javascript" src="/public/static/libs/js/jquery/2.2.4/jquery.min.js"></script>
     <script type="text/javascript" src="/public/static/libs/js/dateTimePicker/lhgCalendar/3.0.0/lhgcalendar.min.js"></script><!-- 日期时间选择器 -->
-    <script type="text/javascript" src="/public/static/libs/ui-framework/bootstrap/3.3.7/js/bootstrap.js"></script><!-- 日期时间选择器 -->
+    <script type="text/javascript" src="/public/static/libs/js/dateTimePicker/My97DatePicker/4.8/WdatePicker.js"></script>
     <script type="text/javascript" src="../js/common/common.js"></script>
     <script type="text/javascript">
         $(function () {
             /* 日期时间选择器 */
+            // datetimepicker
+            $('#searchOrderTimeStart').click(function () {
+                var $searchOrderTimeEnd = $dp.$('searchOrderTimeEnd');
+                WdatePicker({
+                    // 选择完毕后自动打开后一个选择器
+                    onpicked:function(){$searchOrderTimeEnd.click();},
+                    doubleCalendar:true,
+                    skin: 'bootstrap',
+                    firstDayOfWeek: 1,
+                    maxDate:'#F{$dp.$D(\'searchOrderTimeEnd\');}'
+                });
+            });
+            $('#searchOrderTimeEnd').click(function () {
+                WdatePicker({
+                    doubleCalendar:true,
+                    skin: 'bootstrap',
+                    firstDayOfWeek: 1,
+                    minDate:'#F{$dp.$D(\'searchOrderTimeStart\');}'
+                });
+            });
         });
     </script>
     <!-- E js E -->
