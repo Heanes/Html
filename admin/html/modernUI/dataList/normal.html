@@ -12,6 +12,7 @@
 <link rel="stylesheet" type="text/css" href="/public/static/libs/css/reset/reset.css"/>
 <link rel="stylesheet" type="text/css" href="/public/static/libs/css/base/base.css"/>
 <link rel="stylesheet" type="text/css" href="../css/style/style-2016.css"/>
+<link rel="stylesheet" type="text/css" href="/public/static/libs/fonts/font-awesome/4.5.0/css/font-awesome.min.css"/>
 <link rel="stylesheet" type="text/css" href="/public/static/libs/ui-framework/bootstrap/3.3.7/css/bootstrap.css"/>
 <link rel="stylesheet" type="text/css" href="/public/static/libs/js/select2/4.0.3/css/select2.css"/>
 <link rel="stylesheet" type="text/css" href="/lib/heanesStyle/css/message-style1.css"/>
@@ -32,7 +33,13 @@
             <!-- 中心区域 -->
             <div class="center-block center-wrap right-content">
                 <!-- 面包屑导航 -->
-                <div class="page-crumbs"></div>
+                <div class="page-crumbs bg-normal box-normal">
+                    <ul class="crumbs-list">
+                        <li><a href="../start.html" class="crumbs-href">首页</a><span class="crumbs-separator">></span></li>
+                        <li><a href="normal.html" class="crumbs-href">数据列表</a><span class="crumbs-separator">></span></li>
+                        <li>普通数据列表</li>
+                    </ul>
+                </div>
                 <!-- 搜索表单 -->
                 <div class="search-form bg-normal box-normal">
                     <form class="form-inline" role="form">
@@ -126,6 +133,11 @@
                     </div>
                 </div>
                 <!-- 数据统计相关显示区域 -->
+                <div class="data-statistics">
+                    <div class="statistics-content">
+                        <p>当前共有39条数据</p>
+                    </div>
+                </div>
                 <!-- 数据操作区域 -->
                 <div class="date-handle">
                     <div class="table-cell handle-left"></div>
@@ -156,9 +168,11 @@
                                 <td>2016-08-29 18:29:20</td>
                                 <td>2016-08-29 18:29:24</td>
                                 <td>
-                                    <a href="javascript:;" class="op-btn btn btn-primary btn-xs"><span class="op-icon glyphicon glyphicon-edit"></span><span class="btn-text">编辑</span></a>
-                                    <a href="javascript:;" class="op-btn btn btn-info btn-xs"><span class="op-icon glyphicon glyphicon-info-sign"></span><span class="btn-text">查看</span></a>
-                                    <a href="javascript:;" class="op-btn btn btn-success btn-xs"><span class="op-icon glyphicon glyphicon-time"></span><span class="btn-text">历史</span></a>
+                                    <!-- font awesome 字体图标 -->
+                                    <a href="javascript:;" class="op-btn btn btn-primary btn-xs"><i class="op-icon fa fa-edit" aria-hidden="true"></i><span class="btn-text">编辑</span></a>
+                                    <a href="javascript:;" class="op-btn btn btn-info btn-xs"><i class="op-icon fa fa-search-plus" aria-hidden="true"></i><span class="btn-text">查看</span></a>
+                                    <a href="javascript:;" class="op-btn btn btn-success btn-xs"><i class="op-icon fa fa-clock-o" aria-hidden="true"></i><span class="btn-text">历史</span></a>
+                                    <a href="javascript:;" class="op-btn btn btn-danger btn-xs"><i class="op-icon fa fa-trash" aria-hidden="true"></i><span class="btn-text">删除</span></a>
                                 </td>
                             </tr>
                             <tr>
@@ -168,9 +182,39 @@
                                 <td>2016-08-29 18:29:20</td>
                                 <td>2016-08-29 18:29:24</td>
                                 <td>
+                                    <!-- glyphicons 字体图标 -->
+                                    <a href="javascript:;" class="op-btn btn btn-primary btn-xs"><span class="op-icon glyphicon glyphicon-edit"></span><span class="btn-text">编辑</span></a>
+                                    <a href="javascript:;" class="op-btn btn btn-info btn-xs"><span class="op-icon glyphicon glyphicon-info-sign"></span><span class="btn-text">查看</span></a>
+                                    <a href="javascript:;" class="op-btn btn btn-success btn-xs"><span class="op-icon glyphicon glyphicon-time"></span><span class="btn-text">历史</span></a>
+                                    <a href="javascript:;" class="op-btn btn btn-danger btn-xs"><span class="op-icon glyphicon glyphicon-trash"></span><span class="btn-text">删除</span></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1</td>
+                                <td>你好世界!</td>
+                                <td>2016-08-29 18:29:20</td>
+                                <td>2016-08-29 18:29:24</td>
+                                <td>
+                                    <!-- 不可用样式 -->
+                                    <a href="javascript:;" class="op-btn btn btn-primary btn-xs" disabled="disabled"><i class="op-icon fa fa-edit" aria-hidden="true"></i><span class="btn-text">编辑</span></a>
+                                    <a href="javascript:;" class="op-btn btn btn-info btn-xs" disabled="disabled"><i class="op-icon fa fa-search-plus" aria-hidden="true"></i><span class="btn-text">查看</span></a>
+                                    <a href="javascript:;" class="op-btn btn btn-success btn-xs" disabled="disabled"><i class="op-icon fa fa-clock-o" aria-hidden="true"></i><span class="btn-text">历史</span></a>
+                                    <a href="javascript:;" class="op-btn btn btn-danger btn-xs" disabled="disabled"><i class="op-icon fa fa-trash" aria-hidden="true"></i><span class="btn-text">删除</span></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1</td>
+                                <td>你好世界!</td>
+                                <td>2016-08-29 18:29:20</td>
+                                <td>2016-08-29 18:29:24</td>
+                                <td>
+                                    <!-- 不可用样式 -->
                                     <a href="javascript:;" class="op-btn btn btn-primary btn-xs" disabled="disabled"><span class="op-icon glyphicon glyphicon-edit"></span><span class="btn-text">编辑</span></a>
                                     <a href="javascript:;" class="op-btn btn btn-info btn-xs" disabled="disabled"><span class="op-icon glyphicon glyphicon-info-sign"></span><span class="btn-text">查看</span></a>
                                     <a href="javascript:;" class="op-btn btn btn-success btn-xs" disabled="disabled"><span class="op-icon glyphicon glyphicon-time"></span><span class="btn-text">历史</span></a>
+                                    <a href="javascript:;" class="op-btn btn btn-danger btn-xs" disabled="disabled"><span class="op-icon glyphicon glyphicon-trash"></span><span class="btn-text">删除</span></a>
                                 </td>
                             </tr>
                             <tr>
@@ -180,9 +224,11 @@
                                 <td>2016-08-29 18:29:20</td>
                                 <td>2016-08-29 18:29:24</td>
                                 <td>
-                                    <a href="javascript:;" class="op-btn btn btn-primary btn-xs"><span class="op-icon glyphicon glyphicon-edit"></span><span class="btn-text">编辑</span></a>
-                                    <a href="javascript:;" class="op-btn btn btn-info btn-xs"><span class="op-icon glyphicon glyphicon-info-sign"></span><span class="btn-text">查看</span></a>
-                                    <a href="javascript:;" class="op-btn btn btn-success btn-xs"><span class="op-icon glyphicon glyphicon-time"></span><span class="btn-text">历史</span></a>
+                                    <!-- font awesome 字体图标 -->
+                                    <a href="javascript:;" class="op-btn btn btn-primary btn-xs"><i class="op-icon fa fa-edit" aria-hidden="true"></i><span class="btn-text">编辑</span></a>
+                                    <a href="javascript:;" class="op-btn btn btn-info btn-xs"><i class="op-icon fa fa-search-plus" aria-hidden="true"></i><span class="btn-text">查看</span></a>
+                                    <a href="javascript:;" class="op-btn btn btn-success btn-xs"><i class="op-icon fa fa-clock-o" aria-hidden="true"></i><span class="btn-text">历史</span></a>
+                                    <a href="javascript:;" class="op-btn btn btn-danger btn-xs"><i class="op-icon fa fa-trash" aria-hidden="true"></i><span class="btn-text">删除</span></a>
                                 </td>
                             </tr>
                             <tr>
@@ -192,9 +238,39 @@
                                 <td>2016-08-29 18:29:20</td>
                                 <td>2016-08-29 18:29:24</td>
                                 <td>
-                                    <a href="javascript:;" class="op-btn btn btn-primary btn-xs"><span class="op-icon glyphicon glyphicon-edit"></span><span class="btn-text">编辑</span></a>
-                                    <a href="javascript:;" class="op-btn btn btn-info btn-xs"><span class="op-icon glyphicon glyphicon-info-sign"></span><span class="btn-text">查看</span></a>
-                                    <a href="javascript:;" class="op-btn btn btn-success btn-xs"><span class="op-icon glyphicon glyphicon-time"></span><span class="btn-text">历史</span></a>
+                                    <!-- font awesome 字体图标 -->
+                                    <a href="javascript:;" class="op-btn btn btn-primary btn-xs"><i class="op-icon fa fa-edit" aria-hidden="true"></i><span class="btn-text">编辑</span></a>
+                                    <a href="javascript:;" class="op-btn btn btn-info btn-xs"><i class="op-icon fa fa-search-plus" aria-hidden="true"></i><span class="btn-text">查看</span></a>
+                                    <a href="javascript:;" class="op-btn btn btn-success btn-xs"><i class="op-icon fa fa-clock-o" aria-hidden="true"></i><span class="btn-text">历史</span></a>
+                                    <a href="javascript:;" class="op-btn btn btn-danger btn-xs"><i class="op-icon fa fa-trash" aria-hidden="true"></i><span class="btn-text">删除</span></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1</td>
+                                <td>你好世界!</td>
+                                <td>2016-08-29 18:29:20</td>
+                                <td>2016-08-29 18:29:24</td>
+                                <td>
+                                    <!-- font awesome 字体图标 -->
+                                    <a href="javascript:;" class="op-btn btn btn-primary btn-xs"><i class="op-icon fa fa-edit" aria-hidden="true"></i><span class="btn-text">编辑</span></a>
+                                    <a href="javascript:;" class="op-btn btn btn-info btn-xs"><i class="op-icon fa fa-search-plus" aria-hidden="true"></i><span class="btn-text">查看</span></a>
+                                    <a href="javascript:;" class="op-btn btn btn-success btn-xs"><i class="op-icon fa fa-clock-o" aria-hidden="true"></i><span class="btn-text">历史</span></a>
+                                    <a href="javascript:;" class="op-btn btn btn-danger btn-xs"><i class="op-icon fa fa-trash" aria-hidden="true"></i><span class="btn-text">删除</span></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>1</td>
+                                <td>你好世界!</td>
+                                <td>2016-08-29 18:29:20</td>
+                                <td>2016-08-29 18:29:24</td>
+                                <td>
+                                    <!-- font awesome 字体图标 -->
+                                    <a href="javascript:;" class="op-btn btn btn-primary btn-xs"><i class="op-icon fa fa-edit" aria-hidden="true"></i><span class="btn-text">编辑</span></a>
+                                    <a href="javascript:;" class="op-btn btn btn-info btn-xs"><i class="op-icon fa fa-search-plus" aria-hidden="true"></i><span class="btn-text">查看</span></a>
+                                    <a href="javascript:;" class="op-btn btn btn-success btn-xs"><i class="op-icon fa fa-clock-o" aria-hidden="true"></i><span class="btn-text">历史</span></a>
+                                    <a href="javascript:;" class="op-btn btn btn-danger btn-xs"><i class="op-icon fa fa-trash" aria-hidden="true"></i><span class="btn-text">删除</span></a>
                                 </td>
                             </tr>
                             </tbody>

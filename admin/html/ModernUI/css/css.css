@@ -43,7 +43,15 @@ body.start{background-color:#ecf0f5;}
  * @dod数据列表页面
  * @author Heanes
  * @time 2016-09-06 11:53:56 周二
- */
+
+/* 面包屑导航 2016-09-09 00:00:47 */
+.page-crumbs{padding:10px;margin-bottom:20px;}
+.page-crumbs.bg-normal{background-color:#f5f5f5;border:1px solid #ddd;}
+.page-crumbs .crumbs-list{margin:0;list-style:none;}
+.page-crumbs .crumbs-list li,
+.page-crumbs .crumbs-list li .crumbs-href,
+.page-crumbs .crumbs-list li .crumbs-separator{display:inline-block;vertical-align:middle;}
+.page-crumbs .crumbs-list li .crumbs-separator{margin:0 6px;}
 /* 查询表单 */
 .search-form{position:relative;margin-bottom:20px;background-color:#f5f5f5;}
 .search-form.bg-normal{background-color:#f5f5f5;border:1px solid #ddd;}
@@ -66,19 +74,20 @@ body.start{background-color:#ecf0f5;}
 .global-message{margin:20px 0;}
 
 /* 数据列表统计区域 @time 2016-09-08 18:36:38 周四 */
+.data-statistics{margin:20px 0;}
+.data-statistics .statistics-content{padding:10px;border:1px solid #ddd;}
+.data-statistics .statistics-content p{margin:0;}
 
 /* 数据操作区域 @time 2016-09-08 19:15:09 周四 */
 .date-handle{display:table;width:100%;}
 .date-handle .table-cell{display:table-cell}
 .date-handle .handle-right{text-align:right;}
 
-
 /* 数据列表 */
 .data-list{margin:20px 0;}
 .data-list .table{margin-bottom:0;}
 .data-list .bg-normal{background-color:#ddd;}
-.data-list .op-btn{}
+.data-list .op-btn{font-size:13px;}
 .data-list .op-btn .op-icon{position:inherit;margin-right:2px;}
-.data-list .op-btn .btn-text{display:inline-block;}
 .data-list .op-btn .op-icon,
-.data-list .op-btn .btn-text{vertical-align:middle;}
+.data-list .op-btn .btn-text{display:inline-block;vertical-align:middle;}
