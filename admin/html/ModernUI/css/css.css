@@ -7,6 +7,8 @@
  */
 body.start{background-color:#ecf0f5;}
 .main-content .center-block.right-content{padding:20px;}
+
+.box-normal{box-shadow:0 0 2px 2px rgba(225,225,225,0.5);border-radius:4px;}
 /**
  * @doc 欢迎页面
  * @author Heanes
@@ -43,7 +45,9 @@ body.start{background-color:#ecf0f5;}
  * @time 2016-09-06 11:53:56 周二
  */
 /* 查询表单 */
-.search-form{position:relative;margin-bottom:20px;}
+.search-form{position:relative;margin-bottom:20px;background-color:#f5f5f5;}
+.search-form.bg-normal{background-color:#f5f5f5;border:1px solid #ddd;}
+.search-form.bg-normal form{padding:20px;}
 .search-form .input-block,
 .search-form .form-handle{display:table-cell;}
 .search-form .line-group{margin-bottom:20px;}
@@ -51,13 +55,28 @@ body.start{background-color:#ecf0f5;}
 .search-form .line-group:last-child{margin-bottom:0;}
 .search-form .line-group .control-label{min-width:84px;text-align:right;}
 .search-form .line-group .control-label.text-center{text-align:center;}
+.search-form .line-group .form-control{min-width:140px;}
 .search-form .form-handle{vertical-align:middle;padding:0 50px 0;}
 .search-form .form-handle .handle-inline{display:inline-block;vertical-align:bottom;margin-right:20px;}
 .search-form .form-handle .handle-inline:last-child{margin-right:0;}
 .search-form .form-handle .handle-inline input[type="reset"],
 .search-form .form-handle .handle-inline button[type="reset"]{margin-left:40px;}
+
+/* 全局消息 @time 2016-09-08 18:36:48 周四 */
+.global-message{margin:20px 0;}
+
+/* 数据列表统计区域 @time 2016-09-08 18:36:38 周四 */
+
+/* 数据操作区域 @time 2016-09-08 19:15:09 周四 */
+.date-handle{display:table;width:100%;}
+.date-handle .table-cell{display:table-cell}
+.date-handle .handle-right{text-align:right;}
+
+
 /* 数据列表 */
-.data-list{}
+.data-list{margin:20px 0;}
+.data-list .table{margin-bottom:0;}
+.data-list .bg-normal{background-color:#ddd;}
 .data-list .op-btn{}
 .data-list .op-btn .op-icon{position:inherit;margin-right:2px;}
 .data-list .op-btn .btn-text{display:inline-block;}

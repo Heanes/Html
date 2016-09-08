@@ -9,10 +9,12 @@
 <meta name="description" content="描述">
 <link rel="shortcut icon" href="/public/static/image/favicon/favicon.ico"/>
 <link rel="bookmark" href="/public/static/image/favicon/favicon.ico"/>
-<link rel="stylesheet" type="text/css" href="../css/reset/reset.css"/>
-<link rel="stylesheet" type="text/css" href="../css/base/base.css"/>
+<link rel="stylesheet" type="text/css" href="/public/static/libs/css/reset/reset.css"/>
+<link rel="stylesheet" type="text/css" href="/public/static/libs/css/base/base.css"/>
 <link rel="stylesheet" type="text/css" href="../css/style/style-2016.css"/>
 <link rel="stylesheet" type="text/css" href="/public/static/libs/ui-framework/bootstrap/3.3.7/css/bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="/public/static/libs/js/select2/4.0.3/css/select2.css"/>
+<link rel="stylesheet" type="text/css" href="/lib/heanesStyle/css/message-style1.css"/>
 <link rel="stylesheet" type="text/css" href="../css/common.css"/>
 <link rel="stylesheet" type="text/css" href="../css/css.css"/>
 <title>数据列表页</title>
@@ -32,28 +34,48 @@
                 <!-- 面包屑导航 -->
                 <div class="page-crumbs"></div>
                 <!-- 搜索表单 -->
-                <div class="search-form">
+                <div class="search-form bg-normal box-normal">
                     <form class="form-inline" role="form">
                         <!-- 表单输入区域 -->
                         <div class="input-block">
                             <div class="line-group">
                                 <div class="form-group">
                                     <label class="control-label" for="searchOrderId">订单ID：</label>
-                                    <input type="text" class="form-control" id="searchOrderId" placeholder="请输入订单ID">
+                                    <input type="text" name="searchOrderId" class="form-control" id="searchOrderId" placeholder="请输入订单ID">
                                 </div>
                                 <div class="form-group">
                                     <label class="control-label" for="searchShopName">店铺名称：</label>
-                                    <input type="text" class="form-control" id="searchShopName" placeholder="店铺名称">
+                                    <input type="text" name="searchShopName" class="form-control" id="searchShopName" placeholder="店铺名称">
                                 </div>
                             </div>
                             <div class="line-group">
                                 <div class="form-group">
                                     <label class="control-label" for="searchOrderTimeStart">下单时间：</label>
-                                    <input type="text" class="form-control" id="searchOrderTimeStart" placeholder="请输入下单起始时间">
+                                    <input type="text" name="searchOrderTimeStart" class="form-control" id="searchOrderTimeStart" placeholder="请输入下单起始时间">
                                 </div>
                                 <div class="form-group">
                                     <label class="control-label text-center" for="searchOrderTimeEnd">/</label>
-                                    <input type="text" class="form-control" id="searchOrderTimeEnd" placeholder="请输入下单截止时间">
+                                    <input type="text" name="searchOrderTimeEnd" class="form-control" id="searchOrderTimeEnd" placeholder="请输入下单截止时间">
+                                </div>
+                            </div>
+                            <div class="line-group">
+                                <div class="form-group">
+                                    <label class="control-label" for="searchShopId">选择店铺：</label>
+                                    <select name="searchShopId" id="searchShopId" class="form-control select2">
+                                        <option value="">请选择</option>
+                                        <option value="1">店铺1</option>
+                                        <option value="2">店铺2</option>
+                                        <option value="3">店铺3</option>
+                                        <option value="4">店铺4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="searchPayType">付款方式：</label>
+                                    <select name="searchPayType" id="searchPayType" class="form-control">
+                                        <option value="">请选择</option>
+                                        <option value="2">在线支付</option>
+                                        <option value="3">货到付款</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -69,15 +91,55 @@
                     </form>
                 </div>
                 <!-- 全局消息显示区域 -->
-                <div class="global-message" id="globalMessage"></div>
+                <div class="global-message" id="globalMessage">
+                    <div class="message message-success">
+                        <div class="message-handle">
+                            <span class="btn-close">x</span>
+                        </div>
+                        <div class="message-content">
+                            <p>恭喜你，操作成功。</p>
+                        </div>
+                    </div>
+                    <div class="message message-info">
+                        <div class="message-handle">
+                            <span class="btn-close">x</span>
+                        </div>
+                        <div class="message-content">
+                            <p>提醒，你还需要做某项操作。</p>
+                        </div>
+                    </div>
+                    <div class="message message-warning">
+                        <div class="message-handle">
+                            <span class="btn-close">x</span>
+                        </div>
+                        <div class="message-content">
+                            <p>警告，有某些情况出现。</p>
+                        </div>
+                    </div>
+                    <div class="message message-error">
+                        <div class="message-handle">
+                            <span class="btn-close">x</span>
+                        </div>
+                        <div class="message-content">
+                            <p>错误，出现了问题。</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 数据统计相关显示区域 -->
                 <!-- 数据操作区域 -->
-                <div class="date-handle"></div>
+                <div class="date-handle">
+                    <div class="table-cell handle-left"></div>
+                    <div class="table-cell handle-right">
+                        <a href="javascript:;">启用</a>
+                        <a href="javascript:;">禁用</a>
+                    </div>
+                </div>
                 <!-- 数据列表区域 -->
-                <div class="data-list">
+                <div class="data-list box-normal">
                     <div class="table-responsive">
                         <table class="table table-bordered table-striped table-hover table-condensed">
                             <thead>
-                            <tr>
+                            <tr class="bg-normal">
                                 <th>选择</th>
                                 <th>ID</th>
                                 <th>标题</th>
@@ -106,9 +168,9 @@
                                 <td>2016-08-29 18:29:20</td>
                                 <td>2016-08-29 18:29:24</td>
                                 <td>
-                                    <a href="javascript:;" class="op-btn btn btn-primary btn-xs"><span class="op-icon glyphicon glyphicon-edit"></span><span class="btn-text">编辑</span></a>
-                                    <a href="javascript:;" class="op-btn btn btn-info btn-xs"><span class="op-icon glyphicon glyphicon-info-sign"></span><span class="btn-text">查看</span></a>
-                                    <a href="javascript:;" class="op-btn btn btn-success btn-xs"><span class="op-icon glyphicon glyphicon-time"></span><span class="btn-text">历史</span></a>
+                                    <a href="javascript:;" class="op-btn btn btn-primary btn-xs" disabled="disabled"><span class="op-icon glyphicon glyphicon-edit"></span><span class="btn-text">编辑</span></a>
+                                    <a href="javascript:;" class="op-btn btn btn-info btn-xs" disabled="disabled"><span class="op-icon glyphicon glyphicon-info-sign"></span><span class="btn-text">查看</span></a>
+                                    <a href="javascript:;" class="op-btn btn btn-success btn-xs" disabled="disabled"><span class="op-icon glyphicon glyphicon-time"></span><span class="btn-text">历史</span></a>
                                 </td>
                             </tr>
                             <tr>
@@ -155,12 +217,14 @@
     <script type="text/javascript" src="/public/static/libs/js/jquery/2.2.4/jquery.min.js"></script>
     <script type="text/javascript" src="/public/static/libs/js/dateTimePicker/lhgCalendar/3.0.0/lhgcalendar.min.js"></script><!-- 日期时间选择器 -->
     <script type="text/javascript" src="/public/static/libs/js/dateTimePicker/My97DatePicker/4.8/WdatePicker.js"></script>
+    <script type="text/javascript" src="/public/static/libs/js/select2/4.0.3/js/select2.full.js"></script>
+    <script type="text/javascript" src="/lib/heanesStyle/js/message.js"></script>
     <script type="text/javascript" src="../js/common/common.js"></script>
     <script type="text/javascript">
         $(function () {
             /* 日期时间选择器 */
             // datetimepicker
-            $('#searchOrderTimeStart').click(function () {
+            $('#searchOrderTimeStart').on('click', function () {
                 var $searchOrderTimeEnd = $dp.$('searchOrderTimeEnd');
                 WdatePicker({
                     // 选择完毕后自动打开后一个选择器
@@ -171,7 +235,7 @@
                     maxDate:'#F{$dp.$D(\'searchOrderTimeEnd\');}'
                 });
             });
-            $('#searchOrderTimeEnd').click(function () {
+            $('#searchOrderTimeEnd').on('click', function () {
                 WdatePicker({
                     doubleCalendar:true,
                     skin: 'bootstrap',
@@ -179,6 +243,8 @@
                     minDate:'#F{$dp.$D(\'searchOrderTimeStart\');}'
                 });
             });
+            
+            $('.select2').select2({placeholder: "请选择"});
         });
     </script>
     <!-- E js E -->

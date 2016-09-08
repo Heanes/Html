@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta charset="UTF-8"/>
+<!-- responsive -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/><!-- 让IE8在新模式下渲染（禁止兼容模式） -->
+<meta name="renderer" content="webkit"/><!-- 让360等多核模式浏览器默认用极速模式打开 -->
+<meta name="author" content="Heanes heanes.com email(heanes@163.com)"/>
+<meta name="keywords" content="软件,商务,HTML,tutorials,source codes"/>
+<meta name="description" content="描述，不超过150个字符"/>
+<!-- Favicon -->
+<link rel="shortcut icon" href="/public/static/image/favicon/favicon.ico"/>
+<!-- style -->
+<link rel="stylesheet" type="text/css" href="/public/static/libs/css/reset/reset.css"/>
+<link rel="stylesheet" type="text/css" href="/public/static/libs/css/base/base.css"/>
+<link rel="stylesheet" type="text/css" href="/public/static/libs/ui-framework/bootstrap/3.3.5/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="/public/static/libs/js/dateTimePicker/bootstrap-datetimepicker/2.3.5/css/bootstrap-datetimepicker.min.css" />
+<link rel="stylesheet" type="text/css" href="/public/static/libs/js/dateTimePicker/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.min.css" />
+<link rel="stylesheet" type="text/css" href="../css/style/style-2015.css"/>
+<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+<link rel="stylesheet" type="text/css" href="../css/css.css"/>
+<link rel="stylesheet" type="text/css" href="../css/form-style1.css"/>
+<title>日期时间选择器</title>
+</head>
+<body>
+<div class="center wrap">
+    <!-- S 头部 S -->
+    <div class="header">
+        <!-- 顶部操作/导航/工具栏 -->
+        <div class="top-toolbar"></div>
+        <!-- 顶部导航栏 -->
+        <div class="header-nav-bar"></div>
+    </div>
+    <!-- E 头部 E-->
+    <!-- S 主要内容 S -->
+    <div class="main">
+        <!-- 主体内容 -->
+        <div class="main-content main-wrap clearfix">
+            <!-- 中心区域 -->
+            <div class="center-block center-wrap">
+                <div class="page-content">
+                    <div class="demo-block">
+                        <div class="demo-title"><h2>表单样式</h2></div>
+                        <div class="demo-group">
+                            <div class="demo-group-title"><h3>日期时间选择器</h3></div>
+                            <div class="demo-content">
+                                <div class="demo-block">
+                                    <div class="demo-title"><h2>my97DatePicker<a href="http://www.my97.net/" class="a" target="_blank">官网</a></h2></div>
+                                    <div class="demo-group">
+                                        <div class="demo-group-title"><h3>普通样式</h3></div>
+                                        <div class="demo-content">
+                                            <div class="demo-one">
+                                                <label>日期及时间</label>
+                                                <input type="text" name="my97DatePicker" value="" class="my97DatePicker normal" placeholder="请输入日期时间" />
+                                            </div>
+                                        </div>
+                                        <div class="demo-group-title"><h3>仅日期</h3></div>
+                                        <div class="demo-content">
+                                            <div class="demo-one">
+                                                <label>日期</label>
+                                                <input type="text" name="97datePicker-justDate" id="searchOrderTimeStart" value="" placeholder="请输入日期时间" />
+                                                <input type="text" name="97datePicker-justDate" id="searchOrderTimeEnd" value="" placeholder="请输入日期时间" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="demo-block">
+                                    <div class="demo-title"><h2>bootstrap-datetimepicker<a href="http://bootstrap-datepicker.readthedocs.org/en/latest/" class="a" target="_blank">官网</a></h2></div>
+                                    <div class="demo-group">
+                                        <div class="demo-group-title">
+                                            <h3>普通样式
+                                            <a href="http://eternicode.github.io/bootstrap-datepicker/?markup=input&format=&weekStart=&startDate=&endDate=&startView=0&minViewMode=0&maxViewMode=2&todayBtn=false&clearBtn=true&language=en&orientation=auto&multidate=&multidateSeparator=&daysOfWeekDisabled=1&daysOfWeekHighlighted=0&daysOfWeekHighlighted=6&todayHighlight=on&keyboardNavigation=on&forceParse=on#sandbox">参考1</a>
+                                            <a href="http://bootstrap-datepicker.readthedocs.org/en/latest/index.html">参考2</a>
+                                            </h3>
+                                        </div>
+                                        <div class="demo-content">
+                                            <div class="demo-one">
+                                                <label>日期</label>
+                                                <input type="text" name="bootstrap_datepicker" class="datePicker" value="" placeholder="请输入日期" />
+                                            </div>
+                                        </div>
+                                        <div class="demo-group-title">
+                                            <h3>普通样式
+                                            <a href="http://www.malot.fr/bootstrap-datetimepicker/demo.php">参考</a>
+                                            </h3>
+                                        </div>
+                                        <div class="demo-content">
+                                            <div class="demo-one">
+                                                <label>日期及时间</label>
+                                                <input type="text" name="bootstrap_datetimepicker" class="datePicker" value="" placeholder="请输入日期时间" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="demo-block">
+                                    <div class="demo-title"><h2>lhgCalendar<a href="http://www.canwin.net/common/lhgcalendar/" class="a" target="_blank">官网</a></h2></div>
+                                    <div class="demo-group">
+                                        <div class="demo-group-title"><h3>普通样式</h3></div>
+                                        <div class="demo-content">
+                                            <div class="demo-one">
+                                                <label>
+                                                    <input type="text" name="lhgCalendar" value="" placeholder="请输入日期时间" />
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="demo-block">
+                                    <div class="demo-title"><h2>layDate<a href="http://www.canwin.net/common/lhgcalendar/" class="a" target="_blank">官网</a></h2></div>
+                                    <div class="demo-group">
+                                        <div class="demo-group-title"><h3>普通样式</h3></div>
+                                        <div class="demo-content">
+                                            <div class="demo-one">
+                                                <label>
+                                                    <input type="text" name="layDate" id="layDate" value="" placeholder="请输入日期时间" />
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E 主要内容 E -->
+    <!-- S 脚部 S -->
+    <div class="footer">
+        <div class="footer-content footer-wrap">
+            <!-- 友情链接区域 -->
+            <div class="friend-link-block"></div>
+            <!-- 版权声明区域 -->
+            <div class="copyright"></div>
+        </div>
+    </div>
+    <!-- E 脚部 E -->
+</div>
+<cite>
+    <!-- S js S -->
+    <script type="text/javascript" src="/public/static/libs/js/jquery/2.1.4/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="/public/static/libs/js/dateTimePicker/My97DatePicker/4.8/WdatePicker.js"></script>
+    <script type="text/javascript" src="/public/static/libs/js/dateTimePicker/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="/public/static/libs/js/dateTimePicker/bootstrap-datepicker/1.5.0/locales/bootstrap-datepicker.zh-CN.min.js"></script>
+    <script type="text/javascript" src="/public/static/libs/js/dateTimePicker/bootstrap-datetimepicker/2.3.5/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="/public/static/libs/js/dateTimePicker/bootstrap-datetimepicker/2.3.5/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script type="text/javascript" src="/public/static/libs/js/dateTimePicker/lhgCalendar/3.0.0/lhgcalendar.min.js"></script>
+    <script type="text/javascript" src="/public/static/libs/js/dateTimePicker/layDate/laydate.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            // datetimepicker
+            $('.my97DatePicker.normal').on('click', function () {
+                WdatePicker({
+                    skin: 'bootstrap',
+                    firstDayOfWeek: 1
+                });
+            });
+            $('#searchOrderTimeStart').click(function () {
+                var $searchOrderTimeEnd = $dp.$('searchOrderTimeEnd');
+                WdatePicker({
+                    // 选择完毕后自动打开后一个选择器
+                    onpicked:function(){$searchOrderTimeEnd.click();},
+                    doubleCalendar:true,
+                    skin: 'bootstrap',
+                    firstDayOfWeek: 1,
+                    maxDate:'#F{$dp.$D(\'searchOrderTimeEnd\');}'
+                });
+            });
+            $('#searchOrderTimeEnd').on('click', function () {
+                WdatePicker({
+                    doubleCalendar:true,
+                    skin: 'bootstrap',
+                    firstDayOfWeek: 1,
+                    minDate:'#F{$dp.$D(\'searchOrderTimeStart\');}'
+                });
+            });
+            $('input[name="lhgCalendar"]').on('click', function () {
+                $.calendar({format:'yyyy-MM-dd HH:mm:ss'});
+            });
+            $('input[name="laydate"]').on('click', function () {
+                $.laydate({
+                    elem: 'input[name="laydate"]', //需显示日期的元素选择器
+                    event: 'click', //触发事件
+                    format: 'YYYY-MM-DD hh:mm:ss', //日期格式
+                    istime: false, //是否开启时间选择
+                    isclear: true, //是否显示清空
+                    istoday: true, //是否显示今天
+                    issure: true, //是否显示确认
+                    festival: true, //是否显示节日
+                    min: '1900-01-01 00:00:00', //最小日期
+                    max: '2099-12-31 23:59:59', //最大日期
+                    start: '2014-6-15 23:00:00',    //开始日期
+                    fixed: false, //是否固定在可视区域
+                    zIndex: 99999999, //css z-index
+                    choose: function (dates) { //选择好日期的回调
+                    }
+                });
+            });
+        });
+        $('input[name="bootstrap_datetimepicker"]').datetimepicker({
+            format: "yyyy-mm-dd HH:ii:ss",
+            showMeridian: true,
+            autoclose: true,
+            todayBtn: true
+        });
+        $('input[name="bootstrap_datepicker"]').datepicker({
+            format: "yyyy-mm-dd",
+            language: "zh-CN",
+            todayBtn: true,
+            weekStart: 1,
+            daysOfWeekHighlighted: "0,6",
+            todayHighlight: true,
+            autoclose: true
+        });
+        laydate({
+            elem: '#layDate'
+        });
+
+    </script>
+    <!-- E js E -->
+</cite>
+</body>
+</html>

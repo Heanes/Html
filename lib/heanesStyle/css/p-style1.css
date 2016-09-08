@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+/**
+ * @doc 段落样式
+ * @author fanggang
+ * @time 2015-12-01 19:41:00
+ */
+.p{
+    line-height:2em;
+    text-indent:2em;
+}
+p.font-12{
+    font-size:12px;
+}
+p.font-13{
+    font-size:13px;
+}
+p.font-14{
+    font-size:14px;
+}
+p.font-16{
+    font-size:16px;
+}
+p.font-18{
+    font-size:18px;
+}

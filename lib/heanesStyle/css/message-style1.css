@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+/**
+ * @doc 提示信息
+ * @author fanggang
+ * @time 2015-12-01 20:12:06
+ */
+.message{
+    position:relative;
+    display:block;
+    padding:18px 20px;
+    border:1px solid;
+    margin:10px 0;
+}
+.message .message-content p{
+    margin:0;
+}
+.message-success{
+    color:#3c763d;
+    background-color:#dff0d8;
+    border-color:#d6e9c6;
+}
+.message-info{
+    color:#31708f;
+    background-color:#d9edf7;
+    border-color:#bce8f1;
+}
+.message-warning{
+    color:#8a6d3b;
+    background-color:#fcf8e3;
+    border-color:#faebcc;
+}
+.message-error{
+    color:#a94442;
+    background-color:#f2dede;
+    border-color:#ebccd1;
+}
+.message .btn-close{position:absolute;right:2px;top:2px;font-size:17px;font-weight:300;height:24px;width:24px;line-height:24px;text-align:center;vertical-align:middle; font-family:arial,sans-serif;cursor:pointer;border-radius:50%;}
+.message .btn-close:hover{background-color:#d9534f;color:#fff;}
