@@ -98,7 +98,7 @@
                     </form>
                 </div>
                 <!-- 全局消息显示区域 -->
-                <div class="global-message" id="globalMessage">
+                <div class="global-message hide" id="globalMessage">
                     <div class="message message-success">
                         <div class="message-handle">
                             <span class="btn-close">x</span>
@@ -133,7 +133,7 @@
                     </div>
                 </div>
                 <!-- 数据统计相关显示区域 -->
-                <div class="data-statistics">
+                <div class="data-statistics box-normal">
                     <div class="statistics-content">
                         <p>当前共有39条数据</p>
                     </div>
@@ -142,8 +142,8 @@
                 <div class="date-handle">
                     <div class="table-cell handle-left"></div>
                     <div class="table-cell handle-right">
-                        <a href="javascript:;">启用</a>
-                        <a href="javascript:;">禁用</a>
+                        <a href="javascript:;" class="handle handle-inline disabled">启用</a>
+                        <a href="javascript:;" class="handle handle-inline">禁用</a>
                     </div>
                 </div>
                 <!-- 数据列表区域 -->

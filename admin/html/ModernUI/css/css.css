@@ -75,16 +75,20 @@ body.start{background-color:#ecf0f5;}
 
 /* 数据列表统计区域 @time 2016-09-08 18:36:38 周四 */
 .data-statistics{margin:20px 0;}
-.data-statistics .statistics-content{padding:10px;border:1px solid #ddd;}
+.data-statistics .statistics-content{padding:16px;border:1px solid #ddd;border-radius:4px;}
 .data-statistics .statistics-content p{margin:0;}
 
 /* 数据操作区域 @time 2016-09-08 19:15:09 周四 */
 .date-handle{display:table;width:100%;}
 .date-handle .table-cell{display:table-cell}
 .date-handle .handle-right{text-align:right;}
+.date-handle .handle-right .handle{}
+.date-handle .handle-right .handle:hover{text-decoration:none;}
+.date-handle .handle-right .handle.disabled{color:#ddd;pointer-events:none;cursor:not-allowed;}
+.date-handle .handle-right .handle-inline{margin:0 10px;}
 
 /* 数据列表 */
-.data-list{margin:20px 0;}
+.data-list{margin:16px 0;}
 .data-list .table{margin-bottom:0;}
 .data-list .bg-normal{background-color:#ddd;}
 .data-list .op-btn{font-size:13px;}

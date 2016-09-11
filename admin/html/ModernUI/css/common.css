@@ -14,3 +14,4 @@ html,body{_height:100%;}
 .text-center{text-align:center;}
 .relative{position:relative;}
 .absolute{position:absolute;}
+[disabled="disabled"],.disabled{pointer-events:none;}
