@@ -79,9 +79,9 @@ body.start{background-color:#ecf0f5;}
 .data-statistics .statistics-content p{margin:0;}
 
 /* 数据操作区域 @time 2016-09-08 19:15:09 周四 */
-.date-handle{display:table;width:100%;}
+.date-handle{display:table;width:100%;padding-top:10px;}
 .date-handle .table-cell{display:table-cell}
-.date-handle .handle-right{text-align:right;}
+.date-handle .handle-right{text-align:right;vertical-align:bottom;}
 .date-handle .handle-right .handle{}
 .date-handle .handle-right .handle:hover{text-decoration:none;}
 .date-handle .handle-right .handle.disabled{color:#ddd;pointer-events:none;cursor:not-allowed;}
@@ -90,8 +90,28 @@ body.start{background-color:#ecf0f5;}
 /* 数据列表 */
 .data-list{margin:16px 0;}
 .data-list .table{margin-bottom:0;}
+.data-list .table .select-row{width:60px;}
 .data-list .bg-normal{background-color:#ddd;}
 .data-list .op-btn{font-size:13px;}
 .data-list .op-btn .op-icon{position:inherit;margin-right:2px;}
 .data-list .op-btn .op-icon,
 .data-list .op-btn .btn-text{display:inline-block;vertical-align:middle;}
+/* 选中后的数据的批量操作 @time 2016-09-11 17:35:39 */
+.data-selected-handle{margin:20px 0;}
+.data-selected-handle .handle-one{margin-right:20px;}
+.data-selected-handle .inline-block{display:inline-block;vertical-align:middle;margin:0;}
+.data-selected-handle input.inline-block{margin-right:6px;}
+.data-selected-handle .selected-count{color:#ff0000;margin:0 4px;}
+
+/* 分页样式 */
+.turn-page{text-align:right;margin:6px 0;}
+.turn-page .page-link{margin:4px 0 8px 0;font-size:0;}
+.turn-page .page-link a{display:inline-block;margin:0 4px;border:1px solid #ddd;padding:0 4px;min-width:30px;height:30px;line-height:30px;text-align:center;font-size:14px;}
+.turn-page .page-link a:hover{text-decoration:none;background-color:#00a0e9;color:#fff;}
+.turn-page .page-link .href-ellipsis{display:inline-block;min-width:30px;height:30px;line-height:30px;text-align:center;font-size:14px;}
+
+.turn-page .page-info{margin:4px 0 8px 0;}
+
+.turn-page .page-quick-link{margin:4px 0 8px 0;height:30px;}
+.turn-page .page-quick-link .quick-input{width:30px;}
+.turn-page .page-quick-link .quick-select{display:inline-block;width:auto;line-height:inherit;height:inherit;}
