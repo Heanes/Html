@@ -60,3 +60,5 @@
 .menu-left-block.lapped .menu-left-group li.active > ul.menu-left-group{position:relative;left:0;padding-left:0;margin-left:30px;}
 .menu-left-family.lapped .menu-left-group li .menu-parent .triangle-right{display:none;}
 .menu-left-family.lapped .menu-left-group li .menu-parent .menu-text{display:none;}
+
+.menu-left-block .menu-left-group > li:hover{width:auto;}

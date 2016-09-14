@@ -9,7 +9,8 @@
 .float-block{
     float:left;
 }
-html,body{_height:100%;}
+.float-left{float:left;}
+.float-right{float:right;}
 .box{position:relative;border-radius:3px;background-color:#fff;margin-bottom:20px;box-shadow:0 1px 1px rgba(0,0,0,0.1);}
 .text-center{text-align:center;}
 .relative{position:relative;}

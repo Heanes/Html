@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-cmn-Hans">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- 让IE8在新模式下渲染（禁止兼容模式） -->
@@ -9,35 +9,82 @@
 <meta name="description" content="描述">
 <link rel="shortcut icon" href="/public/static/image/favicon/favicon.ico"/>
 <link rel="bookmark" href="/public/static/image/favicon/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="/public/static/libs/css/reset/reset.css"/>
+<link rel="stylesheet" type="text/css" href="/public/static/libs/css/base/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/style/style-2016.css"/>
+<link rel="stylesheet" type="text/css" href="/public/static/libs/fonts/font-awesome/4.5.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="/public/static/libs/ui-framework/bootstrap/3.3.7/css/bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="/public/static/libs/js/select2/4.0.3/css/select2.css"/>
+<link rel="stylesheet" type="text/css" href="/lib/heanesStyle/css/message-style1.css"/>
 <link rel="stylesheet" type="text/css" href="../css/common.css"/>
 <link rel="stylesheet" type="text/css" href="../css/css.css"/>
-<title>数据编辑页面</title>
+<title>多类型数据编辑页面</title>
 </head>
 <body>
-	<div class="wrap">
-		<!-- S 头部 S -->
-		<div class="header">
-			
-		</div>
-		<!-- E 头部 E-->
-		<!-- S 主要内容 S -->
-		<div class="main">
-			
-		</div>
-		<!-- E 主要内容 E -->
-		<!-- S 脚部 S -->
-		<div class="footer">
-			
-		</div>
-		<!-- E 脚部 E -->
-	</div>
-	<cite>
-		<!-- S js S -->
-		<script type="text/javascript" src="/public/static/libs/js/jquery/2.2.4/jquery.min.js"></script>
-		<script type="text/javascript" src="/public/static/libs/js/dateTimePicker/lhgCalendar/3.0.0/lhgcalendar.min.js"></script><!-- 日期时间选择器 -->
-		<script type="text/javascript" src="/public/static/libs/js/colorPicker/jscolor/1.4.4/jscolor.js"></script><!-- 加载颜色选择器 -->
-		<script type="text/javascript" src="../js/common/common.js"></script>
-		<!-- E js E -->
-	</cite>
+<div class="center wrap">
+    <!-- S 主要内容 S -->
+    <div class="main">
+        <!-- 顶部全宽度内容区域 -->
+        <div class="main-top-block"></div>
+		<!-- 顶部内容 -->
+        <div class="main-top-content main-wrap"></div>
+		<!-- 主体内容 -->
+        <div class="main-content main-wrap clearfix">
+            <!-- 中心区域 -->
+            <div class="center-block center-wrap right-content">
+                <!-- 面包屑导航 -->
+                <div class="page-crumbs bg-normal box-normal">
+                    <ul class="crumbs-list">
+                        <li><a href="../start.html" class="crumbs-href">首页</a><span class="crumbs-separator">></span></li>
+                        <li><a href="normal.html" class="crumbs-href">数据编辑</a><span class="crumbs-separator">></span></li>
+                        <li>多类型数据编辑页面</li>
+                    </ul>
+                </div>
+			</div>
+        </div>
+		<!-- 底部区域 -->
+        <div class="main-bottom-content main-wrap"></div>
+		<!-- 底部全宽度内容区域 -->
+        <div class="main-bottom-block"></div>
+    </div>
+	<!-- E 主要内容 E -->
+</div>
+<cite>
+    <!-- S js S -->
+    <script type="text/javascript" src="/public/static/libs/js/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/public/static/libs/js/dateTimePicker/lhgCalendar/3.0.0/lhgcalendar.min.js"></script><!-- 日期时间选择器 -->
+    <script type="text/javascript" src="/public/static/libs/js/dateTimePicker/My97DatePicker/4.8/WdatePicker.js"></script>
+    <script type="text/javascript" src="/public/static/libs/js/select2/4.0.3/js/select2.full.js"></script>
+    <script type="text/javascript" src="/lib/heanesStyle/js/message.js"></script>
+    <script type="text/javascript" src="../js/common/common.js"></script>
+    <script type="text/javascript">
+        $(function () {
+			/* 日期时间选择器 */
+			// datetimepicker
+			$('#searchOrderTimeStart').on('click', function () {
+				var $searchOrderTimeEnd = $dp.$('searchOrderTimeEnd');
+				WdatePicker({
+					// 选择完毕后自动打开后一个选择器
+					onpicked:function(){$searchOrderTimeEnd.click();},
+					doubleCalendar:true,
+					skin: 'bootstrap',
+					firstDayOfWeek: 1,
+					maxDate:'#F{$dp.$D(\'searchOrderTimeEnd\');}'
+				});
+			});
+			$('#searchOrderTimeEnd').on('click', function () {
+				WdatePicker({
+					doubleCalendar:true,
+					skin: 'bootstrap',
+					firstDayOfWeek: 1,
+					minDate:'#F{$dp.$D(\'searchOrderTimeStart\');}'
+				});
+			});
+	
+			$('.select2').select2({placeholder: "请选择"});
+		});
+    </script>
+	<!-- E js E -->
+</cite>
 </body>
 </html>
