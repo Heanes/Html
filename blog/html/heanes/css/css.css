@@ -214,7 +214,7 @@
 
 /* 书本详情页面tab切换 */
 .tab-nav-block{}
-.tab-nav-block .tab-title-block-placeholder{height:50px;display:none;}
+.tab-nav-block .tab-title-block-placeholder{height:48px;display:none;}
 .tab-nav-block .tab-title-block{position:relative;font-size:0;border:1px solid #ddd;background-color:#fff;box-shadow:0 1px 5px 0 rgba(0,0,0,.2)}
 .tab-nav-block .tab-title-block.fixed{position:fixed;top:0;}
 .tab-nav-block .tab-title-block .hide-tab-nav-fixed{display:none;font-size:13px;color:inherit;position:absolute;top:16px;right:10px;}

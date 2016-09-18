@@ -18,7 +18,7 @@
 <link rel="stylesheet" type="text/css" href="/lib/heanesStyle/css/message-style1.css"/>
 <link rel="stylesheet" type="text/css" href="../css/common.css"/>
 <link rel="stylesheet" type="text/css" href="../css/css.css"/>
-<title>多类型数据编辑页面</title>
+<title>图片列表页面</title>
 </head>
 <body>
 <div class="center wrap">
@@ -26,9 +26,9 @@
     <div class="main">
         <!-- 顶部全宽度内容区域 -->
         <div class="main-top-block"></div>
-		<!-- 顶部内容 -->
+      <!-- 顶部内容 -->
         <div class="main-top-content main-wrap"></div>
-		<!-- 主体内容 -->
+      <!-- 主体内容 -->
         <div class="main-content main-wrap clearfix">
             <!-- 中心区域 -->
             <div class="center-block center-wrap right-content">
@@ -45,12 +45,12 @@
                 </div>
 			</div>
         </div>
-		<!-- 底部区域 -->
+      <!-- 底部区域 -->
         <div class="main-bottom-content main-wrap"></div>
-		<!-- 底部全宽度内容区域 -->
+      <!-- 底部全宽度内容区域 -->
         <div class="main-bottom-block"></div>
     </div>
-	<!-- E 主要内容 E -->
+  <!-- E 主要内容 E -->
 </div>
 <cite>
     <!-- S js S -->
@@ -62,32 +62,32 @@
     <script type="text/javascript" src="../js/common/common.js"></script>
     <script type="text/javascript">
         $(function () {
-			/* 日期时间选择器 */
-			// datetimepicker
-			$('#searchOrderTimeStart').on('click', function () {
-				var $searchOrderTimeEnd = $dp.$('searchOrderTimeEnd');
-				WdatePicker({
-					// 选择完毕后自动打开后一个选择器
-					onpicked:function(){$searchOrderTimeEnd.click();},
-					doubleCalendar:true,
-					skin: 'bootstrap',
-					firstDayOfWeek: 1,
-					maxDate:'#F{$dp.$D(\'searchOrderTimeEnd\');}'
-				});
-			});
-			$('#searchOrderTimeEnd').on('click', function () {
-				WdatePicker({
-					doubleCalendar:true,
-					skin: 'bootstrap',
-					firstDayOfWeek: 1,
-					minDate:'#F{$dp.$D(\'searchOrderTimeStart\');}'
-				});
-			});
-	
-			$('.select2').select2({placeholder: "请选择"});
-		});
+          /* 日期时间选择器 */
+          // datetimepicker
+          $('#searchOrderTimeStart').on('click', function () {
+            var $searchOrderTimeEnd = $dp.$('searchOrderTimeEnd');
+            WdatePicker({
+              // 选择完毕后自动打开后一个选择器
+              onpicked:function(){$searchOrderTimeEnd.click();},
+              doubleCalendar:true,
+              skin: 'bootstrap',
+              firstDayOfWeek: 1,
+              maxDate:'#F{$dp.$D(\'searchOrderTimeEnd\');}'
+            });
+          });
+          $('#searchOrderTimeEnd').on('click', function () {
+            WdatePicker({
+              doubleCalendar:true,
+              skin: 'bootstrap',
+              firstDayOfWeek: 1,
+              minDate:'#F{$dp.$D(\'searchOrderTimeStart\');}'
+            });
+          });
+  
+          $('.select2').select2({placeholder: "请选择"});
+        });
     </script>
-	<!-- E js E -->
+  <!-- E js E -->
 </cite>
 </body>
 </html>
