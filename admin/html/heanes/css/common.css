@@ -124,19 +124,19 @@ table.table-data-lap tr:nth-child(2){display:none;}/* 默认折叠状态 */
 .admin_copyright .admin_copyright_about table h4{background-color:#EFF6FD;padding:8px;border-bottom:1px dashed #c9e0f8;}
 
 /* 相册列表页 */
-.ablum_list{display:inline-block;width:100%}
-.ablum_one{width:150px;height:220px;float:left;margin:10px;border:1px solid #e3e3e3;padding:8px;border-radius:5px;box-shadow:2px 2px 6px lightGray;overflow:hidden;}
-.ablum_one:hover{box-shadow:4px 4px 15px #888;}
-.ablum_one .ablum_src{position:relative;}
-.ablum_one .ablum_cover{display:block;width:100%;height:100%;overflow:hidden;}
-.ablum_one img{width:150px;height:150px;margin-bottom:8px;border:1px solid #e8e8e8;cursor:pointer;}
-.ablum_one .ablum_photo_num{position:absolute;width:100%;bottom:0;left:0;text-align:right;font-size:26px;color:white;background-color:rgba(26,26,26,.04);padding-right:1px;padding-bottom:10px;}
-.ablum_one .ablum_photo_categroy{position:absolute;top:-10px;left:5px;width:40px;text-align:center;font-size:16px;color:white;background-color:#49a0e1;padding-top:3px;}
-.ablum_one .ablum_photo_categroy .ablum_photo_categroy_border{position:absolute;left:0;top:23px;border-width:10px 20px;border-style:solid solid dashed solid;border-color:#49a0e1;border-bottom-color:transparent;}
-.ablum_one .ablum_info a{display:block;height:40px;line-height:20px;overflow:hidden;color:black;margin-bottom:6px;font-size:14px;text-align:justify;}
-.ablum_one .ablum_name:before{content:"\f02c";width:10px;height:10px;line-height:10px;display:inline-block;margin:0 5px;font-family:FontAwesome,sans-serif;font-weight:lighter;font-style:normal;font-size:12px;vertical-align:middle;}
-.ablum_one .ablum_upload_time{height:18px;overflow:auto;font-size:10px;text-align:right;color:gray;}
-.ablum_one .ablum_upload_time:before{content:"\f08d";width:10px;height:10px;line-height:10px;display:inline-block;margin-right:5px;font-family:FontAwesome,sans-serif;font-weight:lighter;font-style:normal;font-size:12px;vertical-align:middle;}
+.album_list{display:inline-block;width:100%}
+.album_one{width:150px;height:220px;float:left;margin:10px;border:1px solid #e3e3e3;padding:8px;border-radius:5px;box-shadow:2px 2px 6px lightGray;overflow:hidden;}
+.album_one:hover{box-shadow:4px 4px 15px #888;}
+.album_one .album_src{position:relative;}
+.album_one .album_cover{display:block;width:100%;height:100%;overflow:hidden;}
+.album_one img{width:150px;height:150px;margin-bottom:8px;border:1px solid #e8e8e8;cursor:pointer;}
+.album_one .album_photo_num{position:absolute;width:100%;bottom:0;left:0;text-align:right;font-size:26px;color:white;background-color:rgba(26,26,26,.04);padding-right:1px;padding-bottom:10px;}
+.album_one .album_photo_category{position:absolute;top:-10px;left:5px;width:40px;text-align:center;font-size:16px;color:white;background-color:#49a0e1;padding-top:3px;}
+.album_one .album_photo_category .album_photo_category_border{position:absolute;left:0;top:23px;border-width:10px 20px;border-style:solid solid dashed solid;border-color:#49a0e1;border-bottom-color:transparent;}
+.album_one .album_info a{display:block;height:40px;line-height:20px;overflow:hidden;color:black;margin-bottom:6px;font-size:14px;text-align:justify;}
+.album_one .album_name:before{content:"\f02c";width:10px;height:10px;line-height:10px;display:inline-block;margin:0 5px;font-family:FontAwesome,sans-serif;font-weight:lighter;font-style:normal;font-size:12px;vertical-align:middle;}
+.album_one .album_upload_time{height:18px;overflow:auto;font-size:10px;text-align:right;color:gray;}
+.album_one .album_upload_time:before{content:"\f08d";width:10px;height:10px;line-height:10px;display:inline-block;margin-right:5px;font-family:FontAwesome,sans-serif;font-weight:lighter;font-style:normal;font-size:12px;vertical-align:middle;}
 
 
 /* 视频播放 */

@@ -4,4 +4,33 @@
  * @author Heanes
  * @time 2016-09-19 11:35:42 周一
  */
-/**************************************项目列表*******************************/
+/************************************** 项目列表 *******************************/
+.project-list{padding:20px 0;}
+
+.product{float:left;display:inline-block;margin-right:35px;margin-bottom:20px;}
+.product .product-wrap{border:1px solid #e8e8e8;padding:8px;border-radius:2px;}
+.product:hover .product-wrap{border:4px solid #bc0000;margin:-3px;border-radius:0;}
+.product a{color:inherit;cursor:pointer;}
+.product a:hover{text-decoration:underline;}
+
+.product .product-image{}
+.product .product-image .image-cover{display:block;margin-bottom:10px;}
+.product .product-image .image-big{width:210px;height:210px;}
+
+.product .product-image .image-thumb-list{font-size:0;}
+.product .product-image .image-thumb-list li{display:inline-block;position:relative;border:1px solid #ddd;padding:2px;cursor:pointer;margin-right:4px;}
+.product .product-image .image-thumb-list li:last-child{margin-right:0;}
+.product .product-image .image-thumb-list li:hover,
+.product .product-image .image-thumb-list li.selected{border:2px solid #cd0000;padding:1px;}
+.product .product-image .image-thumb-list li .image-thumb{width:30px;height:30px;}
+.product .product-image .image-thumb-list li .triangle-down{display:none;position:absolute;top:-10px;height:0;left:12px;overflow:hidden;width:0;line-height:0;font-size:1px;border-width:4px;border-color:#fff white #cd0000 #fff;border-style:solid}
+.product .product-image .image-thumb-list li.selected .triangle-down{display:block;}
+
+.product .product-info{margin-top:2px;}
+.product .product-info .product-price{color:#c00;padding:8px 0;line-height:34px;}
+.product .product-info .product-price .unit{font-size:13px;}
+.product .product-info .product-price .value{font-size:20px;}
+
+.product .product-info .product-name{font-size:13px;font-weight:300;margin-bottom:4px;}
+
+.product .product-info .product-seller{font-size:13px;color:#888;}
