@@ -1,6 +1,6 @@
 /**
  * @doc 公共js
- * @author fanggang
+ * @author Heanes
  * @time 2016-02-22 20:23:35 周一
  */
 
@@ -28,7 +28,7 @@ $(function () {
 
     /**
      * @doc 顶部更换字体功能
-     * @author fanggang
+     * @author Heanes
      * @time 2016-06-09 12:30:05
      */
     // 读取cookie里的字体设置
@@ -69,7 +69,7 @@ $(function () {
  * @use 用法,例如<iframe onLoad="frameAutoHeight('FM_header','FM_header')" src="../layout/header.html" name="FM_header" id="FM_header"></iframe>
  * @param frameName 框架名称
  * @param frameId 框架id
- * @author fanggang
+ * @author Heanes
  * @time 2016-02-22 20:24:11 周一
  */
 function frameAutoHeight(frameName, frameId){
@@ -84,7 +84,7 @@ function frameAutoHeight(frameName, frameId){
 
 /**
  * @doc 使iframe自适应宽度高度
- * @author fanggang
+ * @author Heanes
  * @time 2016-04-22 20:04:10
  */
 $(function () {

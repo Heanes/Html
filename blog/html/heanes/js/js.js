@@ -2,13 +2,13 @@
 $(function () {
     /**
      * @doc 文章模块相关
-     * @author fanggang
+     * @author Heanes
      * @time 2016-05-21 23:56:54
      */
 
     /**
      * @doc 文章详情页面滚动时,标题随之钉住在页面顶部显示
-     * @author fanggang
+     * @author Heanes
      * @time 2016-05-24 01:56:00
      */
     var $mainContent = $('.center .main .main-content');
@@ -41,7 +41,7 @@ $(function () {
 
         /**
          * @doc 导航栏钉住，变色
-         * @author fanggang
+         * @author Heanes
          * @time 2016-07-04 15:48:20 周一
          */
         if(headerNavBarTop != null && headerNavBarTop < $window.scrollTop()){
@@ -54,7 +54,7 @@ $(function () {
 
         /**
          * @doc 文章详情页面滚动时,标题随之钉住在页面顶部显示
-         * @author fanggang
+         * @author Heanes
          * @time 2016-05-24 01:56:00
          */
         if(articleTitleBlockTop != null && articleTitleBlockTop < $window.scrollTop()){
@@ -68,7 +68,7 @@ $(function () {
 
         /**
          * @doc 侧面"小猫咪"到底部后自动隐藏
-         * @author fanggang
+         * @author Heanes
          * @time 2016-05-30 22:24:10
          */
         if($footer.offset().top != null && $window.scrollTop() > ($footer.offset().top - $window.height()) ){
@@ -83,7 +83,7 @@ $(function () {
 
     /**
      * @doc 文章主体文字字体增大减小
-     * @author fanggang
+     * @author Heanes
      * @time 2016-05-25 14:27:37
      */
     var $articleContent = $('#articleContent');
@@ -123,7 +123,7 @@ $(function () {
 
     /**
      * @doc 到评论位置（因为页面头部有钉住栏，故不能直接用锚链接跳转形式）
-     * @author fanggang
+     * @author Heanes
      * @time 2016-05-31 14:26:18 周二
      */
     var $goToArticleCommentBtn = $('#goToArticleCommentBtn');

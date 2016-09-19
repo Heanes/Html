@@ -5,12 +5,12 @@ a.link-out{
 }
 /**
  * @doc 表单样式
- * @author fanggang
+ * @author Heanes
  * @time 2015-12-01 19:35:36
  */
 /**
  * @doc 文本框
- * @author fanggang
+ * @author Heanes
  * @time 2015-12-08 11:15:34
  */
 input[type="text"]{
@@ -68,7 +68,7 @@ input.validate-success:focus{
 }
 /**
  * @doc 下拉框
- * @author fanggang
+ * @author Heanes
  * @time 2015-12-08 11:18:40
  */
 select{
@@ -93,7 +93,7 @@ select:focus{
 }
 /**
  * @doc 文本域
- * @author fanggang
+ * @author Heanes
  * @time 2015-12-08 11:59:49
  */
 textarea{
