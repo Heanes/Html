@@ -13,12 +13,15 @@
 <link rel="stylesheet" type="text/css" href="/public/static/libs/css/base/base.css"/>
 <link rel="stylesheet" type="text/css" href="/public/static/libs/fonts/font-awesome/4.5.0/css/font-awesome.min.css"/>
 <link rel="stylesheet" type="text/css" href="/public/static/libs/ui-framework/bootstrap/3.3.7/css/bootstrap.css"/>
+<!-- 富文本编辑器 kindEditor -->
+<link rel="stylesheet" type="text/css" href="/public/static/libs/js/editor/kindEditor/4.1.11/themes/default/default.css"/>
+<link rel="stylesheet" type="text/css" href="../css/editor/kindEditor/default.css"/>
 <link rel="stylesheet" type="text/css" href="/public/static/libs/js/select2/4.0.3/css/select2.css"/>
 <link rel="stylesheet" type="text/css" href="/lib/heanesStyle/css/message-style1.css"/>
 <link rel="stylesheet" type="text/css" href="../css/style/style-2016.css"/>
 <link rel="stylesheet" type="text/css" href="../css/common.css"/>
 <link rel="stylesheet" type="text/css" href="../css/css.css"/>
-<title>业内tab切换编辑-多类型数据编辑页面</title>
+<title>页内tab切换编辑-多类型数据编辑页面</title>
 </head>
 <body>
 <div class="center wrap">
@@ -69,12 +72,61 @@
                                 <form class="form normal">
                                     <div class="line-group">
                                         <div class="form-group inline">
-                                            <label class="control-label" for="searchOrderId">订单ID：</label>
-                                            <input type="text" name="searchOrderId" class="form-control" id="searchOrderId" placeholder="请输入订单ID">
+                                            <label class="control-label" for="id">ID：</label>
+                                            <input type="text" name="id" class="form-control" id="id" placeholder="请输入ID" value="233" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="line-group">
+                                        <div class="form-group inline">
+                                            <label class="control-label" for="order">排序：</label>
+                                            <input type="text" name="order" class="form-control" id="order" placeholder="请输入序号">
+                                        </div>
+                                    </div>
+                                    <div class="line-group">
+                                        <div class="form-group inline">
+                                            <label class="control-label" for="articleTitle">标题：</label>
+                                            <textarea class="form-control textarea-title" name="articleTitle" id="articleTitle">请输入标题</textarea>
+                                        </div>
+                                    </div>
+                                    <div class="line-group">
+                                        <div class="form-group inline">
+                                            <label class="control-label" for="createTime">创建时间：</label>
+                                            <input type="text" name="createTime" class="form-control" id="createTime" placeholder="请选择创建时间">
+                                            <i class="fa fa-calendar control-icon" aria-hidden="true"></i>
                                         </div>
                                         <div class="form-group inline">
-                                            <label class="control-label" for="searchShopName">店铺名称：</label>
-                                            <input type="text" name="searchShopName" class="form-control" id="searchShopName" placeholder="店铺名称">
+                                            <label class="control-label" for="updateTime">更新时间：</label>
+                                            <input type="text" name="updateTime" class="form-control" id="updateTime" placeholder="请选择更新时间">
+                                            <i class="fa fa-calendar control-icon" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="line-group">
+                                        <div class="form-group inline">
+                                            <label class="control-label" for="articleCategory">选择分类：</label>
+                                            <select class="form-control" id="articleCategory">
+                                                <option value="0">请选择分类</option>
+                                                <option value="1">分类一</option>
+                                                <option value="2">分类二</option>
+                                                <option value="3">分类三</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="line-group">
+                                        <div class="form-group inline">
+                                            <label class="control-label">是否置顶：</label>
+                                            <input type="radio" class="form-control" name="singleSelect" value="1" id="isTop"><label class="control-label input-show-value-text" for="isTop">是</label>
+                                            <input type="radio" class="form-control" name="singleSelect" value="0" id="isNotTop"> <label class="control-label input-show-value-text" for="isNotTop">否</label>
+                                        </div>
+                                        <div class="form-group inline">
+                                            <label class="control-label">复选按钮：</label>
+                                            <input type="checkbox" class="form-control" name="multipleSelect" value="1" id="value1"><label class="control-label input-show-value-text" for="value1">值1</label>
+                                            <input type="checkbox" class="form-control" name="multipleSelect" value="0" id="value2"><label class="control-label input-show-value-text" for="value2">值2</label>
+                                        </div>
+                                    </div>
+                                    <div class="line-group">
+                                        <div class="form-group inline">
+                                            <label class="control-label" for="articleContent">内容：</label>
+                                            <textarea class="form-control textarea-content" name="articleContent" id="articleContent"></textarea>
                                         </div>
                                     </div>
                                 </form>
@@ -94,8 +146,12 @@
 <cite>
     <!-- S js S -->
     <script type="text/javascript" src="/public/static/libs/js/jquery/2.2.4/jquery.min.js"></script>
-    <script type="text/javascript" src="/public/static/libs/js/dateTimePicker/lhgCalendar/3.0.0/lhgcalendar.min.js"></script><!-- 日期时间选择器 -->
+    <!-- 富文本编辑器 kindEditor -->
+    <script charset="utf-8" src="/public/static/libs/js/editor/kindEditor/4.1.11/kindeditor-all-min.js"></script>
+    <script charset="utf-8" src="/public/static/libs/js/editor/kindEditor/4.1.11/lang/zh-CN.js"></script>
+    <!-- 日期选择器 WdatePicker -->
     <script type="text/javascript" src="/public/static/libs/js/dateTimePicker/My97DatePicker/4.8/WdatePicker.js"></script>
+    <!-- select 2 -->
     <script type="text/javascript" src="/public/static/libs/js/select2/4.0.3/js/select2.full.js"></script>
     <script type="text/javascript" src="/lib/heanesStyle/js/message.js"></script>
     <script type="text/javascript" src="../js/common/common.js"></script>
@@ -103,23 +159,19 @@
         $(function () {
             /* 日期时间选择器 */
             // datetimepicker
-            $('#searchOrderTimeStart').on('click', function () {
-                var $searchOrderTimeEnd = $dp.$('searchOrderTimeEnd');
+            $('#createTime').on('click', function () {
                 WdatePicker({
                     // 选择完毕后自动打开后一个选择器
-                    onpicked:function(){$searchOrderTimeEnd.click();},
                     doubleCalendar:true,
                     skin: 'bootstrap',
-                    firstDayOfWeek: 1,
-                    maxDate:'#F{$dp.$D(\'searchOrderTimeEnd\');}'
+                    firstDayOfWeek: 1
                 });
             });
-            $('#searchOrderTimeEnd').on('click', function () {
+            $('#updateTime').on('click', function () {
                 WdatePicker({
                     doubleCalendar:true,
                     skin: 'bootstrap',
-                    firstDayOfWeek: 1,
-                    minDate:'#F{$dp.$D(\'searchOrderTimeStart\');}'
+                    firstDayOfWeek: 1
                 });
             });
     
@@ -140,6 +192,34 @@
                     $tabContentList.removeClass('active');
                     $tabContentList.eq(i).addClass('active');
                 });
+            });
+    
+            /**
+             * @doc kindEditor富文本编辑器
+             * @author Heanes
+             * @time 2016-09-27 17:36:37 周二
+             */
+            var kindEditorTitleOption = {
+                minWidth : '740px',
+                width : '740px',
+                minHeight: '76px',
+                height: '76px',
+                items : [
+                    'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+                    'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+                    'insertunorderedlist', '|', 'emoticons'],
+                cssData: 'body {font-size:14px}'
+            };
+            var kindEditorContentOption = {
+                minWidth : '740px',
+                width : '740px',
+                minHeight: '800px',
+                height: '800px',
+                cssData: 'body {font-size:14px}'
+            };
+            KindEditor.ready(function(K) {
+                K.create('textarea[name="articleTitle"]', kindEditorTitleOption);
+                K.create('textarea[name="articleContent"]', kindEditorContentOption);
             });
         });
     </script>
