@@ -161,4 +161,6 @@ body.start{background-color:#ecf0f5;}
 
 .data-edit-form .form .form-group .form-control.textarea-title{width:740px;height:60px;}
 .data-edit-form .form .form-group .form-control.textarea-content{width:740px;height:800px;}
+.data-edit-form .form .form-group .kindEditor-count{font-size:13px;color:#c5c5c5;}
+.data-edit-form .form .form-group .form-control.textarea-content.uEditor{padding:0;border:0;}
 .ke-container{display:inline-block;vertical-align:top;}
