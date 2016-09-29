@@ -152,15 +152,21 @@ body.start{background-color:#ecf0f5;}
  * @time 2016-09-27 20:23:28 周二
  */
 .data-edit-form{padding: 0 20px;}
-.data-edit-form .form{}
+.data-edit-form .form{width:870px;margin:0 auto;}
 .data-edit-form .form .form-group.inline{display:inline-block;}
 .data-edit-form .form .form-group.inline .form-control{width:auto;display:inline-block;vertical-align:middle;}
-.data-edit-form .form .form-group .control-label{min-width:120px;text-align:right;vertical-align:middle;margin-bottom:0;}
-.data-edit-form .form .form-group .control-label.input-show-value-text{font-weight:normal;min-width:0;margin:0 10px 0 4px}
+.data-edit-form .form .form-group .control-label{width:120px;text-align:right;vertical-align:middle;margin-bottom:0;}
+.data-edit-form .form .form-group .control-label.input-show-value-text{width:auto;font-weight:normal;min-width:0;margin:0 10px 0 4px}
 .data-edit-form .form .form-group .control-icon{margin-left:-30px;z-index:-1;vertical-align:middle;}
 
 .data-edit-form .form .form-group .form-control.textarea-title{width:740px;height:60px;}
-.data-edit-form .form .form-group .form-control.textarea-content{width:740px;height:800px;}
-.data-edit-form .form .form-group .kindEditor-count{font-size:13px;color:#c5c5c5;}
-.data-edit-form .form .form-group .form-control.textarea-content.uEditor{padding:0;border:0;}
+.data-edit-form .form .form-group .form-control.textarea-content{width:740px;height:740px;}
+.data-edit-form .form .form-group .kindEditor-count{padding-left:134px;font-size:13px;color:#5a5a5a;}
+.data-edit-form .form .form-group .form-control.textarea-content.uEditor{padding:0;border:0;margin-bottom:130px;}
+.data-edit-form .form .form-group .form-control.textarea-content.uEditor.eui-default{height:auto;}
 .ke-container{display:inline-block;vertical-align:top;}
+
+.data-edit-form .form .form-handle{margin:20px auto;}
+.data-edit-form .form .form-handle .handle-group{}
+.data-edit-form .form .form-handle .handle-group.text-center{text-align:center}
+.data-edit-form .form .form-handle .handle-group .handle{margin:0 20px;}

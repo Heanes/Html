@@ -114,6 +114,12 @@
                                     <textarea class="form-control textarea-content uEditor" name="articleContentByUEditor" id="articleContentByUEditor"></textarea>
                                 </div>
                             </div>
+                            <div class="form-handle">
+                                <div class="handle-group line-group text-center">
+                                    <button type="button" class="handle btn">放弃</button>
+                                    <button type="submit" class="handle btn btn-primary btn-lg">提交</button>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -132,7 +138,7 @@
     <!-- 富文本编辑器 kindEditor -->
     <script type="text/javascript" charset="utf-8" src="/public/static/libs/js/editor/kindEditor/4.1.11/kindeditor-all-min.js"></script>
     <script type="text/javascript" charset="utf-8" src="/public/static/libs/js/editor/kindEditor/4.1.11/lang/zh-CN.js"></script>
-    <!-- 富文本编辑器 kindEditor -->
+    <!-- 富文本编辑器 uEditor -->
     <script type="text/javascript" charset="utf-8" src="/public/static/libs/js/editor/uEditor/1.4.3.3/php/ueditor.config.js"></script>
     <script type="text/javascript" charset="utf-8" src="/public/static/libs/js/editor/uEditor/1.4.3.3/php/ueditor.all.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="/public/static/libs/js/editor/uEditor/1.4.3.3/php/lang/zh-cn/zh-cn.js"></script>
@@ -183,15 +189,18 @@
             var kindEditorContentOption = {
                 minWidth : '740px',
                 width : '740px',
-                minHeight: '800px',
-                height: '800px',
-                cssData: 'body {font-size:14px}'
+                minHeight: '740px',
+                height: '740px',
+                cssData: 'body {font-size:14px}',
+                afterChange : function() {
+                    $('.word_count1').html(this.count());
+                    $('.word_count2').html(this.count('text'));
+                }
             };
             KindEditor.ready(function(K) {
                 K.create('textarea[name="articleTitle"]', kindEditorTitleOption);
                 K.create('textarea[name="articleContent"]', kindEditorContentOption);
             });
-    
     
             /**
              * @doc uEditor富文本编辑器
