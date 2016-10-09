@@ -164,6 +164,8 @@ body.start{background-color:#ecf0f5;}
 .data-edit-form .form .form-group .kindEditor-count{padding-left:134px;font-size:13px;color:#5a5a5a;}
 .data-edit-form .form .form-group .form-control.textarea-content.uEditor{padding:0;border:0;margin-bottom:130px;}
 .data-edit-form .form .form-group .form-control.textarea-content.uEditor.eui-default{height:auto;}
+.data-edit-form .form .form-group input[type="checkbox"],
+.data-edit-form .form .form-group input[type="radio"]{display:inline-block;vertical-align:middle;margin:0;}
 .ke-container{display:inline-block;vertical-align:top;}
 
 .data-edit-form .form .form-handle{margin:20px auto;}

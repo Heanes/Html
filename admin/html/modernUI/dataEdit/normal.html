@@ -89,13 +89,13 @@
                             <div class="line-group">
                                 <div class="form-group inline">
                                     <label class="control-label">是否置顶：</label>
-                                    <input type="radio" class="form-control" name="singleSelect" value="1" id="isTop"><label class="control-label input-show-value-text" for="isTop">是</label>
-                                    <input type="radio" class="form-control" name="singleSelect" value="0" id="isNotTop"> <label class="control-label input-show-value-text" for="isNotTop">否</label>
+                                    <input type="radio" class="" name="singleSelect" value="1" id="isTop"><label class="control-label input-show-value-text" for="isTop">是</label>
+                                    <input type="radio" class="" name="singleSelect" value="0" id="isNotTop"> <label class="control-label input-show-value-text" for="isNotTop">否</label>
                                 </div>
                                 <div class="form-group inline">
                                     <label class="control-label">复选按钮：</label>
-                                    <input type="checkbox" class="form-control" name="multipleSelect" value="1" id="value1"><label class="control-label input-show-value-text" for="value1">值1</label>
-                                    <input type="checkbox" class="form-control" name="multipleSelect" value="0" id="value2"><label class="control-label input-show-value-text" for="value2">值2</label>
+                                    <input type="checkbox" class="" name="multipleSelect" value="1" id="value1"><label class="control-label input-show-value-text" for="value1">值1</label>
+                                    <input type="checkbox" class="" name="multipleSelect" value="0" id="value2"><label class="control-label input-show-value-text" for="value2">值2</label>
                                 </div>
                             </div>
                             <div class="line-group">
@@ -103,8 +103,8 @@
                                     <label class="control-label" for="articleContent">内容：</label>
                                     <textarea class="form-control textarea-content" name="articleContent" id="articleContent"></textarea>
                                     <p class="kindEditor-count">
-                                        您当前输入了 <span class="word_count1">0</span> 个文字。（字数统计包含HTML代码。）<br />
-                                        您当前输入了 <span class="word_count2">0</span> 个文字。（字数统计包含纯文本、IMG、EMBED，不包含换行符，IMG和EMBED算一个文字。）
+                                        您当前输入了 <span class="word-count1">0</span> 个文字。（字数统计包含HTML代码。）<br />
+                                        您当前输入了 <span class="word-count2">0</span> 个文字。（字数统计包含纯文本、IMG、EMBED，不包含换行符，IMG和EMBED算一个文字。）
                                     </p>
                                 </div>
                             </div>
@@ -193,8 +193,8 @@
                 height: '740px',
                 cssData: 'body {font-size:14px}',
                 afterChange : function() {
-                    $('.word_count1').html(this.count());
-                    $('.word_count2').html(this.count('text'));
+                    $('.word-count1').html(this.count());
+                    $('.word-count2').html(this.count('text'));
                 }
             };
             KindEditor.ready(function(K) {
