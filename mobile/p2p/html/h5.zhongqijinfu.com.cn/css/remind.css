@@ -1,0 +1,163 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*提醒 01*/
+.remind_01{text-align:center;}
+.remind_01 img{margin:1em 0 0 0;  width:140px; height:133px;}
+.remind_01 p{ margin:1.55em 0 2.5em 0; font-size:0.95em;}
+
+/*提醒 02*/
+.remind-list{padding:0 10px 0 10px;}
+.remind-list .remind-bank{ background:#fff; border:1px #dbdbdf solid; border-radius:5px; padding:0.8em 0.56em; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center;   -ms-flex-align: center;  align-items: center; margin-top:10px;}
+.href_box_set{display:block;overflow:hidden;}
+.divleft_set{float:left;width:50%;font-size:.85em;color:#999;}
+.divleft_set img{width:35px;height:35px;float:left; margin:3px 8px 0 0;}
+.divleft_set span{display:block; color:#000; font-size:1.3em;}
+.divright_set{float:right;width:50%;}
+.divright_set b{float:right;font-size:2.8em;color:rgba(0, 0, 0, 0.66); padding:3px 6px 0 0;}
+.divright_set p{float:right;font-size:.85em;color:#999; margin-top:10px;  }
+.divright_set p span{display:block;color:#000; letter-spacing:4px; font-size:1.3em;}
+
+/*已还 未还 滑动*/
+.switch-btn {position: relative; display: block; vertical-align: top; width: 60px; height: 20px; border-radius: 18px; cursor: pointer;}
+.checked-switch {position: absolute; top: 0; left: 0; opacity: 0;}
+.text-switch {background-color: #ed5b49; border: 1px solid #d2402e; border-radius: inherit; color: #fff; display: block; font-size: 12px; height: inherit; position: relative; text-transform: uppercase;}
+.text-switch:before, .text-switch:after {position: absolute; top: 50%; margin-top: -.5em; line-height: 1; -webkit-transition: inherit; -moz-transition: inherit; -o-transition: inherit; transition: inherit;}
+.text-switch:before {content: attr(data-no); right: 8px;}
+.text-switch:after {content: attr(data-yes); left: 8px; color: #FFFFFF; opacity: 0;}
+.checked-switch:checked ~ .text-switch {background-color: #00af2c; border: 1px solid #068506;}
+.checked-switch:checked ~ .text-switch:before {opacity: 0;}
+.checked-switch:checked ~ .text-switch:after {opacity: 1;}
+.toggle-btn {background: linear-gradient(#eee, #fafafa); border-radius: 100%; height: 20px; left: 1px; position: absolute; top: 1px; width: 20px;}
+.toggle-btn::before {color: #aaaaaa; content: "|||"; display: inline-block; font-size: 12px; letter-spacing: -2px; padding: 4px 0; vertical-align: middle;}
+.checked-switch:checked ~ .toggle-btn {left:39px;}
+.text-switch, .toggle-btn {transition: All 0.3s ease; -webkit-transition: All 0.3s ease; -moz-transition: All 0.3s ease; -o-transition: All 0.3s ease;}
+.no-radius, .no-radius .toggle-btn{border-radius: 0;}
+.circle-style .toggle-btn::before{ border-radius: 50%; content: ""; height: 14px; margin-top: 6px; padding: 0; width: 14px;}
+/* 已还 未还 滑动 end */
+
+.btn_tx img{ margin-right:10px; vertical-align:middle; width:20px;}
+.btn_tx{ margin-bottom:120px;}
+
+/*贷款提醒 03*/
+.loan_reminder{padding:0.56em 1.13em; overflow:auto; display: block;}
+.loan_reminder:last-child{ margin-bottom:3.90em;}
+.loan_reminder span{ display:inline-block;}
+.loan_reminder ul{margin:0.3em 0;}
+.loan_reminder ul > li{ float:left; width:30%; line-height:2.82em; border:1px #dbdbdf solid; margin:0.40em 0.3em 0 0.20em; text-align:center; background:#fff; border-radius:5px; }
+.loan_reminder ul > li:last-child{ background:none; border:none;}
+
+/*3.1 按揭贷*/
+.mortgage_top{ height:7.5em; background:#2fb3ff;}
+.mortgage_service ul li a{text-align:left; padding-left:27%}
+.mortgage_top img{ display:block; margin:0.8em 0.56em 0 0.56em; width: 50px; height: 50px;}
+.mortgage_top .mortgage_font{ display:block; line-height:1.80em; margin-top:1em; color:#fff; }
+
+.mortgage_top .mortgage_font em{ margin-left:15px;}
+.state{ line-height:2.49em; background:#fff;  overflow:hidden;}
+
+/*我的提醒*/
+.my_mortgage{ margin-top:0.44em; line-height:2.23em;}
+.pleasant_img p img{ vertical-align:middle; margin-right:0.85em; width:40px; height:40px;}
+
+/*贷款提醒*/
+.none_huan{ border:none;}
+
+/*银行服务*/
+.weui_cells_access a{list-style: none; cursor: pointer;}
+.weui_cells_access h3{ display:none;}
+.weui_cell .pleasant p:before{display:inline-block; margin:5px auto 5px auto; width:35px; height:35px; content: " "; vertical-align:middle;}
+.weui_cell .pleasant .bank_ico01:before,.weui_cell .pleasant .bank_ico02:before,.weui_cell .pleasant .bank_ico03:before,.weui_cell .pleasant .bank_ico04:before,.weui_cell .pleasant .bank_ico05:before,.weui_cell .pleasant .bank_ico06:before,.weui_cell .pleasant .bank_ico07:before,.weui_cell .pleasant .bank_ico08:before,.weui_cell .pleasant .bank_ico09:before,.weui_cell .pleasant .bank_ico10:before,.weui_cell .pleasant .bank_ico11:before,.weui_cell .pleasant .bank_ico12:before,.weui_cell .pleasant .bank_ico13:before,.weui_cell .pleasant .bank_ico14:before,.weui_cell .pleasant .bank_ico15:before,.weui_cell .pleasant .bank_ico16:before,.weui_cell .pleasant .bank_ico17:before,.weui_cell .pleasant .bank_ico18:before,.weui_cell .pleasant .bank_ico19:before,.weui_cell .pleasant .bank_ico20:before,.weui_cell .pleasant .bank_ico21:before,.weui_cell .pleasant .bank_ico22:before,.weui_cell .pleasant .bank_ico23:before,.weui_cell .pleasant .bank_ico24:before,.weui_cell .pleasant .bank_ico25:before,.weui_cell .pleasant .bank_ico26:before,.weui_cell .pleasant .bank_ico27:before,.weui_cell .pleasant .bank_ico28:before,.weui_cell .pleasant .bank_ico29:before,.weui_cell .pleasant .bank_ico30:before{ background:url(../images/bank.png) no-repeat; margin-right:10px;}
+.weui_cell .pleasant .bank_ico01:before {background-size:contain; background-size:100%; background-position:0 0;}
+.weui_cell .pleasant .bank_ico02:before {background-size:contain; background-size:100%; background-position:0 -35px;}
+.weui_cell .pleasant .bank_ico03:before {background-size:contain; background-size:100%; background-position:0 -70px;}
+.weui_cell .pleasant .bank_ico04:before {background-size:contain; background-size:100%; background-position:0 -105px;}
+.weui_cell .pleasant .bank_ico05:before {background-size:contain; background-size:100%; background-position:0 -140px;}
+.weui_cell .pleasant .bank_ico06:before {background-size:contain; background-size:100%; background-position:0 -175px;}
+.weui_cell .pleasant .bank_ico07:before {background-size:contain; background-size:100%; background-position:0 -210px;}
+.weui_cell .pleasant .bank_ico08:before {background-size:contain; background-size:100%; background-position:0 -245px;}
+.weui_cell .pleasant .bank_ico09:before {background-size:contain; background-size:100%; background-position:0 -280px;}
+.weui_cell .pleasant .bank_ico10:before {background-size:contain; background-size:100%; background-position:0 -315px;}
+.weui_cell .pleasant .bank_ico11:before {background-size:contain; background-size:100%; background-position:0 -350px;}
+.weui_cell .pleasant .bank_ico12:before {background-size:contain; background-size:100%; background-position:0 -385px;}
+.weui_cell .pleasant .bank_ico13:before {background-size:contain; background-size:100%; background-position:0 -420px;}
+.weui_cell .pleasant .bank_ico14:before {background-size:contain; background-size:100%; background-position:0 -455px;}
+.weui_cell .pleasant .bank_ico15:before {background-size:contain; background-size:100%; background-position:0 -490px;}
+.weui_cell .pleasant .bank_ico16:before {background-size:contain; background-size:100%; background-position:0 -525px;}
+.weui_cell .pleasant .bank_ico17:before {background-size:contain; background-size:100%; background-position:0 -595px;}
+.weui_cell .pleasant .bank_ico18:before {background-size:contain; background-size:100%; background-position:0 -630px;}
+.weui_cell .pleasant .bank_ico19:before {background-size:contain; background-size:100%; background-position:0 -665px;}
+.weui_cell .pleasant .bank_ico20:before {background-size:contain; background-size:100%; background-position:0 -700px;}
+.weui_cell .pleasant .bank_ico21:before {background-size:contain; background-size:100%; background-position:0 -735px;}
+.weui_cell .pleasant .bank_ico22:before {background-size:contain; background-size:100%; background-position:0 -770px;}
+.weui_cell .pleasant .bank_ico23:before {background-size:contain; background-size:100%; background-position:0 -805px;}
+.weui_cell .pleasant .bank_ico24:before {background-size:contain; background-size:100%; background-position:0 -840px;}
+.weui_cell .pleasant .bank_ico25:before {background-size:contain; background-size:100%; background-position:0 -875px;}
+.weui_cell .pleasant .bank_ico26:before {background-size:contain; background-size:100%; background-position:0 -910px;}
+.weui_cell .pleasant .bank_ico27:before {background-size:contain; background-size:100%; background-position:0 -945px;}
+.weui_cell .pleasant .bank_ico28:before {background-size:contain; background-size:100%; background-position:0 -980px;}
+.weui_cell .pleasant .bank_ico29:before {background-size:contain; background-size:100%; background-position:0 -1015px;}
+.weui_cell .pleasant .bank_ico30:before {background-size:contain; background-size:100%; background-position:0 -1050px;}
+
+/*联系招商银行*/
+.weui_cell_primary em{ margin-left:15px;}
+.contact_none:after,.bank_phone:after{ content:""; clear:both; display:inline-block; width:20px; height:22px; background:url(../images/bank_phone.png) no-repeat; vertical-align:middle; }
+.contact_none:after{background-position:-20px 0;}
+.bank_phone:after{ background-position:0 0;}
+.contact_none{ border:none;}
+.weui_cells_access h3{display:none}
+
+/**办卡样式**/
+.card_banner img{ width:100%; height:auto; background-origin:content-box; }
+.card_bank dl{ background:#fff; padding:15px; margin-top:6px;}
+.card_bank dl dt{ margin-right:10px; background:#fff;}
+.card_bank dl dt:before{ content:""; clear:both; display:block;  width:50px; height:49px; margin-right:10px;}
+.card_bank dl .bank_01:before,.card_bank dl .bank_02:before,.card_bank dl .bank_03:before,.card_bank dl .bank_09:before,.card_bank dl .bank_13:before,.card_bank dl .bank_14:before,.card_bank dl .bank_30:before{background:url(../images/bank.png) no-repeat;}
+.card_bank dl .bank_01:before{ background-position:0 -0.5px;}
+.card_bank dl .bank_02:before{ background-position:0 -49px;}
+.card_bank dl .bank_03:before{ background-position:0 -98px;}
+.card_bank dl .bank_09:before{ background-position:0 -401px;}
+.card_bank dl .bank_13:before{ background-position:0 -700px;}
+.card_bank dl .bank_14:before{ background-position:0 -650px;}
+.card_bank dl .bank_30:before{ background-position:0 -1458px;}
+.card_bank dl dd{ display:block; line-height:24px; font-size:1.1em;}	
+.card_bank dl dd em{ float:right;}
+.card_bank dl dd:nth-child(3){color:#ff4545; font-size:1em;}
+
+/*贷款超市*/
+
+.banner  img { width: 100%; display: block;}
+.b-list { margin:.7em .7em 2.5em; line-height:1.5em;}
+.b-list li {position:relative; background: #fff;  margin-bottom: .5em;  border:1px #dbdbdf solid; border-radius:5px;}
+.b-list li a { padding: .8em; display: -webkit-box;-webkit-box-align:center;}
+.b-list li a img { vertical-align:middle; width:70px;}
+.b-list li a div p { color: #999; margin-left:5px;}
+.b-list li a div:nth-child(1) {float:left;position:absolute;top:15px;left:10px; width: 5em; margin-right: .7em; text-align: center;}
+.b-list li a div:nth-child(2) {margin-left:90px;}
+.b-list li a div p span { color: #fe4c45;}
+.b-list li a div p:nth-child(1) { color:#333; }
+.b-list li a div p:nth-child(2) { font-size: .8em;}
+.b-list li a div p:nth-child(3) { font-size:.9em; }
+.recomand:after { background: url(../images/recomand.png) 0 .5em no-repeat; background-size: 1em 1.2em;content: ""; display: inline-block; margin-left:.5em; height: 1.7em; width:1em;}
+.hot:after { background: url(../images/hot.png) 0 .5em no-repeat;content: "";background-size: 1em 1.2em; display: inline-block; margin-left:.5em; height: 1.7em; width: 1em;}
+.new:after { background: url(../images/new.png) 0 .5em no-repeat;content: "";background-size: 1em 1.2em;; display: inline-block; margin-left:.5em; height: 1.7em; width: 1em;}
+
+.
+
+/****垫付月供***/
+.paybanner img { width: 100%;}
+.bg-w { width: 100%; overflow: hidden; display: -webkit-box; background: #fff; border-bottom: 1px solid  #c3c3c3; padding: 1em  0;}
+.bg-w li {padding: 0 .5em; width: 30%; text-align: center; border-right:1px solid #c3c3c3; height:3em; line-height:1.6em;}
+.bg-w li p,.house-list b{ color: #999;font-size:0.875em;}
+.house-list { background: #fff; margin-bottom: .8em;}
+.mb { margin-bottom: 2em;}
+.house-list li {display: -webkit-box; height: auto;padding:0.5em 0; margin: 0 1em; border-bottom: 1px solid #c3c3c3; -webkit-box-align: center; -webkit-box-pack: start; -webkit-box-orient: horizontal;}
+.house-list li.hos-code  p { width: 47%;}
+.house-list li.hos-code button { width: 6em;  background: #999;  color: #fff; border-radius:5px;  height: 2.2em; font-size: .9em; }
+.house-list li:last-child {border: 0;}
+
+.house-list li span {display: block; width: 25%;}
+.house-list li p {width: 65%;}
+.house-list li i {display: block; background: url(../images/go-icon.png) 0 0 no-repeat;width: 0.642em; background-size: 100% 100%; height: 0.928em; margin-left: .7em;}
+.house-list li em {display: block;width: 2.3em;margin-left: .5em;}
+

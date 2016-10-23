@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, user-scalable=no" />
+<meta name="format-detection" content="telephone=no"/>
+<meta name="description" content="" />
+<title>荣盛阿尔卡迪亚霸州温泉城</title>
+<link rel="stylesheet" type="text/css" href="css/commer.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/new.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+</head>
+
+<body> 
+	<div class="picBox">
+    	<div class="liDiv ClearFix">
+        	<section class="u-zhiyin"><span></span></section>
+       		 <ul>
+           		 <li><img src="img/banner1.jpg" /></li>
+           		 <li><img src="img/banner2.jpg" /></li>
+           		 <li><img src="img/banner3.jpg" /></li>
+           		 <li><img src="img/banner4.jpg" /></li>
+           		 <li><img src="img/banner5.jpg" /></li>
+           		 <li><img src="img/banner6.jpg" /></li>                                                                  
+       		 </ul>
+             <div class="button_1 ClearFix">             
+             	<a href="sq_kanfang.html" class="yuyue">预约看房</a>
+                <a href="ms_zixun.html" class="zixun">我要咨询</a>
+             </div>
+		 </div>	
+    </div> 
+<script type="text/javascript">
+$(function(){
+var li=0;
+	var screenW = $(window).width(); 
+	var liLength=$(".picBox li").length;
+	$("li").each(function()
+	{
+		//li+=$(this).width()*0.9;
+		li+=(screenW)
+
+		$(this).width(screenW)
+		
+	});
+	$(".liDiv").width(li);
+	
+var li2=0;
+$('body').swipe({
+		swipe:function(event, direction, distance, duration, fingerCount){
+			if(direction == "left")
+			 {
+				//alert("11");
+				
+				if(li2==liLength-1){
+					
+				}else{
+					li2++;
+					$('.liDiv').animate({left:-(screenW*li2)+'px'},200);
+					}
+			 }
+			 
+			 if(direction == "right")
+			 {
+				//alert("11");
+				
+				if(li2==0){
+					$('.liDiv').animate({left:0},200);
+					
+				}else{
+					li2--;
+					$('.liDiv').animate({left:-(screenW*li2)+'px'},200);
+				}
+			 }			
+		}		
+	});	
+})
+</script>
+</body>

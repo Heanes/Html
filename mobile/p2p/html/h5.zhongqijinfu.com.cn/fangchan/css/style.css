@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+.color_box{background:#e8edf1;}
+.picBox{width:100%;  position:fixed; top:0;}
+.liDiv{position:relative;}
+.liDiv ul li{text-align:center; display:table-cell; vertical-align:middle;}
+.liDiv ul li img{ vertical-align:middle; width:100%;}
+
+.button_1{width:100%; height:75px; position:fixed; bottom:80px; left:0; z-index:9999;text-align:center; font-size:34px; }
+.button_1 a{display:inline-block;  border:1px #ecf1ff solid; margin:0 29px; line-height:75px; text-align:center;width:36%; text-align:center; box-shadow: 0 0 5px rgba(81, 203, 238, 1); color:#fff;}
+.button_1 .yuyue{background:#303954;}
+.button_1 .zixun{background:#95a4ce;}
+
+.u-zhiyin { position:fixed; animation:1s ease 0s normal none infinite running huadong; z-index:9999;}
+.u-zhiyin span{width:29px;height:36px; background:url(../img/jiant.png) no-repeat; position:absolute; top:500px; left:15px;   box-sizing:border-box; opacity:1; display:inline-block;}
+.u-zhiyin span:nth-child(1){ animation-delay: 1s;}
+@keyframes huadong{
+	from{left:0;}
+	to{left:20px;}
+}
+
+
+
+/****申请看房***/
+.sq_k{width:100%; background:#33c3f8; height:95px;  line-height:95px;}
+.sq_k .back {display: block; height:39px; font-size:34px; line-height:39px; text-indent:35px; color:#fff; background:url(../img/back.png) no-repeat; position:absolute; left:33px; top:30px;}
+.sq_k .title { text-align:center; font-size: 36px; line-height:95px;color: #FFF;}
+
+.apply_box{ width:100%; font-size:28px;}
+.m_wen{ line-height:90px;  text-indent:35px; color:#666;}
+.list{ padding:0 35px; background:#fff;}
+.list li{line-height:79px;  border-bottom:1px #c3c3c3 solid;}
+.list .Border{border-bottom:none;}
+.list li .plas_01{ margin-left:75px;}
+.list li .O_ption{ float:right; color:#b6b6b6; font-weight:100;}
+.list li .O_ption input{margin:0 15px;}
+.list input{border:0; background:0; font-size:28px; margin-left:50px;}
+.list .blue{ color:#0e96dc;}
+.list .blue i{font-style:normal; width:2px; display:inline-block;  height:30px; background:#0e96dc; margin:0 15px -5px 0;}
+.btn {height: 75px; display: block; background:#33c3f8; color:#fff; border-radius: 10px; box-sizing: border-box; text-align: center;line-height: 75px; font-size: 32px; width: 85%; margin:60px auto 0 auto;}
+ 
+
+/****申请成功***/
+.Success{background:#fff;  text-align:center; padding:50px 0;  font-size:26px; }
+.Success .Gxi{color:#666; margin:40px 0; display:block;}
+.Success a{ color:#2199ff;}

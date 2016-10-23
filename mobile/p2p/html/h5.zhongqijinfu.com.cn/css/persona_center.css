@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*帮助 01*/
+.wenda ul{list-style: none;}
+.wenda ul li h3{background: #fff url(../images/arrow1.png) no-repeat 96% 15px; background-size:7px 13px; line-height:40px; height: 40px;  padding-left: 15px; cursor: pointer;  border-bottom:1px #dbdbdf solid;}
+.wenda ul li h3:before,.wenda ul li p:before{ background:url(../images/ask.png) no-repeat; content:""; clear:both; display:inline-block; vertical-align:middle; width:16px; height:16px; margin-right:6px;}
+.wenda ul li h3:before{background-size:contain; background-size:200%; background-position:0 0;}
+.wenda ul li p:before{ background-size:contain; background-size:200%; background-position:-16px 0;}
+.wenda ul li h3.cur{background: #fff url(../images/arrow2.png) no-repeat 96% 15px;  background-size:13px 7px;}
+.wenda ul li p{font-size: 12px; line-height:20px; padding: 20px 15px; display: none; background:#fff; border-bottom:1px #dbdbdf solid;}
+
+.proposal{ font: 14px/40px "宋体"; background:#fff; width:100%; position:fixed; bottom:0; text-align:center;}
+.proposal img{ width:20px; height:20px; vertical-align:middle; margin-right:5px;}
+
+/*反馈 01*/
+.feedback_box{ margin:0 10px 10px 10px; border-radius:5px;}
+.none_line{}
+
+/*个人中心*/
+.personal_head{ background:#D8371A; height:105px; text-align:center; padding-top:20px; line-height:25px; color:#fff;}
+.personal_head img{ border-radius:100px; border:2px #fff solid;}
+.center_postion ul li a{text-align:left; padding-left:21%; font-size:1.02em;}
+.center_postion ul li a:before {display:inline-block; margin:0 auto 5px auto; width:20px; height:20px; content: " "; vertical-align:middle;}
+.center_postion ul li .center_01:before,.center_postion ul li .center_02:before,.center_postion ul li .center_03:before,.center_postion ul li .center_04:before,.center_postion ul li .center_05:before,.center_postion ul li .center_06:before,.center_postion ul li .center_07:before,.center_postion ul li .center_08:before,.center_postion ul li .center_09:before{ background:url(../images/center_ico1.png) no-repeat; margin-right:6px;}
+
+.center_postion ul li .center_01:before {background-size:contain; background-size:900%; background-position:0 0;}
+.center_postion ul li .center_02:before {background-size:contain; background-size:900%; background-position:-20px 0;}
+.center_postion ul li .center_03:before {background-size:contain; background-size:900%; background-position:-40px 0;}
+.center_postion ul li .center_04:before {background-size:contain; background-size:900%; background-position:-60px 0;}
+.center_postion ul li .center_05:before {background-size:contain; background-size:900%; background-position:-80px 0;}
+.center_postion ul li .center_06:before {background-size:contain; background-size:900%; background-position:-100px 0;}
+.center_postion ul li .center_07:before {background-size:contain; background-size:900%; background-position:-120px 0;}
+.center_postion ul li .center_08:before {background-size:contain; background-size:900%; background-position:-140px 0;}
+.center_postion ul li .center_09:before {background-size:contain; background-size:900%; background-position:-160px 0;}
+
+/*关于我们*/
+.about_center{ text-align:center; padding:10px 15px; font-size:0.85em;}
+.about_center img{ margin-bottom:10px; width:80px; height:80px;}
+.content_intr{ line-height:24px;  margin-top:10px; text-align:left; text-align:justify; color:#69696d;
+.weui_cell_ft_1{ color:#999;}
+
+/*设置*/
+.weui_cell_ft img{ width:25px; height:25px; border-radius:100px; vertical-align:middle;}
+
+/*注册成功*/
+.main .s-note {padding: 20px; text-align: center;  line-height: 30px;}
+.main .s-note b {font-size: 24px; color: #DE5A51; font-weight: normal;}
+.main .cont {background-color: #FFF; margin: 0 15px; border-radius: 7px; padding: 5px 20px;box-shadow: 0px 2px 8px rgba(0,0,0,0.2)}
+.main .cont p {padding: 5px 0px 20px 0px; margin: 0px;}
+.main .cont .title {font-size: 0.85em;line-height: 30px;color: #DE5A51;text-align: left;}
+.main .cont img {width: 100%;}
+.main .cont .title em{ color:#333;}
+.return_btn{ line-height:80px; text-align:center;}
+.return_btn a{ color:#2e8bff}
+
+
+/*安全保障*/
+.safe{
+text-align:center;
+}

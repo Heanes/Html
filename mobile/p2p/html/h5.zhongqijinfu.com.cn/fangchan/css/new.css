@@ -1,0 +1,19 @@
+body,html{
+	height: 100%
+}
+.picBox{
+	height: 100%;
+}
+.picBox > .liDiv{
+	height: 100%;
+}
+.picBox > div.liDiv > ul{
+	height: 100%;
+	display: table;
+}
+.picBox > div.liDiv > ul > li{
+	height: 100%;
+}
+.picBox > div.liDiv > ul > li > img{
+	height: 100%;
+}

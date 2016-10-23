@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, user-scalable=no" />
+<meta name="format-detection" content="telephone=no"/>
+<meta name="description" content="" />
+<title>荣盛阿尔卡迪亚霸州温泉城</title>
+<link rel="stylesheet" type="text/css" href="css/commer.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body class="color_box">
+	<div class="sq_k">
+    	<a href="#" class="back">返回</a>
+ 		<div class="title">马上咨询</div>
+    </div>
+    
+<!--form--->  
+	<div class="apply_box">
+    	<p class="m_wen">请填写您的联系方式</p>
+        <form>
+        <ul class="list">
+          <li><label>姓名</label><input type="text" class="plas_01" placeholder="请输入姓名"/></li>
+          <li><label>先生/女士</label><b class="O_ption"><input name="sex"  type="radio" value="">先生<input name="sex" type="radio" value="">女士</b></li>
+          <li><label>手机号</label><input type="text" placeholder="请输入手机号"/></li>
+          <li class="Border"><label>验证码</label><input type="text" placeholder="请输入验证码"/><a href="#" class="blue right"><i></i>发送验证码</a></li>
+        </ul>  
+        <p class="m_wen">随后有专业顾问与您联系安排看房</p>  
+        <a  href="#" class="btn">立即申请</a>
+        </form>
+    </div>  
+
+</body>

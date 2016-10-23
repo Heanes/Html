@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {overflow-y:scroll;}
+body {font:12px "\5B8B\4F53", san-serif; margin:0 auto; background:#1a1c22; font-family:"微软雅黑"; height:100%;}
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, blockquote, p { padding:0; margin:0;}
+table, td, tr, th { font-size:12px;}
+li {list-style-type:none;}
+img {border:0;}
+a {text-decoration:none;color:#000; cursor:pointer;}
+ol, ul { list-style:none; margin:0;  padding:0;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+
+.left{float:left;}
+.right{float:right;}
+a{blr:expression(this.onFocus=this.close());} /* 只支持IE，过多使用效率低 */ 　  
+a:focus { -moz-outline-style: none; outline:none;} /* IE不支持 */ 
+.ClearFix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+a:hover{text-decoration:none;}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="text"],
+button {
+-webkit-appearance: none;
+-webkit-border-shadow:none;
+}
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+border: none;
+}
+textarea{-webkit-appearance: none;
+-webkit-border-shadow:none;}
+

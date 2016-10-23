@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*图片轮播*/
+.focus{height:140px;margin:0 auto;overflow:hidden;position:relative; width:320px;}
+.focus .wrappic{height:100%;width:100%;overflow:hidden;position:relative;}
+.focus ol{left:0;height:100%;overflow:hidden;position:absolute;top:0;width:9999px;}
+.focus ol li{float:left;height:100%;width:100%;}
+.focus ol li img{height:100%;width:100%;vertical-align:middle;}
+.focus ul{/*right:10px;*/left:50%; margin-left:-30px; position:absolute; bottom:10px; z-index:999; width:60px;}
+.focus ul li{background:rgba(255,255,255,0.5);border-radius:25px;cursor:pointer;display:inline;float:left;font-size:0;line-height:0;height:9px;margin-left:5px;overflow:hidden;width:9px;}
+.focus ul .current{background:#fff;}
+
+/*云孤业务*/
+.y-business{border-left:#e9e9ec 1px solid;box-sizing:border-box; margin-bottom:88px;}
+.y-business:after {clear: both;content:" ";visibility:hidden;height:0px;float:none;display:block;}
+.y-business li a{line-height: 2.3em; color: #333; text-align: center; display: block; float: left; padding-top: 1.30em; box-sizing: border-box;height: 8.0em;width: 33.333%;border-right: #e9e9ec 1px solid; border-bottom: #e9e9ec 1px solid; text-decoration: none; background-color: #FFF; overflow: hidden; position:relative;}
+.y-business li a:active{ background-color: #eee;}
+.y-business li a:before {display: block; margin:0 auto 5px auto;  content: " "; clear:both; width:40px; height:40px;}
+
+
+
+.y-business li .y-option01:before{ background:url(../images/index/card.png) no-repeat;}
+
+.y-business li .y-option02:before{ background:url(../images/index/shop.png) no-repeat;}
+.y-business li .y-option03:before{ background:url(../images/index/remind.png) no-repeat;}
+.y-business li .y-option04:before{ background:url(../images/index/house.png) no-repeat;}
+.y-business li .y-option05:before{ background:url(../images/index/travel.png) no-repeat;}
+.y-business li .y-option06:before{ background:url(../images/index/progress.png) no-repeat;}
+.y-business li .y-option07:before{ background:url(../images/index/education.png) no-repeat;}
+.y-business li .y-option08:before{ background:url(../images/index/honor.png) no-repeat;}
+.y-business li .y-option09:before{ background:url(../images/index/unit.png) no-repeat;}
+
+.y-business li .y-option01:before {background-size:contain; background-size:100%; background-position:0 0;}
+.y-business li .y-option02:before {background-size:contain; background-size:100%; background-position:0 0;}
+.y-business li .y-option03:before {background-size:contain; background-size:100%; background-position:0 0;}
+.y-business li .y-option04:before {background-size:contain; background-size:100%; background-position:0 0;}
+.y-business li .y-option05:before {background-size:contain; background-size:100%; background-position:0 0;}
+.y-business li .y-option06:before {background-size:contain; background-size:100%; background-position:0 0;}
+.y-business li .y-option07:before {background-size:contain; background-size:100%; background-position:0 0;}
+.y-business li .y-option08:before {background-size:contain; background-size:100%; background-position:0 0;}
+.y-business li .y-option09:before {background-size:contain; background-size:100%; background-position:0 0;}
+
+/*
+.y-business li .y-option01:before,.y-business li .y-option02:before,.y-business li .y-option03:before,.y-business li .y-option04:before,.y-business li .y-option05:before,.y-business li .y-option06:before,.y-business li .y-option07:before,.y-business li .y-option08:before,.y-business li .y-option09:before{ background:url(../images/index_ico.png) no-repeat;}
+*/
+/*
+.y-business li .y-option01:before {background-size:contain; background-size:900%; background-position:0 0;}
+.y-business li .y-option02:before {background-size:contain; background-size:900%; background-position:-40px 0;}
+.y-business li .y-option03:before {background-size:contain; background-size:900%; background-position:-80px 0;}
+.y-business li .y-option04:before {background-size:contain; background-size:900%; background-position:-120px 0;}
+.y-business li .y-option05:before {background-size:contain; background-size:900%; background-position:-160px 0;}
+.y-business li .y-option06:before {background-size:contain; background-size:900%; background-position:-200px 0;}
+.y-business li .y-option07:before {background-size:contain; background-size:900%; background-position:-240px 0;}
+.y-business li .y-option08:before {background-size:contain; background-size:900%; background-position:-280px 0;}
+.y-business li .y-option09:before {background-size:contain; background-size:900%; background-position:-320px 0;}
+*/
+
+
+
+

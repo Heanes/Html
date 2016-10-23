@@ -1,0 +1,21 @@
+@charset "utf-8";
+.safe{
+	text-align: center;
+	border-bottom: 8px solid #ECF0F1;
+}
+.safe h2{
+	padding:0.7em 0;
+}
+.p1{
+	width: 50%;
+}
+.p2{
+	width: 70%;
+}
+.p3{
+	
+	width:90%;
+}
+.safe p img{
+	width:50%;
+}
