@@ -18,6 +18,7 @@
 <link rel="stylesheet" type="text/css" href="/lib/heanesStyle/css/message-style1.css"/>
 <link rel="stylesheet" type="text/css" href="../css/common.css"/>
 <link rel="stylesheet" type="text/css" href="../css/css.css"/>
+<link rel="stylesheet" type="text/css" href="../css/select2/select2BootstrapStyle.css"/>
 <title>数据列表页</title>
 </head>
 <body>
@@ -68,7 +69,7 @@
                             <div class="line-group">
                                 <div class="form-group">
                                     <label class="control-label" for="searchShopId">选择店铺：</label>
-                                    <select name="searchShopId" id="searchShopId" class="form-control select2">
+                                    <select name="searchShopId" id="searchShopId" class="form-control select2 normal-input-width">
                                         <option value="">请选择</option>
                                         <option value="1">店铺1</option>
                                         <option value="2">店铺2</option>
@@ -78,7 +79,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label class="control-label" for="searchPayType">付款方式：</label>
-                                    <select name="searchPayType" id="searchPayType" class="form-control">
+                                    <select name="searchPayType" id="searchPayType" class="form-control normal-input-width">
                                         <option value="">请选择</option>
                                         <option value="2">在线支付</option>
                                         <option value="3">货到付款</option>
@@ -318,15 +319,15 @@
                             </div>
                             <div class="page-info">
                                 <span class="text inline-block">
-                                    当前第<strong class="value">1</strong>页
-                                    ，总计<strong class="value" id="pageInfoTotalRecords">124</strong>个记录分为<strong class="value" id="pageInfoTotalPage">7</strong>页
-                                    ，每页<input type="text" size="3" value="30" class="input-page-size">条
+                                    第<strong class="value">1</strong>页,
+                                    共<strong class="value" id="pageInfoTotalRecords">124</strong>条记录, 分为<strong class="value" id="pageInfoTotalPage">7</strong>页,
+                                    每页<input type="text" size="3" value="30" class="input-page-size">条
                                     <button class="page-info-btn btn btn-default btn-xs">确定</button>
                                 </span>
                             </div>
                             <div class="page-quick-link">
-                                <span class="text inline-block">到第<input type="text" value="2" class="quick-input">/10页<button class="quick-link-btn btn btn-default btn-xs">确定</button>
-                                ，到第
+                                <span class="text inline-block">到第<input type="text" value="2" class="quick-input">/10页<button class="quick-link-btn btn btn-default btn-xs">确定</button>,
+                                到第
                                 <select class="form-control quick-select">
                                     <option value="1">1</option>
                                     <option value="2">2</option>

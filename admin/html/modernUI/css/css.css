@@ -58,17 +58,22 @@ body.start{background-color:#ecf0f5;}
 .search-form.bg-normal form{padding:20px;}
 .search-form .input-block,
 .search-form .form-handle{display:table-cell;}
-.search-form .line-group{margin-bottom:20px;}
+.search-form .line-group{}
 .search-form .line-group.last,
 .search-form .line-group:last-child{margin-bottom:0;}
+.search-form .line-group .form-group{margin-bottom:20px;}
 .search-form .line-group .control-label{min-width:84px;text-align:right;}
 .search-form .line-group .control-label.text-center{text-align:center;}
 .search-form .line-group .form-control{min-width:140px;}
+.search-form .line-group .normal-input-width,
+.search-form .line-group .select2-container{min-width:178px;}
 .search-form .form-handle{vertical-align:middle;padding:0 50px 0;}
 .search-form .form-handle .handle-inline{display:inline-block;vertical-align:bottom;margin-right:20px;}
 .search-form .form-handle .handle-inline:last-child{margin-right:0;}
 .search-form .form-handle .handle-inline input[type="reset"],
 .search-form .form-handle .handle-inline button[type="reset"]{margin-left:40px;}
+
+
 
 /* 全局消息 @time 2016-09-08 18:36:48 周四 */
 .global-message{margin:20px 0;}
@@ -91,7 +96,7 @@ body.start{background-color:#ecf0f5;}
 .data-list{margin:16px 0;}
 .data-list .table{margin-bottom:0;}
 .data-list .table .select-row{width:60px;}
-.data-list .bg-normal{background-color:#ddd;}
+.data-list .bg-normal{background-color:#ededed;}
 .data-list .op-btn{font-size:13px;}
 .data-list .op-btn .op-icon{position:inherit;margin-right:2px;}
 .data-list .op-btn .op-icon,
