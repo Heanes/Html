@@ -28,6 +28,15 @@
 .article-list-block .article-list-row .article-tags{float:right;}
 .article-list-block .article-list-row .article-tags dd{padding-left:6px;}
 .article-list-block .article-list-row .article-tags dd a:hover{background-color:#008fb5;color:#fff;}
+
+/* 分页样式 */
+.data-page-block{margin:20px 0;}
+.data-page-block .page-link{font-size:0;text-align:center;}
+.data-page-block .page-link .turn-page{display:inline-block;min-width:34px;height:34px;line-height:34px;border:1px solid #00a3cf;margin-right:10px;text-align:center;font-size:14px;color:#00a3cf;padding:0 10px;white-space:nowrap;-webkit-transition:all 0.28s ease;transition:all 0.28s ease;}
+.data-page-block .page-link .turn-page.ellipsis{cursor:default;}
+.data-page-block .page-link .turn-page.current,
+.data-page-block .page-link .turn-page:hover{background-color:#00a0e9;color:#fff;}
+.data-page-block .page-link .turn-page.ellipsis:hover{background-color:inherit;color:inherit;}
 /**************************************文章页面*******************************/
 .article-page{background:#fff;color:#000;padding:10px;}
 .article-page .article-block{padding-top:20px;}
