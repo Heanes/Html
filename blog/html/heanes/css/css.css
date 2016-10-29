@@ -38,7 +38,11 @@
 .data-page-block .page-link .turn-page:hover{background-color:#00a0e9;color:#fff;}
 .data-page-block .page-link .turn-page.ellipsis:hover{background-color:inherit;color:inherit;}
 /**************************************文章页面*******************************/
-.article-page{background:#fff;color:#000;padding:10px;}
+.margin-common{margin-left:10px;margin-right:10px;}
+.article-page .article-category,
+.article-page .article-page,
+.article-page .article-relate-block,
+.article-page .article-comment-block{margin-left:10px;margin-right:10px;}
 .article-page .article-block{padding-top:20px;}
 .article-page .article-category{padding:10px 5px;border-bottom:3px solid #57adfd;line-height:24px;}
 .article-page .article-block .article-title-block{position:relative;border-bottom:1px #ddd dashed;color:#222;}
@@ -117,7 +121,7 @@
 .article-page .article-preview-forward p{padding:4px 0;text-indent:2em}
 .article-page .article-preview-forward p a:hover{color:#ff9500}
 /* 相关文章 */
-.article-page .article-relate-block{margin:10px 0}
+.article-page .article-relate-block{margin:10px 10px;}
 .article-page .relate-title{font-size:17px;background:#07adf9;padding:6px 10px}
 .article-page .relate-title a{color:#fff}
 .article-page .relate-text-ul{padding:12px 2px 12px 10px}
