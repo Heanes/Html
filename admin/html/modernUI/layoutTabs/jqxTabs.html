@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- 让IE8在新模式下渲染（禁止兼容模式） -->
+    <meta name="renderer" content="webkit"><!-- 让360等多核模式浏览器默认用极速模式打开 -->
+    <meta name="author" content="Heanes heanes.com email(heanes@163.com)">
+    <meta name="keywords" content="软件,商务,HTML,tutorials,source codes">
+    <meta name="description" content="描述">
+    <link rel="shortcut icon" href="/public/static/image/favicon/favicon.ico"/>
+    <link rel="bookmark" href="/public/static/image/favicon/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="/public/static/libs/css/reset/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="/public/static/libs/css/base/base.css"/>
+    <link rel="stylesheet" type="text/css" href="/public/static/libs/fonts/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/public/static/libs/js/jQWidgets/4.4.0/styles/jqx.base.css">
+    <link rel="stylesheet" type="text/css" href="/public/static/libs/js/jQWidgets/4.4.0/styles/jqx.light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/public/static/libs/js/jQWidgets/4.4.0/styles/jqx.bootstrap.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../css/style/style-2016.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/css.css"/>
+    <title>页内tab</title>
+</head>
+<body class="default">
+<div id='jqxWidget'>
+    <div id='jqxTabs' style="float: left;">
+        <ul id="unorderedList">
+            <li>美菜</li>
+            <li>百度</li>
+        </ul>
+        <div class="tab-content">
+            <iframe src="../dataEdit/normal.html"></iframe>
+        </div>
+        <div class="tab-content">
+            <iframe src="../dataEdit/tab.html"></iframe>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/public/static/libs/js/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="/public/static/libs/js/jQWidgets/4.4.0/jqxcore.js"></script>
+<script type="text/javascript" src="/public/static/libs/js/jQWidgets/4.4.0/jqxtabs.js"></script>
+<script type="text/javascript" src="/public/static/libs/js/jQWidgets/4.4.0/jqxbuttons.js"></script>
+<script type="text/javascript" src="/public/static/libs/js/jquery.cookie/1.4.1/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/common/common.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var theme = "";
+        var addButton,
+            addButtonWidth = 29,
+            index = 0;
+
+        var $jqxTabs = $('#jqxTabs');
+        $jqxTabs.jqxTabs({
+            theme: 'bootstrap',
+            autoHeight: true,
+            showCloseButtons: true
+        });
+        //隐藏首页删除按钮
+        //$jqxTabs.jqxTabs('hideCloseButtonAt', 0);
+        $jqxTabs.on('tabclick', function (event) {
+            if (event.args.item == $('#unorderedList').find('li').length - 1) {
+                var length = $('#unorderedList').find('li').length;
+                //$('#jqxTabs').jqxTabs('addAt', event.args.item, 'Sample title ' + index, 'Sample content number: ' + index);
+                index++;
+
+                var content = '<iframe id="iframepage_tab_node_2" frameborder="0" marginheight="0" marginwidth="0" width="1104" height="855" src="http://tms-center.test.yunshanmeicai.com/customerSms/index"></iframe>';
+                //$jqxTabs.jqxTabs('addAt', event.args.item, 'Sample title ' + index, content);
+            }
+        });
+    });
+</script>
+</body>
+</html>

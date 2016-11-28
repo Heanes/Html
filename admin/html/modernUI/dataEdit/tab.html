@@ -148,13 +148,13 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="content active">
+                        <div class="content">
                             <div class="data-edit-form">
                                 <form class="form normal">
                                     <div class="line-group">
                                         <div class="form-group inline">
                                             <label class="control-label" for="idTab2">ID：</label>
-                                            <input type="text" name="id" class="form-control" id="idTab2" placeholder="请输入ID" value="233" readonly>
+                                            <input type="text" name="id" class="form-control" id="idTab2" placeholder="请输入ID" value="666" readonly>
                                         </div>
                                     </div>
                                 </form>
@@ -189,6 +189,19 @@
     <script type="text/javascript" src="../js/common/common.js"></script>
     <script type="text/javascript">
         $(function () {
+            /**
+             * @doc tab切换
+             * @author Heanes
+             * @time 2016-11-28 10:42:27 周一
+             */
+            var $tabPanelList = $('.tab-panel-list li');
+            var tabContentList = $('.tab-content .content');
+            $tabPanelList.on('click', function(){
+                $tabPanelList.removeClass('active');
+                $(this).addClass('active');
+                tabContentList.removeClass('active');
+                tabContentList.eq($(this).index()).addClass('active');
+            });
             /* 日期时间选择器 */
             // datetimepicker
             $('#createTime').on('click', function () {
