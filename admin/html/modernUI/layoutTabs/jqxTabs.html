@@ -21,8 +21,8 @@
     <title>页内tab</title>
 </head>
 <body class="default">
-<div id='jqxWidget'>
-    <div id='jqxTabs' style="float: left;">
+<div id="jqxWidget">
+    <div id="jqxTabs">
         <ul id="unorderedList">
             <li>美菜</li>
             <li>百度</li>
@@ -63,7 +63,7 @@
                 index++;
 
                 var content = '<iframe id="iframepage_tab_node_2" frameborder="0" marginheight="0" marginwidth="0" width="1104" height="855" src="http://tms-center.test.yunshanmeicai.com/customerSms/index"></iframe>';
-                //$jqxTabs.jqxTabs('addAt', event.args.item, 'Sample title ' + index, content);
+                $jqxTabs.jqxTabs('addAt', event.args.item, 'Sample title ' + index, content);
             }
         });
     });
