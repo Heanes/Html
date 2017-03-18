@@ -1,130 +1,224 @@
 <!DOCTYPE html>
 <html class="default-background">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="renderer" content="webkit">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui" />
-<meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
 
-<meta name="author" content="Heanes heanes.com email(heanes@163.com)">
-<meta name="keywords" content="软件,商务,HTML,tutorials,source codes">
-<meta name="description" content="描述">
-<link rel="shortcut icon" href="/public/static/image/favicon/favicon.ico"/>
-<link rel="bookmark" href="/public/static/image/favicon/favicon.ico"/>
-<link rel="stylesheet" type="text/css" href="/public/static/libs/css/reset/reset.css"/>
-<link rel="stylesheet" type="text/css" href="../css/style/style1.css"/>
-<link rel="stylesheet" type="text/css" href="../css/common.css"/>
-<link rel="stylesheet" type="text/css" href="../css/css.css"/>
-<title>二维码-js生成</title>
-<style type="text/css">
-    .qr-code-input-block{width:220px;margin:0 auto;}
-	.Center-Block {
-      color:#FFF;
-    }
-    .Absolute-Center{
-      height:50%;
-      width:50%;
-      margin:auto;
-      position:absolute;
-      top:0;
-      left:0;
-      bottom:0;
-      right:0;
-    }
-    .Absolute-Center.is-Fixed {
-      position: fixed;
-      z-index: 999;
-    }
-    .Center-Content{
-      text-align:center;
-    }
-</style>
+    <meta name="author" content="Heanes heanes.com email(heanes@163.com)">
+    <meta name="keywords" content="软件,商务,HTML,tutorials,source codes">
+    <meta name="description" content="描述">
+    <link rel="shortcut icon" href="/public/static/image/favicon/favicon.ico"/>
+    <link rel="bookmark" href="/public/static/image/favicon/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="/public/static/libs/css/reset/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/style/style1.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/css.css"/>
+    <title>二维码-js生成</title>
+    <style type="text/css">
+        .qr-code-input-block {
+            width: 220px;
+            margin: 0 auto;
+        }
+
+        .Center-Block {
+            color: #FFF;
+        }
+
+        .Absolute-Center {
+            height: 50%;
+            width: 50%;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        .Absolute-Center.is-Fixed {
+            position: fixed;
+            z-index: 999;
+        }
+
+        .Center-Content {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-	<div class="wrap default-background">
-		<!-- S 头部 S -->
-		<div class="header">
+<div class="wrap default-background">
+    <!-- S 头部 S -->
+    <div class="header">
 
-		</div>
-      <!-- E 头部 E-->
-      <!-- S 主要内容 S -->
-		<div class="main">
-			<div class="main-content main-wrap">
-                <div class="qr-code-input-block">
-                    <input type="text" id="inputText" placeholder="请输入文字"/>
-                    <input type="button" value="确认" id="confirm">
+    </div>
+    <!-- E 头部 E-->
+    <!-- S 主要内容 S -->
+    <div class="main">
+        <style>
+            .show-times-count-wrap{margin-bottom:10px;}
+            .show-times-count-wrap .show-times-count{text-align:center;color:#000;}
+            .show-times-count-wrap .show-times-count .show-times-count-value{padding:0 4px;color:#66afe9;}
+            .show-time-last{color:#000;text-align:center;margin-top:8px;}
+            .show-time-last .show-time-last-value{color:#f00;}
+            .refresh-qrCode-btn{margin:0 2px;cursor:pointer;color:#66afe9;}
+            .show-time-last-value{padding:0 4px;}
+        </style>
+        <div class="main-content main-wrap">
+            <div class="qr-code-input-block">
+                <input type="text" id="inputText" placeholder="请输入文字"/>
+                <input type="button" value="确认" id="confirm">
+            </div>
+            <div class="Center-Block Absolute-Center is-Fixed" style="width:300px;padding-bottom:100px;">
+                <div class="show-times-count-wrap">
+                    <p class="show-times-count">已刷新<span class="show-times-count-value" id="showTimesCountValue">0</span>次</p>
                 </div>
-				<div class="Center-Block Absolute-Center is-Fixed" style="width:300px;padding-bottom:100px;">
-                    <div id="qrcode_user" class="Center-Content"></div>
-					<img src="/public/static/image/logo/logo.png" style="display:none;" id="imgBuffer"/>
+                <div id="qrcode_user" class="Center-Content"></div>
+                <img src="/public/static/image/logo/logo.png" style="display:none;" id="imgBuffer"/>
+                <div class="show-time-last">
+                    <p>剩余时间<strong id="showTimeLast" class="show-time-last-value">5</strong>秒<span class="refresh-qrCode-btn" id="refreshQrCodeBtn">刷新</span></p>
                 </div>
-			</div>
-		</div>
-      <!-- E 主要内容 E -->
-      <!-- S 脚部 S -->
-		<div class="footer">
+            </div>
+        </div>
+    </div>
+    <!-- E 主要内容 E -->
+    <!-- S 脚部 S -->
+    <div class="footer">
 
-		</div>
-      <!-- E 脚部 E -->
-	</div>
-	<cite>
-		<!-- S js S -->
-		<script type="text/javascript" src="/public/static/libs/js/jquery/2.1.4/jquery-2.1.4.min.js"></script>
-        <script type="text/javascript" src="/public/static/libs/js/qrcode/jquery-qrcode/0.14.0/jquery-qrcode.min.js"></script>
-		<script type="text/javascript" src="../js/common.js"></script>
-		<script type="text/javascript" src="../js/js.js"></script>
-        <script type="text/javascript">
-            $(function(){
-                $('#confirm').on('click', function () {
-                    var text = $('#inputText').val() || 'https://www.baidu.com';
-                    $('#qrcode_user').empty().qrcode({
-                        // render method: 'canvas', 'image' or 'div'
-                        render: 'canvas',
-                        // version range somewhere in 1 .. 40
-                        minVersion: 4,
-                        maxVersion: 40,
-    
-                        // error correction level: 'L', 'M', 'Q' or 'H'
-                        ecLevel: 'H',
-    
-                        // offset in pixel if drawn onto existing canvas
-                        left: 0,
-                        top: 0,
-                        // size in pixel
-                        size: 300,
-                        // code color or image element
-                        fill: '#000',
-                        // background color or image element, null for transparent background
-                        background: '#fff',
-                        // content
-                        text: text,
-                        // corner radius relative to module width: 0.0 .. 0.5
-                        radius: 0,
-                        // quiet zone in modules
-                        quiet: 2,
-                        // modes
-                        // 0: normal
-                        // 1: label strip
-                        // 2: label box
-                        // 3: image strip
-                        // 4: image box
-                        mode: 4,
-    
-                        mSize: 0.2,
-                        mPosX: 0.5,
-                        mPosY: 0.5,
-    
-                        label: '',
-                        fontname: 'sans',
-                        fontcolor: '#000',
-                        image: $('#imgBuffer')[0]
-                    });
-                });
-                $('#confirm').trigger('click');
+    </div>
+    <!-- E 脚部 E -->
+</div>
+<cite>
+    <!-- S js S -->
+    <script type="text/javascript" src="/public/static/libs/js/jquery/2.1.4/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="/public/static/libs/js/qrcode/jquery-qrcode/0.14.0/jquery-qrcode.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/js.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#confirm').on('click', function () {
+                var text = $('#inputText').val() || 'https://www.baidu.com';
+                renderQrCode($('#qrcode_user'), text);
             });
-        </script>
-      <!-- E js E -->
-	</cite>
+            $('#confirm').trigger('click');
+
+            /**
+             * @doc 计时器嵌套的处理
+             * @author fanggang
+             * @time 2017-03-17 13:14:05 周五
+             */
+            var clockShowQrCode, clockShowTimeLast;
+            function showLeftSeconds($showTimeLast){
+                var leftSeconds = parseInt($showTimeLast.text());
+                if(leftSeconds < 0){
+                    leftSeconds = 5;
+                    $showTimeLast.text(leftSeconds);
+                }else{
+                    $showTimeLast.text(leftSeconds - 1);
+                }
+            }
+            function renderQrCode($qrCodeContainer, text) {
+                $qrCodeContainer.empty().qrcode({
+                    // render method: 'canvas', 'image' or 'div'
+                    render: 'canvas',
+                    // version range somewhere in 1 .. 40
+                    minVersion: 4,
+                    maxVersion: 40,
+
+                    // error correction level: 'L', 'M', 'Q' or 'H'
+                    ecLevel: 'H',
+
+                    // offset in pixel if drawn onto existing canvas
+                    left: 0,
+                    top: 0,
+                    // size in pixel
+                    size: 300,
+                    // code color or image element
+                    fill: '#000',
+                    // background color or image element, null for transparent background
+                    background: '#fff',
+                    // content
+                    text: text,
+                    // corner radius relative to module width: 0.0 .. 0.5
+                    radius: 0,
+                    // quiet zone in modules
+                    quiet: 2,
+                    // modes
+                    // 0: normal
+                    // 1: label strip
+                    // 2: label box
+                    // 3: image strip
+                    // 4: image box
+                    mode: 4,
+
+                    mSize: 0.2,
+                    mPosX: 0.5,
+                    mPosY: 0.5,
+
+                    label: '',
+                    fontname: 'sans',
+                    fontcolor: '#000',
+                    image: $('#imgBuffer')[0]
+                });
+            }
+
+            function showQrCode(qrCodeText, $qrCodeContainer, $showTimeLast, showSeconds, $showTimesCountValue) {
+                renderQrCode($qrCodeContainer, qrCodeText);
+                $showTimeLast.text(showSeconds);
+                $showTimesCountValue.text(parseInt($showTimesCountValue.text()) + 1);
+                clearInterval(clockShowTimeLast);
+                clockShowTimeLast = setInterval(function () {
+                    showLeftSeconds($showTimeLast);
+                }, 1000)
+            }
+            function getShowString(callback, $qrCodeContainer, $showTimeLast, showSeconds, $showTimesCountValue, $refreshBtn) {
+                var qrCodeText = Math.random().toString(36).substr(2);
+                callback(qrCodeText, $qrCodeContainer, $showTimeLast, showSeconds, $showTimesCountValue, $refreshBtn);
+            }
+
+            /**
+             * @doc 显示动态二维码
+             * @param $qrCodeContainer 显示二维码的容器
+             * @param $showTimeLast 显示倒计时的容器
+             * @param showSeconds 显示的秒数
+             * @param $showTimesCountValue 显示一共刷新次数的容器
+             * @param $refreshBtn 触发刷新的按钮
+             * @author Heanes
+             * @time 2017-03-18 13:23:33 周六
+             */
+            function showDynamicQrCode($qrCodeContainer, $showTimeLast, showSeconds, $showTimesCountValue, $refreshBtn) {
+                clearInterval(clockShowQrCode);
+                clockShowQrCode = setInterval(function(){
+                    getShowString(showQrCode, $qrCodeContainer, $showTimeLast, showSeconds, $showTimesCountValue, $refreshBtn);
+                }, showSeconds * 1000);
+                getShowString(showQrCode, $qrCodeContainer, $showTimeLast, showSeconds, $showTimesCountValue, $refreshBtn);
+                // 按钮触发刷新
+                $refreshBtn.on('click', function () {
+                    $(this).unbind();
+                    showDynamicQrCode($qrCodeContainer, $showTimeLast, showSeconds, $showTimesCountValue, $refreshBtn);
+                });
+                $qrCodeContainer.on('click', function () {
+                    $(this).unbind();
+                    showDynamicQrCode($qrCodeContainer, $showTimeLast, showSeconds, $showTimesCountValue, $refreshBtn);
+                });
+            }
+            showDynamicQrCode($('#qrcode_user'), $('#showTimeLast'), 30, $('#showTimesCountValue'), $('#refreshQrCodeBtn'));
+
+            /**
+             * @doc 部门-分组联动功能
+             * @param departmentSelector
+             * @param groupSelector
+             */
+            function cascadeDepartsAndGroups(departmentSelector, groupSelector) {
+                var $departmentSelector = $(departmentSelector);
+                var $groupSelector = $(groupSelector);
+            }
+            cascadeDepartsAndGroups('#searchStaffType', '#searchEmployeeStatus');
+        });
+    </script>
+    <!-- E js E -->
+</cite>
 </body>
 </html>
