@@ -17,10 +17,11 @@
 <link rel="stylesheet" type="text/css" href="/public/static/libs/css/reset/reset.css"/>
 <link rel="stylesheet" type="text/css" href="/public/static/libs/css/base/base.css"/>
 <link rel="stylesheet" type="text/css" href="../css/style/style-2016.css"/>
-<link rel="stylesheet" type="text/css" href="../css/layout.css"/>
+<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+<link rel="stylesheet" type="text/css" href="../css/css.css"/>
 <title>全结构页面</title>
 </head>
-<body class="full-frame-example">
+<body>
 <!-- S 左侧功能区 S -->
 <div class="left-bar clearfix">
     <div class="left-bar-content"></div>
@@ -28,39 +29,33 @@
 <!-- E 左侧功能区 E -->
 <div class="wrap">
     <!-- S header 头部 S -->
-    <div class="header"></div>
+    <iframe src="../layout/header.html"></iframe>
     <!-- E header 头部 E-->
     <!-- S main 主要内容 S -->
     <div class="main">
         <!-- 顶部全宽度内容区域 -->
-        <div class="full-width-block">
-            <div class="main-top-block"></div>
-        </div>
-        <div class="main-width-block main-wrap">
-            <!-- 顶部内容 -->
-            <div class="main-top-content"></div>
-            <!-- 主体内容 -->
-            <div class="main-content">
-                <!-- 左侧区域 -->
-                <div class="left-block left-wrap float-block"></div>
-                <!-- 中心区域 -->
-                <div class="center-block center-wrap">
+        <div class="main-top-block"></div>
+        <!-- 顶部内容 -->
+        <div class="main-top-content main-wrap"></div>
+        <!-- 主体内容 -->
+        <div class="main-content main-wrap clearfix">
+            <!-- 左侧区域 -->
+            <div class="left-block left-wrap float-block"></div>
+            <!-- 中心区域 -->
+            <div class="center-block center-wrap float-block">
 
-                </div>
-                <!-- 右侧区域 -->
-                <div class="right-block right-wrap float-block"></div>
             </div>
-            <!-- 底部区域 -->
-            <div class="main-bottom-content"></div>
+            <!-- 右侧区域 -->
+            <div class="right-block right-wrap float-block"></div>
         </div>
-        <div class="full-width-block">
-            <!-- 底部全宽度内容区域 -->
-            <div class="main-bottom-block"></div>
-        </div>
+        <!-- 底部区域 -->
+        <div class="main-bottom-content main-wrap"></div>
+        <!-- 底部全宽度内容区域 -->
+        <div class="main-bottom-block"></div>
     </div>
     <!-- E main 主要内容 E -->
     <!-- S footer 脚部 S -->
-    <div class="footer"></div>
+    <iframe src="../layout/footer.html"></iframe>
     <!-- E footer 脚部 E -->
 </div>
 <!-- S 右侧功能区 S -->

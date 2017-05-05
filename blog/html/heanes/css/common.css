@@ -32,8 +32,11 @@
 /* S 页面框架结构 S */
 .left-bar{}
 .main-wrap{width:1200px;}
-.main .main-content .left-block{display:none;}
-.main .main-content .right-block{display:none;}
+/* 页面框架示例布局 */
+.full-frame-example .header{height:100px;background-color:#f4f4f4;}
+.full-frame-example .header:after{content:"头部";position:absolute;width:100%;text-align:center;}
+.full-frame-example .footer{height:100px;background-color:#686b6c;}
+.full-frame-example .footer:after{content:"头部";position:absolute;width:100%;text-align:center;color:#fff;}
 /* E 页面框架结构 E */
 
 /* S 头部 S */
@@ -50,9 +53,9 @@
 .header .top-toolbar .top-handle-block .handle-block.font-setting:hover{-webkit-box-shadow:0 3px 6px rgba(0,0,0,.3);-moz-box-shadow:0 3px 6px rgba(0,0,0,.3);box-shadow:0 3px 6px rgba(0,0,0,.3);}
 .header .top-toolbar .top-handle-block .handle-block.font-setting .handle-content.backend{font-size:20px;background-color:#fff;}
 .header .top-toolbar .top-handle-block .handle-block.font-setting .handle-content.backend .text-songti,
-.header .top-toolbar .top-handle-block .handle-block.font-setting .handle-content.backend .test-yahei{display:block;font-size:12px;padding-left:10px;cursor:pointer}
+.header .top-toolbar .top-handle-block .handle-block.font-setting .handle-content.backend .text-yahei{display:block;font-size:12px;padding-left:10px;cursor:pointer}
 .header .top-toolbar .top-handle-block .handle-block.font-setting .handle-content.backend .text-songti{font-family:'sans-serif',serif}
-.header .top-toolbar .top-handle-block .handle-block.font-setting .handle-content.backend .test-yahei{font-family:'Microsoft Yahei',serif}
+.header .top-toolbar .top-handle-block .handle-block.font-setting .handle-content.backend .text-yahei{font-family:'Microsoft Yahei',serif}
 .header .top-toolbar .top-handle-block .handle-block.font-setting:hover{background-color:#fff;}
 
 
