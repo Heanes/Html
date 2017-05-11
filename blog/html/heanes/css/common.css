@@ -108,11 +108,11 @@
 /* 左侧工具栏 */
 .main .left-wrap{width:260px;}
 .main .left-block{background:#fff;margin-right:16px;}
-.main .left-block{height:1000px;}
+.main .left-block{height:1000px;display:none;}
 
 /* 中心主体内容 */
 .main .main-content{margin-bottom:12px;background-color:#fff}
-.main .main-content .center-wrap{width:920px;height:1000px;}
+.main .main-content .center-wrap{width:920px;}
 .main .main-content .center-block{background:#fff;}
 
 /* 右侧工具栏 */

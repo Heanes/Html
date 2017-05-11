@@ -40,11 +40,11 @@
             <!-- 顶部内容 -->
             <div class="main-top-content"></div>
             <!-- 主体内容 -->
-            <div class="main-content">
+            <div class="main-content clearfix">
                 <!-- 左侧区域 -->
                 <div class="left-block left-wrap float-block"></div>
                 <!-- 中心区域 -->
-                <div class="center-block center-wrap">
+                <div class="center-block center-wrap float-block">
 
                 </div>
                 <!-- 右侧区域 -->
@@ -72,6 +72,53 @@
     <!-- S js S -->
     <script type="text/javascript" src="/public/static/libs/js/jquery/2.1.4/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            function renderTableFromDynamicData(data) {
+                var $table = $('<table class="grid-table"></table>');
+                var $thead = $('<thead></thead>');
+                var $tbody = $('<tbody></tbody>');
+                var columns = getDistinctColumn(data);
+
+                var $theadTr = $('<tr></tr>');
+                for(var column in columns){
+                    var $td = $('<td></td>').append(columns[column]);
+                    $theadTr.append($td);
+                }
+                $thead.append($theadTr);
+
+                for(var row in data){
+                    var $tr = $('<tr></tr>');
+                    for(var column in columns){
+                        var value = row[column];
+                        var $td = $('<td></td>').append(value === undefined ? '' : value);
+                        $tr.append($td);
+                    }
+                    $tbody.append($tr);
+                }
+                $table.append($thead).append($tbody);
+                $('body').append($table);
+            }
+            
+            function getDistinctColumn(data) {
+                var columns = [];
+                $.each(data, function (i, item) {
+                    for (var key in item){
+                        if($.inArray(key, columns) === -1){
+                            columns.push(key);
+                        }
+                    }
+                });
+                return columns;
+            }
+            
+            var data = [
+                {id: 1, name: "fanggang"},
+                {id: 2, name: "fanggang1"}
+            ];
+            renderTableFromDynamicData(data);
+        });
+    </script>
     <!-- E js E -->
 </cite>
 </body>
