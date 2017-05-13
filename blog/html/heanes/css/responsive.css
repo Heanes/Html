@@ -1,0 +1,61 @@
+@CHARSET "UTF-8";
+/**
+ * @doc 前台响应式样式
+ * @author Heanes
+ * @time 2017-05-12 10:56:46 周五
+ */
+
+/* Responsive */
+/* extra widely screen */
+@media screen and (min-width:1921px){
+    .main-wrap{width:1840px;}
+    .center-wrap{width:1300px;}
+    .right-fix-block .right-corner{margin-left:679px;}
+}
+/* PC */
+/* 此模式下左右工具栏展现 */
+@media screen and (min-width:1367px) and (max-width:1920px){
+    .main-wrap{width:1740px;}
+    .center-wrap{width:1200px;}
+    .right-fix-block .right-corner{margin-left:679px;}
+}
+/* NoteBook */
+/* 此宽度下不显示侧栏 */
+@media screen and (max-width:1366px){
+    .main-wrap{width:1200px;float:none;}
+    .center-wrap{width:100%;float:none;}
+    .left-block,.right-block
+    ,.left-bar,.right-bar{display:none;}
+}
+
+@media screen and (max-width:1139px){
+    .main-wrap{width:96%;float:none;}
+}
+/* iPhone 3 4 5 */
+@media screen and (min-width:320px) and (max-width:374px){
+
+}
+/* iPhone 6 */
+@media screen and (min-width:375px) and (max-width:413px){
+
+}
+/* iPhone 6plus */
+@media screen and (min-width:414px) and (max-width:479px){
+
+}
+/* Android and + */
+@media screen and (min-width:480px) and (max-width:639px){
+
+}
+/* Android and + */
+@media screen and (min-width:640px) and (max-width:767px){
+
+}
+/* ipad */
+@media screen and (min-width:767px) and (max-width:1139px){
+
+}
+/* 设备分辨率媒体查询 */
+@media screen and (-webkit-min-device-pixel-ratio:2),screen and (max--moz-device-pixel-ratio:2){
+
+}

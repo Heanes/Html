@@ -31,7 +31,7 @@
 
 /* S 页面框架结构 S */
 .main-wrap{width:1200px;}
-.center-wrap{width:644px;}
+.center-wrap{width:960px;}
 
 /* 页面框架示例布局 */
 .full-frame-example .header{height:100px;background-color:#f4f4f4;}
@@ -56,11 +56,11 @@
 
 /* 左侧工具栏 */
 .full-frame-example .main .main-content .left-wrap{width:260px;}
-.full-frame-example .main .main-content .left-block{background:#fff;margin-right:16px;}
+.full-frame-example .main .main-content .left-block{background:#fff;margin-right:10px;}
 
 /* 右侧工具栏 */
 .full-frame-example .main .main-content .right-wrap{width:260px;}
-.full-frame-example .main .main-content .right-block{background:#fff;margin-left:20px;}
+.full-frame-example .main .main-content .right-block{background:#fff;margin-left:10px;}
 
 /* 左侧盯住栏 */
 .full-frame-example .left-bar{position:fixed;z-index:2;top:0;left:0;width:100px;height:100%;background:rgba(215,230,233,0.5)}
@@ -82,51 +82,5 @@
 
 .full-frame-example .main .main-content .left-block,
 .full-frame-example .main .main-content .right-block{height:1000px;}
-.full-frame-example .main .main-content .right-block,
-.full-frame-example .main .main-content .left-block{}
-
-
-/* Responsive */
-/* PC */
-/* 此模式下 */
-@media screen and (min-width:1367px) and (max-width:1920px){
-    .main-wrap{width:1476px;}
-    .center-wrap{width:920px;}
-    .right-fix-block .right-corner{margin-left:679px;}
-}
-/* NoteBook */
-/* 此宽度下不显示侧栏 */
-@media screen and (max-width:1366px){
-    .main-wrap{width:1200px;float:none;}
-    .center-wrap{width:920px;float:none;}
-    .left-block,.right-block
-    ,.left-bar,.right-bar{display:none;}
-}
-/* iPhone 3 4 5 */
-@media screen and (min-width:320px) and (max-width:374px){
-
-}
-/* iPhone 6 */
-@media screen and (min-width:375px) and (max-width:413px){
-
-}
-/* iPhone 6plus */
-@media screen and (min-width:414px) and (max-width:479px){
-
-}
-/* Android and + */
-@media screen and (min-width:480px) and (max-width:639px){
-
-}
-/* Android and + */
-@media screen and (min-width:640px) and (max-width:767px){
-
-}
-/* ipad */
-@media screen and (min-width:767px) and (max-width:1139px){
-
-}
-/* 设备分辨率媒体查询 */
-@media screen and (-webkit-min-device-pixel-ratio:2),screen and (max--moz-device-pixel-ratio:2){
-
-}
+.full-frame-example .left-bar,
+.full-frame-example .right-bar{display:none;}
