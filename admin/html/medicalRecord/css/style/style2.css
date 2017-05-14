@@ -1,4 +1,4 @@
-@CHARSET "UTF-8";
+@charset "UTF-8";
 /*链接根据页面要求全局自定义*/
 body,button,input,select,textarea{font:12px/1.5 '宋体',Arial,Verdana,tahoma,Helvetica,sans-serif}
 a,input{outline:none}

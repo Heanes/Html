@@ -1,4 +1,4 @@
-@CHARSET "UTF-8";
+@charset "UTF-8";
 .absolute-center{position:absolute;margin:auto;left:0;right:0;top:0;bottom:0;display:table;width:100%}
 .center-content{text-align:center;}
 /* 右侧导航 */

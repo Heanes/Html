@@ -1,38 +1,11 @@
-@CHARSET "UTF-8";
+@charset "UTF-8";
 /**
- * @doc 前台公共样式
+ * @doc 页面框架样式
  * @author Heanes
  * @time 2015-11-21 22:11:30
  */
-/* 常用及简写样式 */
-.fixed{position:fixed;z-index:100;}
-.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
-.clear{clear:both;content:" ";display:block;}
-.clear-left{clear:left;content:" ";display:block;}
-.clear-right{clear:right;content:" ";display:block;}
-.text-center{text-align:center;}
-.text-right{text-align:right;}
-.for-eye-protect{background:#e3edcd;}
-.none{display:none}
-.relative{position:relative}
-
-/* 通用命名下的样式 */
-.wrap{width:100%;}
-.wrap,
-.main-wrap,
-.header,
-.main,
-.footer,
-.center-wrap,
-.left-wrap,
-.right-wrap{margin:0 auto;}
-[class*="-wrap"]{margin:0 auto;}
-.float-block{float:left;}
 
 /* S 页面框架结构 S */
-.main-wrap{width:1200px;}
-.center-wrap{width:960px;}
-
 /* 页面框架示例布局 */
 .full-frame-example .header{height:100px;background-color:#f4f4f4;}
 .full-frame-example .footer{height:100px;background-color:#686b6c;}
