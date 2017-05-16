@@ -29,7 +29,6 @@ iframe{
   height:100%;
   border:0;
 }
-
 /* 通用命名下的样式 */
 .wrap{width:100%;}
 .wrap,
@@ -72,8 +71,8 @@ iframe{
 .header .header-nav-bar .header-logo .logo-a{display:inline-block;width:64px;height:64px;}
 .header .header-nav-bar .header-logo .logo-a img{width:100%;height:100%;}
 .header .header-nav-bar .header-nav{float:left;width:918px;}
-.header .header-nav-bar .header-nav .nav{padding:0 10px;}
-.header .header-nav-bar .header-nav .nav li{padding:0;display:inline-block;position:relative;line-height:36px;}
+.header .header-nav-bar .header-nav .nav{padding:0 10px;margin:0;}
+.header .header-nav-bar .header-nav .nav li{padding:0;display:inline-block;position:relative;line-height:36px;margin:0;}
 .header .header-nav-bar .header-nav .nav .nav-a{display:block;position:relative;font-size:14px;color:#233;padding:0 12px;white-space:nowrap;}
 .header .header-nav-bar .header-nav .nav .nav-a.has-children{padding-right:22px;}
 .header .header-nav-bar .header-nav .nav .nav-a:hover,
@@ -170,7 +169,7 @@ iframe{
 .footer-content .add-link-ul .link-list-ul a:hover{color:#e7e7e8;}
 
 .footer-content .copyright{height:50px;background-color:#5a5d5e;color:#909090;font-size:13px;padding:6px 0;}
-.footer-content .copyright p{text-align:center;line-height:20px;}
+.footer-content .copyright p{text-align:center;line-height:20px;margin:0;}
 .footer-content .copyright a{color:#b3b3b3;}
 .footer-content .copyright a:hover{color:#e7e7e8;}
 .footer-content.footer-top-border{border-top:14px solid #000;}
