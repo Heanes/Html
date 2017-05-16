@@ -23,12 +23,15 @@
 /* 此宽度下不显示侧栏 */
 @media screen and (max-width:1366px){
     .main-wrap{width:1200px;float:none;}
-    .center-wrap{width:100%;float:none;}
-    .left-block,.right-block
-    ,.left-bar,.right-bar{display:none;}
+    .center-wrap{width:960px;}
+    .right-block{width:240px;}
+    .left-block,
+    .left-bar,.right-bar{display:none;}
 }
 
-@media screen and (max-width:1139px){
+@media screen and (max-width:1200px){
+    .left-block,.right-block,
+    .left-bar,.right-bar{display:none;}
     .main-wrap{width:96%;float:none;}
 }
 /* iPhone 3 4 5 */

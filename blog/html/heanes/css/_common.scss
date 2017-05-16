@@ -16,13 +16,7 @@
 .none{display:none}
 .relative{position:relative}
 
-html{
-  color:#000;
-  background:#fff;
-  -webkit-text-size-adjust:100%;
-  -ms-text-size-adjust:100%;
-  word-break:break-all;
-}
+/* iframe */
 iframe{
   display:block;
   width:100%;
@@ -110,14 +104,14 @@ iframe{
 .main .main-top-block{height:200px;background:#fff;margin-bottom:12px}
 .main .main-top-content{height:200px;background:#fff;margin-bottom:12px}
 /* 左侧工具栏 */
-.main .left-block{background:#fff;margin-right:16px;}
+.main .left-block{background:#fff;padding-right:16px;}
 
 /* 中心主体内容 */
 .main .main-content{margin-bottom:12px;background-color:#fff}
 .main .main-content .center-block{background:#fff;}
 
 /* 右侧工具栏 */
-.main .main-content .right-block{background:#fff;margin-left:20px;}
+.main .main-content .right-block{background:#fff;padding-left:16px;}
 
 .main .main-bottom-content{background:#fff;margin-bottom:12px}
 .main .main-bottom-block{background:#fff;margin-bottom:12px}

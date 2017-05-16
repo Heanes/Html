@@ -1,12 +1,12 @@
 @charset "UTF-8";
-// 导入style-风格样式
-@import 'style/style-2017';
-// 导入前台公共样式
-@import 'common';
 // 导入responsive-响应式样式
 @import 'responsive';
 // 导入layout-布局样式
 @import 'layout';
+// 导入style-风格样式
+@import 'style/style-2017';
+// 导入前台公共样式
+@import 'common';
 /**
  * @doc 前台公共样式
  * @author Heanes
