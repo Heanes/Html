@@ -30,7 +30,7 @@ div.blank{display:block;height:1px}
 .left-wrap,
 .right-wrap{margin:0 auto;}
 [class*="-wrap"]{margin:0 auto;}
-.float-block{float:left;}
+.fl{float:left;}
 
 /* 按钮 */
 .button-normal{display:inline-block;height:45px;line-height:45px;text-align:center;padding:0 15px;border:0;-webkit-appearance:none;}

@@ -12,33 +12,31 @@
 
 /* S 中间主体 S */
 /* 中心主体上下全宽内容 */
-.full-frame-example .main .main-top-block{background:#fff;margin-bottom:12px}
-.full-frame-example .main .main-bottom-block{background:#fff;margin-bottom:12px}
+.main .main-top-block{background:#fff;margin-bottom:12px}
+.main .main-bottom-block{background:#fff;margin-bottom:12px}
 .full-frame-example .main .main-top-block,
 .full-frame-example .main .main-bottom-block{height:140px;}
 /* 中心主体上下主宽内容 */
-.full-frame-example .main .main-top-content{background:#fff;margin-bottom:12px}
-.full-frame-example .main .main-bottom-content{background:#fff;margin-bottom:12px}
+.main .main-top-content{background:#fff;margin-bottom:12px}
+.main .main-bottom-content{background:#fff;margin-bottom:12px}
 .full-frame-example .main .main-top-content,
 .full-frame-example .main .main-bottom-content{height:160px;}
 /* 中心主体内容 */
-.full-frame-example .main .main-content{margin-bottom:12px;background-color:#e9e9e9;}
+.main .main-content{margin-bottom:12px;background-color:#e9e9e9;}
 
-.full-frame-example .main .main-content .center-block{background-color:#fff;}
+.main .main-content .center-block{background-color:#fff;}
 .full-frame-example .main .main-content .center-block{height:1000px;}
 
 /* 左侧工具栏 */
-.full-frame-example .main .main-content .left-wrap{width:260px;}
-.full-frame-example .main .main-content .left-block{background:#fff;margin-right:10px;}
+.main .main-content .left-block{background:#fff;margin-right:10px;}
 
 /* 右侧工具栏 */
-.full-frame-example .main .main-content .right-wrap{width:260px;}
-.full-frame-example .main .main-content .right-block{background:#fff;margin-left:10px;}
+.main .main-content .right-block{background:#fff;margin-left:10px;}
 
 /* 左侧盯住栏 */
-.full-frame-example .left-bar{position:fixed;z-index:2;top:0;left:0;width:100px;height:100%;background:rgba(215,230,233,0.5)}
+.left-bar{position:fixed;z-index:2;top:0;left:0;width:100px;height:100%;background:rgba(215,230,233,0.5)}
 /* 右侧盯住栏 */
-.full-frame-example .right-bar{position:fixed;z-index:2;top:0;right:0;width:35px;height:100%;background:rgba(0,0,0,.4)}
+.right-bar{position:fixed;z-index:2;top:0;right:0;width:35px;height:100%;background:rgba(0,0,0,.4)}
 
 /* E 页面框架结构 E */
 .full-frame-example .header:after{content:"头部";display:inline-block;width:100%;text-align:center;}
@@ -49,9 +47,9 @@
 .full-frame-example .main .main-top-content:after{content:"主体顶部主体宽";display:inline-block;width:100%;text-align:center;}
 .full-frame-example .main .main-bottom-content:after{content:"主体底部主体宽";display:inline-block;width:100%;text-align:center;}
 
-.full-frame-example .main .main-content{position:relative;}
+/*.full-frame-example .main .main-content{position:relative;}
 .full-frame-example .main .main-content:after{content:"中心主体内容大区块";position:absolute;left:0;top:20%;width:100%;text-align:center;}
-.full-frame-example .main .main-content .center-block:after{content:"中心主体内容中心";position:absolute;left:0;top:50%;width:100%;text-align:center;}
+.full-frame-example .main .main-content .center-block:after{content:"中心主体内容中心";position:absolute;left:0;top:50%;width:100%;text-align:center;}*/
 
 .full-frame-example .main .main-content .left-block,
 .full-frame-example .main .main-content .right-block{height:1000px;}

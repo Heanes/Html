@@ -29,7 +29,7 @@
 .left-wrap,
 .right-wrap{margin:0 auto;}
 [class*="-wrap"]{margin:0 auto;}
-.float-block{float:left;}
+.fl{float:left;}
 /* S 头部 S */
 .header{
     background-color:#f4f4f4;
