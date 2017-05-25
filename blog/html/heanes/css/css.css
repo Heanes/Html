@@ -48,7 +48,10 @@
 
   .main-wrap {
     width: 96%;
-    float: none; } }
+    float: none; }
+
+  .center-wrap {
+    width: 100%; } }
 /* iPhone 3 4 5 */
 /* iPhone 6 */
 /* iPhone 6plus */
