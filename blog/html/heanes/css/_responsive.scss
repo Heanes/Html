@@ -26,9 +26,9 @@
 /* NoteBook */
 /* 此宽度下不显示侧栏 */
 @media screen and (max-width:1366px){
-    .main-wrap{width:1260px;}
-    .center-wrap{width:960px;}
-    .right-block{width:290px;}
+    .main-wrap{width:1200px;}
+    .center-wrap{width:920px;}
+    .right-block{width:270px;}
     .left-block,
     .left-bar,.right-bar{display:none;}
 }
