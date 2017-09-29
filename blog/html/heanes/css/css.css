@@ -220,18 +220,28 @@
 .full-frame-example.marked .main .main-content .right-block {
   position: relative; }
 .full-frame-example.marked .main .main-content .left-block:before,
-.full-frame-example.marked .main .main-content .right-block:before {
+.full-frame-example.marked .main .main-content .right-block:before,
+.full-frame-example.marked .left-bar:before, .full-frame-example.marked .right-bar:before {
   position: absolute;
   margin: auto;
   top: 50%;
-  width: 10px;
+  width: 1em;
   transform: translateY(-50%);
   display: inline-block; }
 .full-frame-example.marked .main .main-content .left-block:before {
-  content: "左侧工具栏"; }
+  content: "左侧工具栏";
+  left: 2px; }
 .full-frame-example.marked .main .main-content .right-block:before {
   content: "右侧工具栏";
-  right: 10px; }
+  right: 2px; }
+.full-frame-example.marked .left-bar:before {
+  content: "左侧钉住工具栏";
+  color: #98618b;
+  left: 2px; }
+.full-frame-example.marked .right-bar:before {
+  content: "右侧钉住工具栏";
+  color: #fff;
+  right: 2px; }
 
 /**
  * @doc 风格样式
