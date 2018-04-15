@@ -20,8 +20,8 @@
 
   .main-content .left-wrap {
     position: relative;
-    width: 220px;
-    margin-right: -220px;
+    width: 260px;
+    margin-right: -260px;
     z-index: 2; }
 
   .main-content .right-wrap {
@@ -35,7 +35,7 @@
 
   .center-wrap .center-content {
     position: relative;
-    margin-left: 220px;
+    margin-left: 260px;
     margin-right: 260px; }
 
   .right-fix-block .right-corner {
@@ -63,7 +63,7 @@
     display: none; } }
 @media screen and (max-width: 1200px) {
   .main-wrap {
-    width: 96%;
+    width: 100%;
     float: none; }
 
   .center-wrap {
@@ -126,7 +126,7 @@
     height: 140px; }
 
 /* 中心主体内容 */
-.main .main-content {
+.full-frame-example .main .main-content {
   margin-bottom: 12px;
   background-color: #e9e9e9; }
 

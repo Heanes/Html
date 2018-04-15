@@ -4,7 +4,7 @@
  * @author Heanes
  * @time 2017-05-12 10:56:46 周五
  */
-$leftWrapWidth:220px;
+$leftWrapWidth:260px;
 $rightWrapWidth:260px;
 
 /* Responsive */
@@ -35,7 +35,7 @@ $rightWrapWidth:260px;
 }
 
 @media screen and (max-width:1200px){
-    .main-wrap{width:96%;float:none;}
+    .main-wrap{width:100%;float:none;}
     .center-wrap{width:100%;}
 }
 

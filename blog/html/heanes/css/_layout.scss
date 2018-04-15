@@ -39,7 +39,9 @@ $exampleMainBottomBlockHeight:140px;
   .main .main-bottom-content{height:$exampleMainTopBlockHeight;}
 }
 /* 中心主体内容 */
-.main .main-content{margin-bottom:12px;background-color:#e9e9e9;}
+.full-frame-example{
+  .main .main-content{margin-bottom:12px;background-color:#e9e9e9;}
+}
 
 .main .main-content .center-block .center-content{background-color:#fff;}
 .full-frame-example{
