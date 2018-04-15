@@ -1,11 +1,11 @@
 @charset "UTF-8";
 /* 后台公共样式 */
 /* 导入重设样式 */
-@import url(/public/static/libs/css/reset/reset.css);
+@import url(/public/static/vendor/css/reset/reset.css);
 /* 导入基础简写样式库 */
-@import url(/public/static/libs/css/base/short.css);
+@import url(/public/static/vendor/css/base/short.css);
 /* 导入font-awesome字体文件 */
-@import url(/public/static/libs/fonts/font-awesome/4.2.0/css/font-awesome.min.css);
+@import url(/public/static/vendor/fonts/font-awesome/4.7.0/css/font-awesome.min.css);
 /* 导入全局显示样式控制 */
 @import url(style/style1.css);
 /* bootstrap表格样式附加样式 */

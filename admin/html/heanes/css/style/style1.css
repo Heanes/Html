@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*定义字体*/
 /* 导入bootstrap样式 */
-@import url(/public/static/libs/ui-framework/bootstrap/2.3.2/css/bootstrap.min.css);
+@import url(/public/static/vendor/ui-framework/bootstrap/2.3.2/css/bootstrap.min.css);
 body,button,input,select,textarea{font:12px/1.3 'Microsoft Yahei',Arial,Verdana,tahoma,Helvetica,sans-serif}
 /*链接根据页面要求全局自定义*/
 /*链接*/

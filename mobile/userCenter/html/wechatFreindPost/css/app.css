@@ -2,23 +2,23 @@
     font-family: PingHei;
     font-style:normal;
     font-weight:300;
-    src:url("/public/static/libs/fonts/PingHei/PingHei-light.woff") format("woff"),
-    url("/public/static/libs/fonts/PingHei/PingHei-light.ttf") format("truetype"),
-    url("/public/static/libs/fonts/PingHei/PingHei-light.eot") format("eot");
+    src:url("/public/static/vendor/fonts/PingHei/PingHei-light.woff") format("woff"),
+    url("/public/static/vendor/fonts/PingHei/PingHei-light.ttf") format("truetype"),
+    url("/public/static/vendor/fonts/PingHei/PingHei-light.eot") format("eot");
 }
 @font-face {
     font-family: fangZhengLanTingHei;
     font-style:normal;
     font-weight:300;
-    src:url("/public/static/libs/fonts/fangZhengLanTingHei/FZLTXGBK.woff") format("woff"),
-    url("/public/static/libs/fonts/fangZhengLanTingHei/FZLTXGBK.ttf") format("truetype"),
-    url("/public/static/libs/fonts/fangZhengLanTingHei/FZLTXGBK.eot") format("eot");
+    src:url("/public/static/vendor/fonts/fangZhengLanTingHei/FZLTXGBK.woff") format("woff"),
+    url("/public/static/vendor/fonts/fangZhengLanTingHei/FZLTXGBK.ttf") format("truetype"),
+    url("/public/static/vendor/fonts/fangZhengLanTingHei/FZLTXGBK.eot") format("eot");
 }
 @font-face {
     font-family: pingfang;
     font-style:normal;
     font-weight:300;
-    src:url("/public/static/libs/fonts/pingfang/PingFang Medium.ttf") format("truetype");
+    src:url("/public/static/vendor/fonts/pingfang/PingFang Medium.ttf") format("truetype");
 }
 
 #list, #list li, .po-hd, .post{

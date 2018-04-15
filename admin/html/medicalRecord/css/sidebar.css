@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* 侧栏常用样式 */
 /* 导入font-awesome字体文件 */
-@import url(/static/libs/fonts/font-awesome/4.2.0/css/font-awesome.min.css);
+@import url(/static/libs/fonts/font-awesome/4.7.0/css/font-awesome.min.css);
 /* 右下角样式 S */
 /* 常用导航 使用了font-awesome字体 */
 .right_corner_nav{width:60px;float:left;position:fixed;right:50px;bottom:80px;}
